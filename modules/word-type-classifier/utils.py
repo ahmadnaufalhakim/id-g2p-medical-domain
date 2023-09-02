@@ -368,3 +368,51 @@ def calculate_lid(
 #   if len(token) >= n :
 #     lid /= len(token)-n+1
 #   return lid
+
+# SVC utils
+def preprocess_train_corpus(raw_train_corpus:list, label:int, level:str="sent") :
+  """
+    Preprocess raw train corpus (list of strings)
+
+    Level denotes the level of the corpus preprocessing method ("sent" or "word")
+  """
+  assert level == "sent" or level == "word"
+  X, y = [], []
+  for document in raw_train_corpus :
+    if level == "sent" :
+      sentence = ' '.join(remove_digits_punctuation(document).split())
+      if sentence != '' and sentence not in X :
+        X.append(sentence)
+        y.append(label)
+    else :
+      tokens = remove_digits_punctuation(document).split()
+      for token in tokens :
+        if token != '' and token not in X :
+          X.append(token)
+          y.append(label)
+  return X, y
+
+def preprocess_test_corpus(raw_test_corpus:list, level:str="sent") :
+  """
+    Preprocess raw test corpus (list of strings)
+    Each test corpus entry must be in the following syntax:
+    ```
+    '<class label>\\t<sentence|word>\\n'
+    ```
+    Level denotes the level of the corpus preprocessing method ("sent" or "word")
+  """
+  assert level == "sent" or level == "word"
+  X, y = [], []
+  for document in raw_test_corpus :
+    tokens = document.split()
+    if level == "sent" :
+      sentence = ' '.join([remove_digits_punctuation(token) for token in tokens[1:] if remove_digits_punctuation(token) != ''])
+      if sentence != '' and sentence not in X :
+        X.append(sentence)
+        y.append(int(tokens[0]))
+    else :
+      for token in tokens[1:] :
+        if token != '' and token not in X :
+          X.append(token)
+          y.append(int(tokens[0]))
+  return X, y
