@@ -1,0 +1,4 @@
+bookbot/cmudict-0.7b
+bookbot/id_word2phoneme
+lipishan/ipa-phoneme-to-word
+indonesian-nlp/librivox-indonesia

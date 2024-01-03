@@ -1,0 +1,10 @@
+1_0
+	add "word,phoneme" as first entry
+	change "\t" to ','
+	remove all occurences of "\/" and '.' in phoneme column
+	change char "\’" to "\'", and 'é' to 'e' in word column
+	remove '-' in phoneme column while manually check the validity of the phoneme sequence (case: kətidak-pastian -> kətidaʔpastian)
+1_1
+	remove all entry where the word has the character '.' ["ada.,ada", "a.i.,aʔi", "ayam.,ajam", "bagus.,bagus", "baja.,badʒa", "bangun.,baŋun", "belum.,bəlum", "berahi.,bərahi", "betina.,bətina", "bis.,bis", "bulan.,bulan", "darurat.,darurat", "dia.,dia", "dipakainya.,dipakaiɲa", "disuntik.,disuntiʔ", "dos.,dos", "gerigi.,gərigi", "hal.,hal", "istrinya.,istriɲa", "itu.,itu", "juara.,dʒuara", "juga.,dʒuga", "kecamatan.,kətʃamatan", "kemilau.,kəmilau", "kepalanya.,kəpalaɲa", "kepang.,kepaŋ", "lagi.,lagi", "lahir.,lahir", "lah.,lah", "lebaran.,ləbaran", "lepas.,ləpas", "main.,main", "maju.,madʒu", "makan.,makan", "malam.,malam", "mas.,mas", "melulu.,məlulu", "menguat.,məŋuat", "minum.,minum", "nya.,ɲa", "pagi.,pagi", "penghulu.,pəŋhulu", "penglihatannya.,pəŋlihatanɲa", ".penyakit,pəɲakit", "perang.,pəraŋ", "pesona.,pəsona", "pinang.,pinaŋ", "proyek.,projeʔ", "pukul.,pukul", "saya.,saja", "sbb.,sbb", "sekolah.,səkolah", "sember.,səmber", "siang.,siaŋ", "siri.,siri", "sore.,sore", "tahun.,tahun", ".telapak,təlapaʔ", "telepon.,teləpon", "tidur.,tidur", "tinggi.,tiŋgi"]
+	change phoneme of bereksperimen (from "bəreʔspərimen" to "bəreʔsperimen")
+	remove entry of word eksperimen with phoneme "eʔspərimen"
