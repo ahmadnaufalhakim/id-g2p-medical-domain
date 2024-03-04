@@ -9,3 +9,4 @@
 	change phoneme of bereksperimen (from "bəreʔspərimen" to "bəreʔsperimen")
 	remove entry of word eksperimen with phoneme "eʔspərimen"
 	remove entry of word doeloe
+	change phoneme of any "daerah" subword (from "daerah" to "daʔerah")
