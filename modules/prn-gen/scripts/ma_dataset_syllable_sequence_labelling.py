@@ -5,6 +5,7 @@ import itertools
 from kbbi import KBBI, TidakDitemukan, BatasSehari
 import os
 import re
+import readline
 from subprocess import call
 import sys
 import time
@@ -12,7 +13,7 @@ import time
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 CURRENT_TIMESTAMP = time.time()
 CURRENT_TIMESTAMP_STR = datetime.datetime.fromtimestamp(CURRENT_TIMESTAMP).strftime("%Y-%m-%d_%H-%M-%S")
-KBBI_API_LIMIT = False
+KBBI_API_LIMIT = True
 
 parser = argparse.ArgumentParser()
 parser.add_argument('entry_idx_start', help="entry index start (1-indexed)")
@@ -108,6 +109,8 @@ with open(os.path.join(DATA_DIR, "ma/train_1_1.csv")) as f_read,\
   rows = list(csv_reader)
 
   for i in range(entry_idx_start, entry_idx_finish+1) :
+    # csv_writer.writerow([i+1] + rows[i] + [''])
+    
     print(f"\n{i+1} out of {len(rows)} data ({round(100*(i+1)/len(rows),3)}%)") 
     print(rows[i][0])
     kbbi_word_entry_choice = -1
