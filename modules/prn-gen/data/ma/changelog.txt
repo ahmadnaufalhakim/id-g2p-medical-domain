@@ -10,3 +10,5 @@
 	remove entry of word eksperimen with phoneme "eʔspərimen"
 	remove entry of word doeloe
 	change phoneme of any "daerah" subword (from "daerah" to "daʔerah")
+	change phoneme of berdeklamasi (from "bərdeʔlamasi" to "bərdeklamasi")
+	change phoneme of buklet (from "buʔlet" to "buklet")
