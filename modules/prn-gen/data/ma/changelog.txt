@@ -11,4 +11,9 @@
 	remove entry of word doeloe
 	change phoneme of any "daerah" subword (from "daerah" to "daʔerah")
 	change phoneme of berdeklamasi (from "bərdeʔlamasi" to "bərdeklamasi")
-	change phoneme of buklet (from "buʔlet" to "buklet")
+	change phoneme of	buklet (from "buʔlet" to "buklet")
+	change phoneme of	berkhalwat (from "bərʔhalwat" to "bərkhalwat")
+	change phoneme of	berkhasiat (from "bərʔhasiat" to "bərkhasiat")
+	change phoneme of	berkhayal (from "bərʔhajal" to "bərkhajal")
+	change phoneme of	berkhidmat (from "bərʔhidmat" to "bərkhidmat")
+	change phoneme of	berkhotbah (from "bərʔhotbah" to "bərkhotbah")
