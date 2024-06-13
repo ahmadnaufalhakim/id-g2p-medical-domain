@@ -17,3 +17,4 @@
 	change phoneme of	berkhayal (from "bərʔhajal" to "bərkhajal")
 	change phoneme of	berkhidmat (from "bərʔhidmat" to "bərkhidmat")
 	change phoneme of	berkhotbah (from "bərʔhotbah" to "bərkhotbah")
+	change word "rasulu'llah" to "rasulullah"
