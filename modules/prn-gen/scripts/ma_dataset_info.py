@@ -211,39 +211,38 @@ train_percentage = .9
 phone_keys = list(phoneme_to_words.keys())
 # split TRAIN/VAL/TEST process start
 for i in range(len(phone_keys)) :
-  if i == 1 :
-    break
+  # if i == 5 :
+  #   break
   phn = phone_keys[i]
-  # split TRAIN/TEST
+  # populate TEST set
   ## shuffle the words list
   random.shuffle(phoneme_to_words[phn]["words"])
   ## split the words list
   split_index = round(train_percentage * len(phoneme_to_words[phn]["words"]))
-  split1 = set(phoneme_to_words[phn]["words"][:split_index])
-  split2 = set(phoneme_to_words[phn]["words"][split_index:])
-  ## assign words to train and test, ensuring no duplicates
-  train = split1
-  test = split2
+  test_split = set(phoneme_to_words[phn]["words"][split_index:])
+  ## assign words test, ensuring no duplicates
+  test.update(test_split)
   ## remove assigned words from other phoneme's word lists
   for other_phn, other_data in phoneme_to_words.items() :
-    phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - split2)
+    phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - test_split)
 
-  # split TRAIN/VAL
+  # populate TRAIN and VAL set
   ## shuffle the words list
   random.shuffle(phoneme_to_words[phn]["words"])
   ## split the words list
   split_index = round(train_percentage * len(phoneme_to_words[phn]["words"]))
-  split1 = set(phoneme_to_words[phn]["words"][:split_index])
-  split2 = set(phoneme_to_words[phn]["words"][split_index:])
+  train_split = set(phoneme_to_words[phn]["words"][:split_index])
+  val_split = set(phoneme_to_words[phn]["words"][split_index:])
   ## assign words to train and val, ensuring no duplicates
-  train = split1
-  val = split2
-  print(len(list(train)), train)
-  print(len(list(val)), val)
-  print(len(list(test)), test)
+  train.update(train_split)
+  val.update(val_split)
+  print(f"iteration no.{i+1} (phoneme: {phn})")
+  print("current phone keys:", phone_keys)
+  print(len(list(train)), len(list(val)), len(list(test)))
+  print()
   ## remove assigned words from other phoneme's word lists
   for other_phn, other_data in phoneme_to_words.items() :
-    phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - split1 - split2)
+    phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - train_split - val_split)
   ## resort the phones based on their occurrences
   phoneme_to_words = dict(sorted(phoneme_to_words.items(), key=lambda item: len(item[1]["words"])))
   phone_keys = list(phoneme_to_words.keys())
@@ -252,46 +251,9 @@ print(phoneme_to_words.keys())
 for phn, data in phoneme_to_words.items() :
   print(phn, len(data["words"]))
 
-# # split TRAIN/TEST process end
-
-# #TODO: SPLIT TRAIN/VAL MASIH SALAH
-# phone_keys = list(phoneme_to_words.keys())
-# # split TRAIN/VAL process start
-# for i in range(len(phone_keys)) :
-#   if i == 1 :
-#     break
-#   phn = phone_keys[i]
-#   # print("before shuffle", phoneme_to_words[phn]["words"])
-#   ## shuffle the words list
-#   random.shuffle(phoneme_to_words[phn]["words"])
-#   # print("after shuffle", phoneme_to_words[phn]["words"])
-#   ## split the words list
-#   split_index = round(train_percentage * len(phoneme_to_words[phn]["words"]))
-#   # print(split_index)
-#   split1 = set(phoneme_to_words[phn]["words"][:split_index])
-#   split2 = set(phoneme_to_words[phn]["words"][split_index:])
-#   # print(split1)
-#   # print(split2)
-#   ## assign words to train and test, ensuring no duplicates
-#   train.update(split1 - val)
-#   val.update(split2 - train)
-#   # print(train)
-#   # print(test)
-#   ## remove assigned words from other phoneme's word lists
-#   for other_phn, other_data in phoneme_to_words.items() :
-#     phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - split1 - split2)
-
-#   ## resort the phones based on their occurrences
-#   phoneme_to_words = dict(sorted(phoneme_to_words.items(), key=lambda item: len(item[1]["words"])))
-#   phone_keys = list(phoneme_to_words.keys())
-
-# split TRAIN/VAL process end
-
+# split TRAIN/VAL/TEST process end
 
 print(len(train), len(val), len(test))
-
-# for key, value in dict(sorted(phoneme_to_words.items(), key=lambda item: item[1]["occurrences"])) :
-#   print(key, value)
 
 # with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read, open(os.path.join(DATA_DIR, "ma/train_converted.csv"), 'w') as f_write :
 #   csv_reader = csv.reader(f_read)
