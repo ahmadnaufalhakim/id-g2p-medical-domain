@@ -55,7 +55,7 @@ T_IPA_TO_2_LETTER_ARPABET = {
   't': 'T'
 }
 
-phonemes = [
+PHONEMES = [
   'ʔ',
   'b',
   'ə',
@@ -77,28 +77,28 @@ phonemes = [
   'j',  # y
   'z'
 ]
-a_phonemes = [
+A_PHONEMES = [
   "ai", # diftong ai
   "au", # diftong au
   'a'
 ]
-d_phonemes = [
+D_PHONEMES = [
   "dʒ", # j
   'd'
 ]
-e_phonemes = [
+E_PHONEMES = [
   "ei", # diftong ei
   'e'
 ]
-o_phonemes = [
+O_PHONEMES = [
   "oi", # diftong oi
   'o'
 ]
-s_phonemes = [
+S_PHONEMES = [
   "sj", # sh,sy
   's'
 ]
-t_phonemes = [
+T_PHONEMES = [
   "tʃ", # c
   't'
 ]
@@ -106,7 +106,7 @@ t_phonemes = [
 phoneme_to_words = {
   phn: {
     "words": set()
-  } for phoneme in [phonemes, a_phonemes, d_phonemes, e_phonemes, o_phonemes, s_phonemes, t_phonemes] for phn in phoneme
+  } for phoneme in [PHONEMES, A_PHONEMES, D_PHONEMES, E_PHONEMES, O_PHONEMES, S_PHONEMES, T_PHONEMES] for phn in phoneme
 }
 with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read, open(os.path.join(DATA_DIR, "ma/train_converted.csv"), 'w') as f_write :
   csv_reader = csv.reader(f_read)
@@ -118,79 +118,78 @@ with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read, open(os.path.join(D
     phoneme_sequence = []
     for syllable in row[3].split('.') :
       # Count phoneme distribution
-      for phoneme in phonemes :
+      for phoneme in PHONEMES :
         if phoneme in syllable :
           phoneme_to_words[phoneme]["words"].add(tuple(row))
       ## a IPA phonemes
-      if a_phonemes[0] in syllable :
-        phoneme_to_words[a_phonemes[0]]["words"].add(tuple(row))
-      elif a_phonemes[1] in syllable :
-        phoneme_to_words[a_phonemes[1]]["words"].add(tuple(row))
-      elif a_phonemes[2] in syllable :
-        phoneme_to_words[a_phonemes[2]]["words"].add(tuple(row))
+      if A_PHONEMES[0] in syllable :
+        phoneme_to_words[A_PHONEMES[0]]["words"].add(tuple(row))
+      elif A_PHONEMES[1] in syllable :
+        phoneme_to_words[A_PHONEMES[1]]["words"].add(tuple(row))
+      elif A_PHONEMES[2] in syllable :
+        phoneme_to_words[A_PHONEMES[2]]["words"].add(tuple(row))
       ## d IPA phonemes
-      if d_phonemes[0] in syllable :
-        phoneme_to_words[d_phonemes[0]]["words"].add(tuple(row))
-      elif d_phonemes[1] in syllable :
-        phoneme_to_words[d_phonemes[1]]["words"].add(tuple(row))
+      if D_PHONEMES[0] in syllable :
+        phoneme_to_words[D_PHONEMES[0]]["words"].add(tuple(row))
+      elif D_PHONEMES[1] in syllable :
+        phoneme_to_words[D_PHONEMES[1]]["words"].add(tuple(row))
       ## e IPA phonemes
-      if e_phonemes[0] in syllable :
-        phoneme_to_words[e_phonemes[0]]["words"].add(tuple(row))
-      elif e_phonemes[1] in syllable :
-        phoneme_to_words[e_phonemes[1]]["words"].add(tuple(row))
+      if E_PHONEMES[0] in syllable :
+        phoneme_to_words[E_PHONEMES[0]]["words"].add(tuple(row))
+      elif E_PHONEMES[1] in syllable :
+        phoneme_to_words[E_PHONEMES[1]]["words"].add(tuple(row))
       ## o IPA phonemes
-      if o_phonemes[0] in syllable :
-        phoneme_to_words[o_phonemes[0]]["words"].add(tuple(row))
-      elif o_phonemes[1] in syllable :
-        phoneme_to_words[o_phonemes[1]]["words"].add(tuple(row))
+      if O_PHONEMES[0] in syllable :
+        phoneme_to_words[O_PHONEMES[0]]["words"].add(tuple(row))
+      elif O_PHONEMES[1] in syllable :
+        phoneme_to_words[O_PHONEMES[1]]["words"].add(tuple(row))
       ## s IPA phonemes
-      if s_phonemes[0] in syllable :
-        phoneme_to_words[s_phonemes[0]]["words"].add(tuple(row))
-      elif s_phonemes[1] in syllable :
-        phoneme_to_words[s_phonemes[1]]["words"].add(tuple(row))
+      if S_PHONEMES[0] in syllable :
+        phoneme_to_words[S_PHONEMES[0]]["words"].add(tuple(row))
+      elif S_PHONEMES[1] in syllable :
+        phoneme_to_words[S_PHONEMES[1]]["words"].add(tuple(row))
       ## t IPA phonemes
-      if t_phonemes[0] in syllable :
-        phoneme_to_words[t_phonemes[0]]["words"].add(tuple(row))
-      elif t_phonemes[1] in syllable :
-        phoneme_to_words[t_phonemes[1]]["words"].add(tuple(row))
+      if T_PHONEMES[0] in syllable :
+        phoneme_to_words[T_PHONEMES[0]]["words"].add(tuple(row))
+      elif T_PHONEMES[1] in syllable :
+        phoneme_to_words[T_PHONEMES[1]]["words"].add(tuple(row))
 
       # Rewrite phonemes as a space-separated phoneme sequence
       row[1] = row[1].replace('-', '')
       for i in range(len(syllable)) :
-        if syllable[i] in phonemes :
+        if syllable[i] in PHONEMES :
           phoneme_sequence.append(IPA_TO_2_LETTER_ARPABET[syllable[i]])
         ## Handle double letter IPA phoneme
-        elif syllable[i:i+2] in a_phonemes :
+        elif syllable[i:i+2] in A_PHONEMES :
           phoneme_sequence.append(A_IPA_TO_2_LETTER_ARPABET[syllable[i:i+2]])
           i += 1
-        elif syllable[i:i+2] in d_phonemes :
+        elif syllable[i:i+2] in D_PHONEMES :
           phoneme_sequence.append(D_IPA_TO_2_LETTER_ARPABET[syllable[i:i+2]])
           i += 1
-        elif syllable[i:i+2] in e_phonemes :
-          # print(syllable[i:i+2])
+        elif syllable[i:i+2] in E_PHONEMES :
           phoneme_sequence.append(E_IPA_TO_2_LETTER_ARPABET[syllable[i:i+2]])
           i += 1
-        elif syllable[i:i+2] in o_phonemes :
+        elif syllable[i:i+2] in O_PHONEMES :
           phoneme_sequence.append(O_IPA_TO_2_LETTER_ARPABET[syllable[i:i+2]])
           i += 1
-        elif syllable[i:i+2] in s_phonemes :
+        elif syllable[i:i+2] in S_PHONEMES :
           phoneme_sequence.append(S_IPA_TO_2_LETTER_ARPABET[syllable[i:i+2]])
           i += 1
-        elif syllable[i:i+2] in t_phonemes :
+        elif syllable[i:i+2] in T_PHONEMES :
           phoneme_sequence.append(T_IPA_TO_2_LETTER_ARPABET[syllable[i:i+2]])
           i += 1
         ## Handle rest of single letter IPA phoneme
-        elif syllable[i] in a_phonemes :
+        elif syllable[i] in A_PHONEMES :
           phoneme_sequence.append(A_IPA_TO_2_LETTER_ARPABET[syllable[i]])
-        elif syllable[i] in d_phonemes :
+        elif syllable[i] in D_PHONEMES :
           phoneme_sequence.append(D_IPA_TO_2_LETTER_ARPABET[syllable[i]])
-        elif syllable[i] in e_phonemes :
+        elif syllable[i] in E_PHONEMES :
           phoneme_sequence.append(E_IPA_TO_2_LETTER_ARPABET[syllable[i]])
-        elif syllable[i] in o_phonemes :
+        elif syllable[i] in O_PHONEMES :
           phoneme_sequence.append(O_IPA_TO_2_LETTER_ARPABET[syllable[i]])
-        elif syllable[i] in s_phonemes :
+        elif syllable[i] in S_PHONEMES :
           phoneme_sequence.append(S_IPA_TO_2_LETTER_ARPABET[syllable[i]])
-        elif syllable[i] in t_phonemes :
+        elif syllable[i] in T_PHONEMES :
           phoneme_sequence.append(T_IPA_TO_2_LETTER_ARPABET[syllable[i]])
     csv_writer.writerow([row[0],' '.join(phoneme_sequence)])
 
@@ -254,12 +253,3 @@ for phn, data in phoneme_to_words.items() :
 # split TRAIN/VAL/TEST process end
 
 print(len(train), len(val), len(test))
-
-# with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read, open(os.path.join(DATA_DIR, "ma/train_converted.csv"), 'w') as f_write :
-#   csv_reader = csv.reader(f_read)
-#   csv_writer = csv.writer(f_write)
-#   headers = next(csv_reader, None)
-#   if headers :
-#     csv_writer.writerow([headers[1]])
-#   for row in csv_reader :
-#     csv_writer.writerow([row[1]])
