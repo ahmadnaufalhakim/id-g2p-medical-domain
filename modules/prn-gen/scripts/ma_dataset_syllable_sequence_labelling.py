@@ -102,6 +102,7 @@ def generate_phoneme_syllable_sequence_candidates(phoneme, syllables=[]) :
 def clear() :
   _ = call("clear" if os.name == "posix" else "cls")
 
+## CORE OF THE SCRIPT ##
 with open(os.path.join(DATA_DIR, "ma/train_1_1.csv")) as f_read,\
      open(os.path.join(DATA_DIR, f"ma/train_{args.entry_idx_start}-{args.entry_idx_finish}_{CURRENT_TIMESTAMP_STR}.csv"), 'w') as f_write :
   csv_reader = csv.reader(f_read)
