@@ -1,0 +1,26 @@
+IH D => ə d
+IH M => ə m
+IH Z => ə z
+
+IH L => i l (need checking)
+IH L => ə l (awal & huruf e pertama)
+
+IH P => i p (awal & not huruf e pertama, tengah, akhir)
+IH P => ə p (awal & huruf e pertama)
+
+IH S => i s (awal)
+IH S => ə s (tengah, akhir)
+IH T => i t (awal, tengah)
+IH T => ə t (akhir)
+
+IH Z => ????
+
+ER => ə r
+AH => ə
+AE => e
+OW => ????
+
+
+TH => t
+DH => d
+JH => j
