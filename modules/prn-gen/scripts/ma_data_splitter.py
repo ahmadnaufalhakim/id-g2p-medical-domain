@@ -22,7 +22,6 @@ IPA_TO_2_LETTER_ARPABET = {
   'ɲ': "NY",  # ny
   'p': 'P',
   'r': 'R',
-  's': 'S',
   'u': "UW",
   'v': 'V',
   'w': 'W',
