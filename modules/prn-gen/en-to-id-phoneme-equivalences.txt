@@ -1,6 +1,9 @@
 ### phoneme equivalences
 AH <consonant> perlu dicek!!!!!!!!!!!
 
+AH N => a n (UN)
+AH N => ə n (ON)
+
 IH B => ????
 IH D => ə d
 IH G => ????
@@ -20,6 +23,8 @@ IY IH => i ʔ i
 IH JH => ə j (need checking)
 
 IH K => ????
+
+IH K S => i ʔ s
 
 IH L => i l (awal & not huruf e pertama, tengah & "IL" in grapheme, akhir)
 IH L => ə l (awal & huruf e pertama, tengah & "EL" in grapheme)
@@ -78,9 +83,15 @@ DRZEWIECKI
 DUBICKI
 EAU
 EAUX
+FEB
+FSI
+G'VANNI'S
+GET
+GMBH
+GWAY
 
 #
-### abbreviation entries (current checking row: 30732 out of 108133)
+### abbreviation entries (current checking row: 41241 out of 108133)
 AAA
 ABT
 ABTS
@@ -143,5 +154,23 @@ EEO
 EK
 EKK
 EMDR
+ERS
+ETC
+
+F
+F'D
+F'S
+FM
+FOIA
+FOP
+
+G'S
+GA
+GED
+GMBH
+GNC
+GOVPX
+GYI
+
 
 WM
