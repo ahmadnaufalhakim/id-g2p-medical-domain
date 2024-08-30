@@ -1,26 +1,147 @@
+### phoneme equivalences
+AH <consonant> perlu dicek!!!!!!!!!!!
+
+IH B => ????
 IH D => ə d
-IH M => ə m
+IH G => ????
+IH M => i m (awal & not huruf i pertama, tengah & "IM"|"OM" in grapheme, akhir & "IM"|"YM" in grapheme)
+IH M => ə m (awal & huruf i pertama, tengah & "EM" in grapheme, akhir & "EM" in grapheme)
+
+IH N => (akhir & "YN" in grapheme)
+IH N => ə n ("ION"?)
+IH N => ə n (akhir, more checking of IH N)
+
+IH NG => i ŋ
+
 IH Z => ə z
 
-IH L => i l (need checking)
-IH L => ə l (awal & huruf e pertama)
+IY IH => i ʔ i
+
+IH JH => ə j (need checking)
+
+IH K => ????
+
+IH L => i l (awal & not huruf e pertama, tengah & "IL" in grapheme, akhir)
+IH L => ə l (awal & huruf e pertama, tengah & "EL" in grapheme)
 
 IH P => i p (awal & not huruf e pertama, tengah, akhir)
 IH P => ə p (awal & huruf e pertama)
 
+IH R => i r (tengah & "YR" in grapheme)
+IH R => ə r (need checking)
+
 IH S => i s (awal)
 IH S => ə s (tengah, akhir)
+
+IH SH => i sj
+
 IH T => i t (awal, tengah)
 IH T => ə t (akhir)
 
-IH Z => ????
+IH Z => ə z (akhir(need more))
 
 ER => ə r
-AH => ə
+AH => a (akhir?)
+AH => ə (not akhir?)
 AE => e
-OW => ????
-
+EH => e
+OW => o w
+AW => au
+OY => oi
+UH => u
+UW => u
 
 TH => t
 DH => d
 JH => j
+ZH => ????
+
+D AE => d ə (awal & "D'A" in grapheme)
+D IH => d i (awal & "DI" in grapheme)
+D IH => d ə (awal & "DE" in grapheme)
+
+
+
+# possible troublesome entry
+B'GOSH
+C'EST
+C'MON
+CEYLON
+CMX
+semua yg berawalan "D'"
+DELIAL
+DES
+DEXFENFLURAMINE
+DMITRI
+DORIS
+DRZEWIECKI
+DUBICKI
+EAU
+EAUX
+
+#
+### abbreviation entries (current checking row: 30732 out of 108133)
+AAA
+ABT
+ABTS
+AG
+AI
+AM
+AOL
+APC
+ATX
+AWB
+
+B
+B'S
+BBC
+BBC'S
+BBQ
+BT
+BTA
+BUA
+BYU
+
+C'S
+CA
+CAC
+CEL
+CELO
+CIA
+CIE
+CMOS
+
+CNN
+CNNFN
+COD
+CPS
+CSPAN
+CSPI
+CT
+CXC
+CYB
+
+D
+DA'S
+DAK
+DBASE
+DDT
+DFW
+DIFM
+DK
+DQALPHA
+DR
+DRAM
+DSS
+DSV
+DUI
+DWI
+
+E'S
+EAP
+EEO
+EK
+EKK
+EMDR
+
+WM
