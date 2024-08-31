@@ -1,11 +1,32 @@
 ### phoneme equivalences
 AH <consonant> perlu dicek!!!!!!!!!!!
 
-AH N => a n (UN)
-AH N => ə n (ON)
+AH D => a d (akhir & "UD" in grapheme, need checking)
+
+AH JH => ə j (else?) 
+
+AH K => ə k (else?)
+
+AH K S => ə ʔ s (EX, need checking)
+AH K S => a ʔ s (UX, need checking)
+
+AH L => ə l (akhir & "EL" in grapheme, else?)
+
+AH M => a m (akhir & "UM" in grapheme, need checking)
+
+AH N => a n (akhir & "UN" in grapheme, need checking)
+AH N => ə n (akhir & "ION"|"ON"|"AN"|"EN" in grapheme, need checking, else?)
+
+AH S => ə s ("US" in grapheme)
+
+AH T => ə t (akhir & "OT" in grapheme, need checking)
+
+AH Z => ə z (else, need checking)
 
 IH B => ????
-IH D => ə d
+IH D => i d (need checking)
+IH D => ə d (need checking)
+IH F => i f
 IH G => ????
 IH M => i m (awal & not huruf i pertama, tengah & "IM"|"OM" in grapheme, akhir & "IM"|"YM" in grapheme)
 IH M => ə m (awal & huruf i pertama, tengah & "EM" in grapheme, akhir & "EM" in grapheme)
@@ -22,12 +43,13 @@ IY IH => i ʔ i
 
 IH JH => ə j (need checking)
 
-IH K => ????
+IH K => i k (else)
+IH K => ə k (need checking)
 
 IH K S => i ʔ s
 
 IH L => i l (awal & not huruf e pertama, tengah & "IL" in grapheme, akhir)
-IH L => ə l (awal & huruf e pertama, tengah & "EL" in grapheme)
+IH L => ə l (awal & huruf e pertama, tengah & "EL" in grapheme, else)
 
 IH P => i p (awal & not huruf e pertama, tengah, akhir)
 IH P => ə p (awal & huruf e pertama)
@@ -46,8 +68,8 @@ IH T => ə t (akhir)
 IH Z => ə z (akhir(need more))
 
 ER => ə r
-AH => a (akhir?)
-AH => ə (not akhir?)
+AH => a (akhir & huruf a terakhir)
+AH => ə (akhir & not huruf a terakhir, else?)
 AE => e
 EH => e
 OW => o w
@@ -64,7 +86,6 @@ ZH => ????
 D AE => d ə (awal & "D'A" in grapheme)
 D IH => d i (awal & "DI" in grapheme)
 D IH => d ə (awal & "DE" in grapheme)
-
 
 
 # possible troublesome entry
@@ -89,9 +110,21 @@ G'VANNI'S
 GET
 GMBH
 GWAY
+HA'ARETZ
+HA'ETZNI
+IAMS
+semua yg ada substring "ISRAEL" (jk but cmon now)
+
+# possible (but not really) troublesome entry
+I
+I'D
+I'ERS
+I'M
+I'S
+I'VE
 
 #
-### abbreviation entries (current checking row: 41241 out of 108133)
+### abbreviation entries (current checking row: 49187 out of 108133)
 AAA
 ABT
 ABTS
@@ -172,5 +205,25 @@ GNC
 GOVPX
 GYI
 
+H
+H'S
+HBOX
+HCES
+HFDF
+HIAA
+
+IB
+ID
+IMO
+INS
+IO
+IP
+IRA
+IRVE
+ISTY
+ISU
+ITA
+
+J
 
 WM
