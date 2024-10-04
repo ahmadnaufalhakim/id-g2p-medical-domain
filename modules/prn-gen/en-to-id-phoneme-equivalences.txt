@@ -1,37 +1,46 @@
+based on data datasets/huggingface/bookbot/cmudict-0.7b/train.csv
+
 ### phoneme equivalences
 AH <consonant> perlu dicek!!!!!!!!!!!
+AH B => ə b (akhir & "EB" in grapheme, need checking)
 
-AH D => a d (akhir & "UD" in grapheme, need checking)
+AH D => a d (tengah & "UD" in grapheme, akhir & "UD" in grapheme, need checking)
 
 AH JH => ə j (else?) 
 
 AH K => ə k (else?)
+AH K => a ʔ (akhir)
 
 AH K S => ə ʔ s (EX, need checking)
 AH K S => a ʔ s (UX, need checking)
 
-AH L => ə l (akhir & "EL" in grapheme, else?)
+# PRIORITIZE CHECKING THIS, CUMBERSOME!
+AH L => a l (tengah & "BUL"| , and akhir & "UL" in grapheme)
+AH L => ə l (akhir & "EL"|"LE" in grapheme, tengah & "EL", else?)
 
 AH M => a m (akhir & "UM" in grapheme, need checking)
+AH M => ə m (akhir & "SM"|"ZM" in grapheme, else?)
 
 AH N => a n (akhir & "UN" in grapheme, need checking)
 AH N => ə n (akhir & "ION"|"ON"|"AN"|"EN" in grapheme, need checking, else?)
 
 AH S => ə s ("US" in grapheme)
 
-AH T => ə t (akhir & "OT" in grapheme, need checking)
+AH T => a t (tengah & "UT" in grapheme, need checking)
+AH T => ə t (akhir & "OT"|"ET" in grapheme, tengah & "IT" in grapheme, need checking)
 
 AH Z => ə z (else, need checking)
 
-IH B => ????
+IH B => i b (tengah & "IB" in grapheme, need checking, else)
 IH D => i d (need checking)
 IH D => ə d (need checking)
 IH F => i f
 IH G => ????
+IH L => i l (else)
 IH M => i m (awal & not huruf i pertama, tengah & "IM"|"OM" in grapheme, akhir & "IM"|"YM" in grapheme)
 IH M => ə m (awal & huruf i pertama, tengah & "EM" in grapheme, akhir & "EM" in grapheme)
 
-IH N => (akhir & "YN" in grapheme)
+IH N => i n (akhir & "YN" in grapheme)
 IH N => ə n ("ION"?)
 IH N => ə n (akhir, more checking of IH N)
 
@@ -45,6 +54,7 @@ IH JH => ə j (need checking)
 
 IH K => i k (else)
 IH K => ə k (need checking)
+IH K => i ʔ (akhir)
 
 IH K S => i ʔ s
 
@@ -87,6 +97,12 @@ D AE => d ə (awal & "D'A" in grapheme)
 D IH => d i (awal & "DI" in grapheme)
 D IH => d ə (awal & "DE" in grapheme)
 
+K L => k l
+<vocal> K <consonant> => <corresponding-vocal> ʔ <corresponding-consonant>
+<vocal> K<EOS> => <corresponding-vocal> ʔ
+
+# TODO:
+- cek ZH ekivalen to what (ada di web CMU seingetku)
 
 # possible troublesome entry
 B'GOSH
@@ -114,6 +130,14 @@ HA'ARETZ
 HA'ETZNI
 IAMS
 semua yg ada substring "ISRAEL" (jk but cmon now)
+KAO
+KARDASHIAN
+KARDASHIAN'S
+KIA
+KINGHORN
+KOOYMAN
+semua yg berawalan "L'"
+LN
 
 # possible (but not really) troublesome entry
 I
@@ -122,9 +146,19 @@ I'ERS
 I'M
 I'S
 I'VE
+KCAL
+KCOP
+KGANAKGA
+KGORI
+KMART
+KMART'S
+KMETZ
+KMIEC
+KMIECIK
+LUU
 
 #
-### abbreviation entries (current checking row: 49187 out of 108133)
+### abbreviation entries (current checking row: 55723 out of 108133)
 AAA
 ABT
 ABTS
@@ -225,5 +259,17 @@ ISU
 ITA
 
 J
+
+K'S
+KAL
+KJAR
+KKK
+KNBC
+KYI
+
+L
+LP
+LS
+LSD
 
 WM
