@@ -32,10 +32,10 @@ AH M => ə m (tengah & "EM" in grapheme, akhir & "SM"|"ZM" in grapheme, else?)
 
 AH NG => ??
 
-AH N => a n (akhir & "UN" in grapheme, need checking)
+AH N => a n (awal & "ON" in grapheme, akhir & "UN" in grapheme, need checking)
 AH N => ə n (akhir & "IN"|"ION"|"ON"|"AN"|"EN" in grapheme, tengah & "ION"|"ON"|"AN"|"EN" in grapheme, need checking, else?)
 
-AH P => ə p (akhir & "UP" in grapheme, else?)
+AH P => ə p (awal & "OP" in grapheme, akhir & "UP" in grapheme, else?)
 
 AH R => ə r (tengah & "IR" in grapheme, else?)
 
@@ -45,8 +45,8 @@ AH SH => ə sj (else?)
 AH S => ə s (tengah & "ES"|"US" in grapheme, akhir & "ICE"|"AS"|"IS"|"US" in grapheme)
 
 
-AH T => a t (tengah & "UT" in grapheme, akhir & "UT" in grapheme, need checking)
-AH T => ə t (akhir & "OT"|"ET" in grapheme, tengah & "AT"|"IT" in grapheme, need checking)
+AH T => a t (need checking)
+AH T => ə t (akhir & "OT"|"ET"|"UT" in grapheme, tengah & "AT"|"IT"|"UT" in grapheme, need checking)
 
 
 AH V => ə v (akhir & "'VE"|"VE" in grapheme, else?)
@@ -109,7 +109,7 @@ AW => au
 OY => oi
 EY => ei
 UH => u
-UW => u
+UW => u (or u w?)
 
 TH => t
 DH => d
@@ -130,6 +130,7 @@ K W => k w
 
 # TODO:
 - cek ZH ekivalen to what (ada di web CMU seingetku)
+- check all possible combinations of AH G dan AH K
 
 # possible troublesome entry
 B'GOSH
@@ -182,6 +183,7 @@ semua yg ada substring NETANYAHU (jk but yk)
 NGAI
 NGEMA
 NGHI
+PASADENA
 
 # possible (but not really) troublesome entry
 I
@@ -202,7 +204,7 @@ KMIECIK
 LUU
 
 #
-### abbreviation entries (current checking row: 68815 out of 108133)
+### abbreviation entries (current checking row: 73737 out of 108133)
 AAA
 ABT
 ABTS
@@ -347,6 +349,13 @@ OAD
 ODP
 OJ
 OK
+OT
+
+P
+P'S
+PGM
+PH
+PHLCORP
 
 WM
 
