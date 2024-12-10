@@ -2,18 +2,21 @@ based on data datasets/huggingface/bookbot/cmudict-0.7b/train.csv
 
 ### phoneme equivalences
 AH <consonant> perlu dicek!!!!!!!!!!!
-AH B => ə b (akhir & "EB" in grapheme, need checking)
+AH B => ə b (awal & "OB" in grapheme, akhir & "EB" in grapheme, need checking, else?)
 
 AH D => a d (tengah & "UD" in grapheme, akhir & "UD" in grapheme, need checking)
 AH D => ə d (akhir & "OD" in grapheme, else?)
 
 AH F => a f (tengah & "UF" in grapheme)
-AH F => ə f (else?)
+AH F => ə f (awal & "OF" in grapheme, else?)
 
+# i think variations of AH G neess to be inspected?
 AH G => ə g (else?)
 
+AH JH => a j (tengah & "OG" in grapheme)
 AH JH => ə j (else?)
 
+# (same as variations of AH G) i think variations of AH K needs to be inspected?
 AH K => ə ʔ (else?)
 AH K => a ʔ (akhir)
 
@@ -22,28 +25,38 @@ AH K S => a ʔ s (UX, need checking)
 
 # PRIORITIZE CHECKING THIS, CUMBERSOME!
 AH L => a l (tengah & "BUL"| , and akhir & "UL" in grapheme)
-AH L => ə l (akhir & "IL"|"AL"|"EL"|"LE" in grapheme, tengah & "EL"|"IL", else?)
+AH L => ə l (akhir & "UL"|"IL"|"AL"|"EL"|"LE" in grapheme, tengah & "UL"|"EL"|"IL"|"OL" in grapheme, else?)
 
-AH M => a m (akhir & "UM" in grapheme, need checking)
+AH M => a m (akhir & "UM" in grapheme, tengah & "UM" in grapheme, need checking (case: NOVUM))
 AH M => ə m (tengah & "EM" in grapheme, akhir & "SM"|"ZM" in grapheme, else?)
+
+AH NG => ??
 
 AH N => a n (akhir & "UN" in grapheme, need checking)
 AH N => ə n (akhir & "IN"|"ION"|"ON"|"AN"|"EN" in grapheme, tengah & "ION"|"ON"|"AN"|"EN" in grapheme, need checking, else?)
 
-AH S => ə s (tengah "ES"|"US" in grapheme, akhir & "AS" in grapheme)
+AH P => ə p (akhir & "UP" in grapheme, else?)
+
+AH R => ə r (tengah & "IR" in grapheme, else?)
+
+AH SH => a sj (tengah & "USH" in grapheme)
+AH SH => ə sj (else?)
+
+AH S => ə s (tengah & "ES"|"US" in grapheme, akhir & "ICE"|"AS"|"IS"|"US" in grapheme)
 
 
-AH T => a t (tengah & "UT" in grapheme, need checking)
-AH T => ə t (akhir & "OT"|"ET" in grapheme, tengah & "IT" in grapheme, need checking)
+AH T => a t (tengah & "UT" in grapheme, akhir & "UT" in grapheme, need checking)
+AH T => ə t (akhir & "OT"|"ET" in grapheme, tengah & "AT"|"IT" in grapheme, need checking)
 
-AH V => ə v (akhir & "'VE" in grapheme, else?)
+
+AH V => ə v (akhir & "'VE"|"VE" in grapheme, else?)
 
 AH Z => a z (akhir & "A'S" in grapheme)
-AH Z => ə z (else, need checking)
+AH Z => ə z (tengah & "OZ" in grapheme, else?)
 
 IH B => i b (tengah & "IB" in grapheme, need checking, else)
 IH D => i d (need checking)
-IH D => ə d (need checking)
+IH D => ə d (akhir & "ED" in grapheme)
 IH F => i f
 IH G => ????
 IH L => i l (else)
@@ -55,9 +68,6 @@ IH N => i n (akhir & "YN" in grapheme, else)
 IH N => ə n (tengah & "EN" in grapheme, akhir & "ION" in grapheme, more checking of IH N)
 
 IH NG => i ŋ
-
-IH Z => i z (akhir & "ES" in grapheme)
-IH Z => ə z (else?)
 
 IY IH => i ʔ i
 
@@ -86,12 +96,12 @@ IH SH => i sj
 IH T => i t (awal, tengah)
 IH T => ə t (akhir)
 
-IH Z => ə z (akhir(need more))
+IH Z => ə z (akhir & "'S"|"ES" in grapheme)
 IH Z => i z (else?)
 
 ER => ə r
 AH => a (akhir & huruf a terakhir)
-AH => ə (akhir & not huruf a terakhir, else?)
+AH => ə (awal & "O'" in grapheme, akhir & not huruf a terakhir, else?)
 AE => e
 EH => e
 OW => o w
@@ -146,7 +156,7 @@ GWAY
 HA'ARETZ
 HA'ETZNI
 IAMS
-semua yg ada substring "ISRAEL" (jk but cmon now)
+semua yg ada substring "ISRAEL" (jk but yk)
 KAO
 KARDASHIAN
 KARDASHIAN'S
@@ -163,6 +173,15 @@ MBEKI
 MEAGHER
 MFUME
 MHOON
+MR
+MRS
+MS
+MSGR
+NDAU
+semua yg ada substring NETANYAHU (jk but yk)
+NGAI
+NGEMA
+NGHI
 
 # possible (but not really) troublesome entry
 I
@@ -183,7 +202,7 @@ KMIECIK
 LUU
 
 #
-### abbreviation entries (current checking row: 63328 out of 108133)
+### abbreviation entries (current checking row: 68815 out of 108133)
 AAA
 ABT
 ABTS
@@ -303,14 +322,33 @@ M'BOW
 M'S
 MAM
 MBANK
+MBEKI
 MC
 MCORP
 MGM
 MH
 MHM
 MIT
+MJ'S
 MPEG
 MPH
 MTEL
 
+N
+N'S
+NEPL
+NOAA
+NPR
+NPR'S
+NVHOMES
+NVRYAN
+
+OAD
+ODP
+OJ
+OK
+
 WM
+
+# words i want to check after converting
+NOMINAL
