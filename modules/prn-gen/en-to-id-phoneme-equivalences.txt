@@ -2,6 +2,7 @@ based on data datasets/huggingface/bookbot/cmudict-0.7b/train.csv
 
 ### phoneme equivalences
 AH <consonant> perlu dicek!!!!!!!!!!!
+AH B => a b (tengah & "UB" in grapheme, akhir & "UB" in grapheme)
 AH B => ə b (awal & "OB" in grapheme, akhir & "EB" in grapheme, need checking, else?)
 
 AH D => a d (tengah & "UD" in grapheme, akhir & "UD" in grapheme, need checking)
@@ -32,21 +33,22 @@ AH M => ə m (tengah & "EM" in grapheme, akhir & "SM"|"ZM" in grapheme, else?)
 
 AH NG => ??
 
-AH N => a n (awal & "ON" in grapheme, akhir & "UN" in grapheme, need checking)
+AH N => a n (awal & "ON" in grapheme, tengah & "UN" in grapheme, akhir & "UN" in grapheme, need checking)
 AH N => ə n (akhir & "IN"|"ION"|"ON"|"AN"|"EN" in grapheme, tengah & "ION"|"ON"|"AN"|"EN" in grapheme, need checking, else?)
 
-AH P => ə p (awal & "OP" in grapheme, akhir & "UP" in grapheme, else?)
+AH P => a p (tengah & "UP" in grapheme, akhir & "OP"|"UP" in grapheme)
+AH P => ə p (awal & "OP" in grapheme, else?)
 
 AH R => ə r (tengah & "IR" in grapheme, else?)
 
 AH SH => a sj (tengah & "USH" in grapheme)
 AH SH => ə sj (else?)
 
-AH S => ə s (tengah & "ES"|"US" in grapheme, akhir & "ICE"|"AS"|"IS"|"US" in grapheme)
+AH S => ə s (tengah & "ES"|"US" in grapheme, akhir & "ICE"|"AS"|"IS"|"US"|"OUS" in grapheme)
 
 
 AH T => a t (need checking)
-AH T => ə t (akhir & "OT"|"ET"|"UT" in grapheme, tengah & "AT"|"IT"|"UT" in grapheme, need checking)
+AH T => ə t (akhir & "OT"|"ET"|"UT" in grapheme, tengah & "AT"|"IT"|"UT"|"ET" in grapheme, need checking, else)
 
 
 AH V => ə v (akhir & "'VE"|"VE" in grapheme, else?)
@@ -59,8 +61,24 @@ IH D => i d (need checking)
 IH D => ə d (akhir & "ED" in grapheme)
 IH F => i f
 IH G => ????
-IH L => i l (else)
-IH L => ə l (tengah & "EL" in grapheme)
+
+IY IH => i ʔ i
+IY EH => i ʔ e
+
+IH JH => ə j (need checking)
+IH JH => i j (else?)
+
+
+IH K => i k (else)
+IH K => ə k (need checking)
+IH K => i ʔ (akhir)
+
+IH K S => i ʔ s
+
+
+IH L => i l (awal & not huruf e pertama, tengah & "IL" in grapheme, akhir, else?)
+IH L => ə l (awal & huruf e pertama, tengah & "EL" in grapheme)
+
 IH M => i m (awal & not huruf i pertama, tengah & "IM"|"OM" in grapheme, akhir & "IM"|"YM" in grapheme)
 IH M => ə m (awal & huruf i pertama, tengah & "EM" in grapheme, akhir & "EM" in grapheme)
 
@@ -69,34 +87,22 @@ IH N => ə n (tengah & "EN" in grapheme, akhir & "ION" in grapheme, more checkin
 
 IH NG => i ŋ
 
-IY IH => i ʔ i
 
-IH JH => ə j (need checking)
-
-IH K => i k (else)
-IH K => ə k (need checking)
-IH K => i ʔ (akhir)
-
-IH K S => i ʔ s
-
-IH L => i l (awal & not huruf e pertama, tengah & "IL" in grapheme, akhir)
-IH L => ə l (awal & huruf e pertama, tengah & "EL" in grapheme, else)
-
-IH P => i p (awal & not huruf e pertama, tengah, akhir)
-IH P => ə p (awal & huruf e pertama)
+IH P => i p (awal & not huruf e pertama, tengah & "EP" in grapheme, akhir)
+IH P => ə p (awal & huruf e pertama, else)
 
 IH R => i r (tengah & "YR" in grapheme, else)
 IH R => ə r (need checking)
 
 IH S => i s (awal)
-IH S => ə s (tengah, akhir)
+IH S => ə s (tengah & "ES" in grapheme, akhir)
 
 IH SH => i sj
 
-IH T => i t (awal, tengah)
-IH T => ə t (akhir)
+IH T => i t (awal, tengah, else?)
+IH T => ə t (akhir, tengah & "ET" in grapheme)
 
-IH Z => ə z (akhir & "'S"|"ES" in grapheme)
+IH Z => ə z (akhir & "'S"|"ES" in grapheme, tengah & "ES" in grapheme)
 IH Z => i z (else?)
 
 ER => ə r
@@ -130,7 +136,9 @@ K W => k w
 
 # TODO:
 - cek ZH ekivalen to what (ada di web CMU seingetku)
-- check all possible combinations of AH G dan AH K
+- check all possible combinations of AH G and AH K
+- check all possible combinations of IH G and IH K
+- <R IPA phoneme> + G|K => r k|g maybe?
 
 # possible troublesome entry
 B'GOSH
@@ -204,7 +212,7 @@ KMIECIK
 LUU
 
 #
-### abbreviation entries (current checking row: 73737 out of 108133)
+### abbreviation entries (current checking row: 82181 out of 108133)
 AAA
 ABT
 ABTS
@@ -356,8 +364,18 @@ P'S
 PGM
 PH
 PHLCORP
+PJ'S
+
+Q
+QASR
+QMAX
+
+R
+R'S
+
 
 WM
 
 # words i want to check after converting
 NOMINAL
+REIMPOSITION
