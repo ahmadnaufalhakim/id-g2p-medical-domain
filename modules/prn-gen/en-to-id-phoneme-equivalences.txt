@@ -2,7 +2,7 @@ based on data datasets/huggingface/bookbot/cmudict-0.7b/train.csv
 
 ### phoneme equivalences
 AH <consonant> perlu dicek!!!!!!!!!!!
-AH B => a b (tengah & "UB" in grapheme, akhir & "UB" in grapheme)
+AH B => a b (tengah & "OUB"|"UB" in grapheme, akhir & "UB" in grapheme)
 AH B => ə b (awal & "OB" in grapheme, akhir & "EB" in grapheme, need checking, else?)
 
 AH CH => a c (tengah & "UCH" in grapheme, akhir & "UCH" in grapheme)
@@ -203,6 +203,7 @@ NGAI
 NGEMA
 NGHI
 PASADENA
+REDOUBTABLE
 ROCK'N'ROLL
 RZASA
 RZEPKA
@@ -230,7 +231,7 @@ KMIECIK
 LUU
 
 #
-### abbreviation entries (current checking row: 98046 out of 108133)
+### abbreviation entries (current checking row: 100000 out of 108133)
 AAA
 ABT
 ABTS
@@ -407,6 +408,12 @@ T'S
 TB
 TCAS
 TH
+TS
+TT'S
+
+U
+U'S
+UN
 
 WM
 
