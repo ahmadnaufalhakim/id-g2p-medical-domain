@@ -11,6 +11,9 @@ AH CH => ə c (else?)
 AH D => a d (tengah & "UD" in grapheme, akhir & "UD" in grapheme, need checking)
 AH D => ə d (akhir & "OD" in grapheme, else?)
 
+AH DH => a d (awal & "UTH" in grapheme)
+AH DH => ə d (else?)
+
 AH F => a f (tengah & "UF" in grapheme, akhir & "UF" in grapheme)
 AH F => ə f (awal & "OF" in grapheme, else?)
 
@@ -40,7 +43,7 @@ AH M => ə m (tengah & "EM" in grapheme, akhir & "SM"|"ZM" in grapheme, else?)
 
 AH NG => a ŋ (awal & "UN" in grapheme, tengah "UN" in grapheme)
 
-AH N => a n (awal & "ON" in grapheme, tengah & "UN" in grapheme, akhir & "UN" in grapheme, need checking)
+AH N => a n (awal & "ON"|"UN" in grapheme, tengah & "UN" in grapheme, akhir & "UN" in grapheme, need checking)
 AH N => ə n (akhir & "IN"|"ION"|"ON"|"AN"|"EN" in grapheme, tengah & "ION"|"ON"|"AN"|"EN" in grapheme, need checking, else?)
 
 AH P => a p (tengah & "UP" in grapheme, akhir & "OP"|"UP" in grapheme)
@@ -48,16 +51,16 @@ AH P => ə p (awal & "OP" in grapheme, else?)
 
 AH R => ə r (tengah & "IR" in grapheme, else?)
 
-AH SH => a sj (tengah & "USH" in grapheme)
+AH SH => a sj (awal & "USH" in grapheme, tengah & "USH" in grapheme)
 AH SH => ə sj (else?)
 
-AH S => a s (tengah & "RUS" in grapheme)
+AH S => a s (awal & "US" in grapheme, tengah & "RUS" in grapheme)
 AH S => ə s (tengah & "ES"|"US" in grapheme, akhir & "ICE"|"AS"|"IS"|"US"|"OUS" in grapheme, else)
 
-AH TH => a t (tengah & "RUT" in grapheme)
+AH TH => a t (awal & "UTH" in grapheme, tengah & "RUT" in grapheme)
 AH TH => ə t (else?)
 
-AH T => a t (tengah & "RUT" in grapheme, need checking)
+AH T => a t (awal & "UT" in grapheme, tengah & "RUT" in grapheme, need checking)
 AH T => ə t (akhir & "OT"|"ET"|"UT" in grapheme, tengah & "AT"|"IT"|"UT"|"ET" in grapheme, need checking, else)
 
 
@@ -211,6 +214,9 @@ SINEAD
 SR
 SRAM
 TO,T IH
+VS,V ER S AH Z
+VSEL,V IY S EH L
+WM,W IH L Y AH M
 
 # possible (but not really) troublesome entry
 I
@@ -229,9 +235,10 @@ KMETZ
 KMIEC
 KMIECIK
 LUU
+VISX
 
 #
-### abbreviation entries (current checking row: 100000 out of 108133)
+### abbreviation entries (current checking row: 108133 out of 108133)
 AAA
 ABT
 ABTS
@@ -414,12 +421,35 @@ TT'S
 U
 U'S
 UN
+US,Y UW EH S
+USA,Y UW EH S EY
+USS,Y UW EH S EH S
+UVA,Y UW V IY EY
+UY,Y UW W AY
+UYS,Y UW W AY EH S
 
-WM
+V'S,V IY Z
+
+W,D AH B AH L Y UW
+W'S,D AH B AH L Y UW Z
+WM,D AH B AH Y UW EH M
+
+X,EH K S
+X'S,EH K S IH Z
+
+Y,W AY
+Y'S,W AY Z
+
+Z,Z IY
+Z'S,Z IY Z
 
 # words i want to check after converting
 NOMINAL
 REIMPOSITION
+UNCTAD
+UNSUBTLE
+VNESHECONOMBANK
+XERXES
 
 # untuk ditambah di tesis
 latar belakang - pro cons pendekatan tradisional vs end-to-end
