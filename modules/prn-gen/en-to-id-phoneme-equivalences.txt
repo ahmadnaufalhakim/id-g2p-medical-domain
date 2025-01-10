@@ -63,14 +63,14 @@ AH TH => ə t (else?)
 AH T => a t (awal & "UT" in grapheme, tengah & "RUT" in grapheme, need checking)
 AH T => ə t (akhir & "OT"|"ET"|"UT" in grapheme, tengah & "AT"|"IT"|"UT"|"ET" in grapheme, need checking, else)
 
-
+AH V => a v (awal & "OV" in grapheme)
 AH V => ə v (akhir & "'VE"|"VE" in grapheme, else?)
 
 AH Z => a z (tengah & "UZ" in grapheme, akhir & "A'S" in grapheme)
 AH Z => ə z (tengah & "OZ" in grapheme, else?)
 
 IH B => i b (tengah & "IB" in grapheme, need checking, else)
-IH D => i d (need checking)
+IH D => i d (else?)
 IH D => ə d (akhir & "ED" in grapheme)
 IH F => i f
 IH G => ????
@@ -100,20 +100,22 @@ IH N => ə n (tengah & "EN" in grapheme, akhir & "ION"|"ON" in grapheme, more ch
 
 IH NG => i ŋ
 
-
-IH P => i p (awal & not huruf e pertama, tengah & "EP" in grapheme, akhir)
-IH P => ə p (awal & huruf e pertama, else)
+IH P => i p (awal & not huruf e pertama, akhir, else)
+IH P => ə p (awal & huruf e pertama, tengah & "EP" in grapheme)
 
 IH R => i r (tengah & "YR" in grapheme, else)
 IH R => ə r (need checking)
 
-IH S => i s (awal)
+IH S => i s (awal, else?)
 IH S => ə s (tengah & "ES" in grapheme, akhir)
 
 IH SH => i sj
 
 IH T => i t (awal, tengah, else?)
 IH T => ə t (akhir, akhir & "ET" in grapheme, tengah & "ET" in grapheme)
+
+IH W => i w (else?)
+IH W => ə w (tengah & "EW" in grapheme)
 
 IH Z => ə z (akhir & "'S"|"ES" in grapheme, tengah & "ES" in grapheme)
 IH Z => i z (else?)
@@ -132,6 +134,7 @@ UW => u (or u w?)
 
 TH => t
 DH => d
+DH D => t d
 JH => j
 SH => sj
 ZH => z
@@ -154,7 +157,8 @@ K W => k w
 - check all possible combinations of IH G and IH K
 - <R IPA phoneme> + G|K => r k|g maybe?
 
-# possible troublesome entry
+# train
+### possible troublesome entry
 B'GOSH,B AY G AO SH
 C'EST,S EH S T
 C'EST,S EY
@@ -182,14 +186,13 @@ VS,V ER S AH Z
 VSEL,V IY S EH L
 WM,W IH L Y AH M
 
-# possible (but not really) troublesome entry
+### possible (but not really) troublesome entry
 I'M,AH M
 KCAL,K EY K AA L
 KCOP,K EY K AO P
 KMART,K EY M AA R T
 KMART'S,K EY M AA R T S
 
-#
 ### abbreviation entries (current checking row: 108133 out of 108133)
 'S,EH S
 A,AH
@@ -422,8 +425,79 @@ Y'S,W AY Z
 Z,Z IY
 Z'S,Z IY Z
 
+# test
+### possible troublesome entry
+ACERO,AH S Y EH R OW
+ACERO,AH TH EH R OW
+B'NAI,B AH N EY
+BA'ATH,B AA AA TH
+BAPTISTS,B AE P T AH S
+BHATIA,B AA SH AH
+BICYCLISTS,B AY S IH K L IH S
+CACHE,K AE SH EY
+CALL'S,K AA L Z
+CAUL,K AA L
+CUTSHAW,K AH CH AO
+D'GENETTA,D IY JH AH N EH T AH
+DOLLAR'S,D AA L AH Z
+DU,D AH
+GOOD,G IH D
+IBN,IH B AH N
+INES,IH N IH S
+JOACHIM,W AA K IY M
+LOEWE,L AA UW
+LOS,L OW S
+NTH,EH N TH
+OR,ER
+PRI,P R AY
+SZE,SH EY
+SZILARD,Z IH L ER D
+UNO,AH N OW
+WOR,D AH B AH Y UW OW AA R
+WOR,D AH B EH L Y UW OW AA R
+
+### abbreviation entries (current checking row: 12856 out of 12856)
+ABS,EY B IY EH S
+AC,EY S IY
+AMC,EY EH M S IY
+BLVD,B UH L AH V AA R D
+C,S IY
+C,S IY T UW
+C,S IY W AH N
+DA,D IY EY
+G,JH IY
+IOU,AY OW Y UW
+J'S,JH EY Z
+JNA,JH EY EH N EY
+K,K EY
+LAS,EH L EY EH S
+LCS,EH L S IY EH S
+LPN,EH L P IY EH N
+LTD,EH L T IY D IY
+LTD,L IH M IH T IH D
+MPG,EH M P IY JH IY
+MPG,M AY L Z P ER G AE L AH N
+MT,EH M T IY
+MT,M AW N T
+OAS,OW EY EH S
+PIH,P IY AY EY CH
+PM,P IY EH M
+POS,P IY OW EH S
+Q'S,K Y UW Z
+SDN,EH S D IY EH N
+SEP,EH S IY P IY
+STA,EH S T IY EY
+TV,T EH L AH V IH ZH AH N
+TV,T IY V IY
+V,V IY
+
+# validation
+### abbreviation entries (current checking row: 251 out of 5448)
+ATP,EY T IY P IY
+
 # words i want to check after converting
 NOMINAL
+OVEN
 REIMPOSITION
 UNCTAD
 UNSUBTLE
