@@ -32,16 +32,16 @@ AH K => a ʔ (akhir)
 AH K => ə ʔ (else?)
 
 AH K S => ə ʔ s (EX, need checking)
-AH K S => a ʔ s ("UX"|"UCKS"|"UCK'S", need checking)
+AH K S => a ʔ s (tengah & "UX"|"UCKS"|"UCK'S" in grapheme, need checking)
 
 # PRIORITIZE CHECKING THIS, CUMBERSOME!
-AH L => a l (tengah & "BUL"| , and akhir & "UL" in grapheme)
+AH L => a l (awal & "UL" in grapheme, tengah & "BUL"| , and akhir & "UL" in grapheme)
 AH L => ə l (akhir & "UL"|"IL"|"AL"|"EL"|"LE" in grapheme, tengah & "UL"|"EL"|"IL"|"OL" in grapheme, else?)
 
 AH M => a m (tengah & "UM" in grapheme, akhir & "UM" in grapheme, need checking (case: NOVUM))
 AH M => ə m (tengah & "EM" in grapheme, akhir & "SM"|"ZM" in grapheme, else?)
 
-AH NG => a ŋ (awal & "UN" in grapheme, tengah "UN" in grapheme)
+AH NG => a ŋ
 
 AH N => a n (awal & "ON"|"UN" in grapheme, tengah & "UN" in grapheme, akhir & "UN" in grapheme, need checking)
 AH N => ə n (akhir & "IN"|"ION"|"ON"|"AN"|"EN" in grapheme, tengah & "ION"|"ON"|"AN"|"EN" in grapheme, need checking, else?)
@@ -51,11 +51,11 @@ AH P => ə p (awal & "OP" in grapheme, else?)
 
 AH R => ə r (tengah & "IR" in grapheme, else?)
 
-AH SH => a sj (awal & "USH" in grapheme, tengah & "USH" in grapheme)
+AH SH => a sj (awal & "USH" in grapheme, tengah & "USH"|"USS" in grapheme)
 AH SH => ə sj (else?)
 
-AH S => a s (awal & "US" in grapheme, tengah & "RUS" in grapheme)
-AH S => ə s (tengah & "ES"|"US" in grapheme, akhir & "ICE"|"AS"|"IS"|"US"|"OUS" in grapheme, else)
+AH S => a s (awal & "US" in grapheme, tengah & "RUS"|"US" in grapheme)
+AH S => ə s (tengah & "OUS"|"ES" in grapheme, akhir & "ICE"|"AS"|"IS"|"US"|"OUS" in grapheme, else)
 
 AH TH => a t (awal & "UTH" in grapheme, tengah & "RUT" in grapheme)
 AH TH => ə t (else?)
@@ -96,7 +96,7 @@ IH M => i m (awal & not huruf i pertama, tengah & "IM"|"OM" in grapheme, akhir &
 IH M => ə m (awal & huruf i pertama, tengah & "EM" in grapheme, akhir & "EM" in grapheme)
 
 IH N => i n (akhir & "YN" in grapheme, else)
-IH N => ə n (tengah & "EN" in grapheme, akhir & "ION"|"ON" in grapheme, more checking of IH N)
+IH N => ə n (tengah & "EN" in grapheme, akhir & "ION"|"ON"|"EN" in grapheme)
 
 IH NG => i ŋ
 
@@ -119,6 +119,9 @@ IH W => ə w (tengah & "EW" in grapheme)
 
 IH Z => ə z (akhir & "'S"|"ES" in grapheme, tengah & "ES" in grapheme)
 IH Z => i z (else?)
+
+AO N => a n (awal & "UN" in grapheme)
+AO N => o n (else)
 
 ER => ə r
 AH => a (akhir & huruf a terakhir)
@@ -492,14 +495,29 @@ TV,T IY V IY
 V,V IY
 
 # validation
-### abbreviation entries (current checking row: 251 out of 5448)
+### possible troublesome entry
+GILLES,ZH IY L
+
+### abbreviation entries (current checking row: 5057 out of 5448)
 ATP,EY T IY P IY
+CDS,S IY D IY Z
+E,IY
+HGH,EY CH JH IY EY CH
+L'S,EH L Z
+MSSRS,M EH S ER Z
+REP,R EH P R IY Z EH T AH T IH V
+S,EH S
+WS,D AH B AH L Y UW EH S
 
 # words i want to check after converting
 NOMINAL
 OVEN
 REIMPOSITION
+TAURUSES
+TEARFUL
+THAT
 UNCTAD
+UNFOCUSED
 UNSUBTLE
 VNESHECONOMBANK
 XERXES
