@@ -112,7 +112,6 @@ with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read :
   csv_reader = csv.reader(f_read)
   headers = next(csv_reader, None)
   for row in csv_reader :
-    phoneme_sequence = []
     for syllable in row[3].split('.') :
       # Count phoneme distribution
       for phoneme in PHONEMES :
@@ -176,7 +175,7 @@ for i in range(len(phone_keys)) :
   ### Remove assigned words from other phonemes' word lists
   for other_phn, other_data in phoneme_to_words.items() :
     phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - test_split)
-  
+
   ## Populate TRAIN and VAL set
   ### Shuffle the words list
   random.shuffle(phoneme_to_words[phn]["words"])
@@ -263,15 +262,15 @@ with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read,\
   print(f"Populating train set .. ({len(list(train))})")
   for train_entry in sorted(list(train), key=lambda entry: entry[0]) :
     phoneme_sequence = convert_to_arpabet(syllables=train_entry[3].split('.'))
-    train_csv_writer.writerow([train_entry[0], *train_entry[2:4],' '.join(phoneme_sequence)])
+    train_csv_writer.writerow([train_entry[0], *train_entry[2:4], ' '.join(phoneme_sequence)])
   print("Done populating train set")
   print(f"Populating val set .. ({len(list(val))})")
   for val_entry in sorted(list(val), key=lambda entry: entry[0]) :
     phoneme_sequence = convert_to_arpabet(syllables=val_entry[3].split('.'))
-    val_csv_writer.writerow([val_entry[0], *val_entry[2:4],' '.join(phoneme_sequence)])
+    val_csv_writer.writerow([val_entry[0], *val_entry[2:4], ' '.join(phoneme_sequence)])
   print("Done populating val set")
   print(f"Populating test set .. ({len(list(test))})")
   for test_entry in sorted(list(test), key=lambda entry: entry[0]) :
     phoneme_sequence = convert_to_arpabet(syllables=test_entry[3].split('.'))
-    test_csv_writer.writerow([test_entry[0], *test_entry[2:4],' '.join(phoneme_sequence)])
+    test_csv_writer.writerow([test_entry[0], *test_entry[2:4], ' '.join(phoneme_sequence)])
   print("Done populating test set")
