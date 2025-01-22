@@ -453,6 +453,20 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               elif iʔ_pattern.search(grapheme) :
                 ipa_phoneme_sequence.extend(['i', 'ʔ'])
                 i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'B' :
+              # obs_flag = True
+              patterns = [
+                re.compile(r"OUB"),
+                re.compile(r"UB(?!$)"),
+                re.compile(r"UB$")
+              ]
+              n_match = sum(bool(pattern.search(grapheme)) for pattern in patterns)
+              if n_match < 1 :
+                ipa_phoneme_sequence.extend(['ə', 'b'])
+                i += 2; rule_found_flag = True
+              else :
+                ipa_phoneme_sequence.extend(['a', 'b'])
+                i += 2; rule_found_flag = True
           elif arpabet_phoneme_sequence[i] == "IH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
               # obs_flag = True
@@ -464,7 +478,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 ipa_phoneme_sequence.extend(['i', 'ʔ'])
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'K' :
-              obs_flag = True
+              # obs_flag = True
               eʔ_pattern = re.compile(r"ECK$")
               əʔ_pattern = re.compile(r"ECKE")
               if eʔ_pattern.search(grapheme) :
@@ -473,6 +487,9 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               elif əʔ_pattern.search(grapheme) :
                 ipa_phoneme_sequence.extend(['ə', 'ʔ'])
                 i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'B' :
+              obs_flag = True
+              pass
         # DH D => t d
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "DH" and \
