@@ -133,7 +133,8 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
     ONE_PHN_COND = lambda i : i <= len(arpabet_phoneme_sequence)-1
     TWO_PHN_COND = lambda i : i+1 <= len(arpabet_phoneme_sequence)-1
     THREE_PHN_COND = lambda i : i+2 <= len(arpabet_phoneme_sequence)-1
-    tmp_flag = False
+    obs_flag = None # to observe certain phoneme rules
+                    # use `obs_flag = True` in to be observed phoneme rule
     i = 0
     while i<len(arpabet_phoneme_sequence) :
       rule_found_flag = False
@@ -145,13 +146,16 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
            arpabet_phoneme_sequence[i] == 'D' and i==0 :
           if arpabet_phoneme_sequence[i+1] == "AE" and \
              grapheme.startswith("D'A") :
+            # obs_flag = True
             ipa_phoneme_sequence.extend(['d', 'ə'])
             i += 2; rule_found_flag = True
           elif arpabet_phoneme_sequence[i+1] == "IH" :
             if grapheme.startswith("DI") :
+              # obs_flag = True
               ipa_phoneme_sequence.extend(['d', 'i'])
               i += 2; rule_found_flag = True
             elif grapheme.startswith("DE") :
+              # obs_flag = True
               ipa_phoneme_sequence.extend(['d', 'ə'])
               i += 2; rule_found_flag = True
         # <consonant-ending> G|K <consonant> => <corresp-consonant-ending> K <corresp-consonant>
@@ -160,6 +164,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
            arpabet_phoneme_sequence[i] in CONSONANT_ENDING_ARPABETS and \
            arpabet_phoneme_sequence[i+1] in ['G', 'K'] and \
            arpabet_phoneme_sequence[i+2] in CONSONANT_ARPABETS :
+          # obs_flag = True
           ipa_phoneme_sequence.extend([
             DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]],
             DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+1]],
@@ -173,6 +178,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
            arpabet_phoneme_sequence[i] in AH_IH_EXCLUDED_VOCAL_ARPABETS :
           if arpabet_phoneme_sequence[i+1] in ['G', 'K'] :
             if arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_EXCLUDED_CONSONANT_ARPABETS :
+              # obs_flag = True
               ipa_phoneme_sequence.extend([
                 DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]],
                 'ʔ',
@@ -180,6 +186,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               ])
               i += 3; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_ARPABETS :
+              # obs_flag = True
               ipa_phoneme_sequence.extend([
                 DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]],
                 DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+1]],
@@ -191,6 +198,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
           if arpabet_phoneme_sequence[i] == "AH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
               if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
+                # obs_flag = True
                 patterns = [
                   re.compile(r"^([JT])?UG"),
                   re.compile(r"([BDFGHKMN])UG"),
@@ -201,13 +209,11 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 if n_match < 1 :
                   ipa_phoneme_sequence.extend(['ə', 'g'])
                   i += 2; rule_found_flag = True
-                elif n_match == 1 :
+                else :
                   ipa_phoneme_sequence.extend(['a', 'g'])
                   i += 2; rule_found_flag = True
-                elif n_match > 1 :
-                  raise Exception("AH G <vocal>")
               elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_ARPABETS :
-                tmp_flag = True
+                # obs_flag = True
                 patterns = [
                   re.compile(r"^UG"),
                   re.compile(r"([HJLMNOPST])UG"),
@@ -221,16 +227,15 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                     DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
                   ])
                   i += 3; rule_found_flag = True
-                elif n_match == 1 :
+                else :
                   ipa_phoneme_sequence.extend([
                     'a',
                     'g',
                     DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
                   ])
                   i += 3; rule_found_flag = True
-                elif n_match > 1 :
-                  raise Exception("AH G <HH-L-R-W-Y>")
               elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_EXCLUDED_CONSONANT_ARPABETS :
+                # obs_flag = True
                 pattern = re.compile(r"([BDHJLMNOPRSTZ])UG")
                 if pattern.search(grapheme) :
                   ipa_phoneme_sequence.extend([
@@ -248,7 +253,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                   i += 3; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'K' :
               if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
-                tmp_flag = True
+                # obs_flag = True
                 patterns = [
                   re.compile(r"([BLY])UCC"),
                   re.compile(r"([BDHKRT])UCH"),
@@ -261,12 +266,11 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 if n_match < 1 :
                   ipa_phoneme_sequence.extend(['ə', 'k'])
                   i += 2; rule_found_flag = True
-                elif n_match == 1 :
+                else :
                   ipa_phoneme_sequence.extend(['a', 'k'])
                   i += 2; rule_found_flag = True
-                elif n_match > 1 :
-                  raise Exception("AH K <vocal>")
               elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_ARPABETS :
+                # obs_flag = True
                 patterns = [
                   re.compile(r"UCC"),
                   re.compile(r"^(?!MC).*UCH"),
@@ -282,17 +286,15 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                     DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
                   ])
                   i += 3; rule_found_flag = True
-                elif n_match == 1 :
+                else :
                   ipa_phoneme_sequence.extend([
                     'a',
                     'k',
                     DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
                   ])
                   i += 3; rule_found_flag = True
-                elif n_match > 1 :
-                  raise Exception("AH K <HH-L-R-W-Y>")
               elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_EXCLUDED_CONSONANT_ARPABETS :
-                tmp_flag = True
+                # obs_flag = True
                 patterns = [
                   re.compile(r"UCH"),
                   re.compile(r"UCK"),
@@ -307,17 +309,123 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                     DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
                   ])
                   i += 3; rule_found_flag = True
-                elif n_match == 1 :
+                else :
                   ipa_phoneme_sequence.extend([
                     'a',
                     'ʔ',
                     DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
                   ])
                   i += 3; rule_found_flag = True
-                elif n_match > 1 :
-                  raise Exception("AH K <consonants-except-HH-L-R-W-Y>")
           elif arpabet_phoneme_sequence[i] == "IH" :
-            pass
+            if arpabet_phoneme_sequence[i+1] == 'G' :
+              if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
+                # obs_flag = True
+                patterns = [
+                  re.compile(r"AG"),
+                  re.compile(r"(?!^)EG")
+                ]
+                n_match = sum(bool(pattern.search(grapheme)) for pattern in patterns)
+                if n_match < 1 :
+                  ipa_phoneme_sequence.extend(['i', 'g'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['ə', 'g'])
+                  i += 2; rule_found_flag = True
+              elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_ARPABETS :
+                # obs_flag = True
+                pattern = re.compile(r"(?!^EGRESS)EG")
+                if pattern.search(grapheme) :
+                  ipa_phoneme_sequence.extend([
+                    'ə',
+                    'g',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend([
+                    'i',
+                    'g',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
+              elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_EXCLUDED_CONSONANT_ARPABETS :
+                # obs_flag = True
+                patterns = [
+                  re.compile(r"(?<![(GN)|(EX)|Z)])AG"),
+                  re.compile(r"OG")
+                ]
+                n_match = sum(bool(pattern.search(grapheme)) for pattern in patterns)
+                if n_match < 1 :
+                  ipa_phoneme_sequence.extend([
+                    'i',
+                    'ʔ',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend([
+                    'ə',
+                    'ʔ',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'K' :
+              if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
+                # obs_flag = True
+                patterns = [
+                  re.compile(r"EC[AEIOU]"),
+                  re.compile(r"IC(?!C|K)")
+                ]
+                n_match = sum(bool(pattern.search(grapheme)) for pattern in patterns)
+                if n_match < 1 :
+                  ipa_phoneme_sequence.extend(['i', 'k'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['ə', 'k'])
+                  i += 2; rule_found_flag = True
+              elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_ARPABETS :
+                # obs_flag = True
+                patterns = [
+                  re.compile(r"EC[AEIOUR]"),
+                  re.compile(r"EQ"),
+                  re.compile(r"IC(?!H|K)(AL|L|U)")
+                ]
+                n_match = sum(bool(pattern.search(grapheme)) for pattern in patterns)
+                if n_match < 1 :
+                  ipa_phoneme_sequence.extend([
+                    'i',
+                    'k',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend([
+                    'ə',
+                    'k',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
+              elif arpabet_phoneme_sequence[i+2] in HH_L_R_W_Y_EXCLUDED_CONSONANT_ARPABETS :
+                # obs_flag = True
+                patterns = [
+                  re.compile(r"EC"),
+                  re.compile(r"^(?!.*ICS).*EX.*")
+                ]
+                n_match = sum(bool(pattern.search(grapheme)) for pattern in patterns)
+                if n_match < 1 :
+                  ipa_phoneme_sequence.extend([
+                    'i',
+                    'ʔ',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend([
+                    'ə',
+                    'ʔ',
+                    DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
+                  ])
+                  i += 3; rule_found_flag = True
         # DH D => t d
         if TWO_PHN_COND(i) and \
            arpabet_phoneme_sequence[i] == "DH" and \
@@ -366,6 +474,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
         print(f"An error occurred:")
         print(traceback.format_exc())
         sys.exit(1)
-    if tmp_flag :
+    if obs_flag :
       print(row[0], row[1], ipa_phoneme_sequence)
-    # print(row[0], row[1], ipa_phoneme_sequence)
+    # else :
+    #   print(row[0], row[1], ipa_phoneme_sequence)
