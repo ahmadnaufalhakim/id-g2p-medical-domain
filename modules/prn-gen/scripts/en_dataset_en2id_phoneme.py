@@ -56,6 +56,9 @@ VOCAL_ARPABETS = ["AA", "AE", "AH", "AO", "AW", "AY", "EH", "EY", "IH", "IY", "O
 AH_IH_ARPABETS = ["AH", "IH"]
 # vocal arpabets minus AH and IH
 AH_IH_EXCLUDED_VOCAL_ARPABETS = [arpabet for arpabet in VOCAL_ARPABETS if arpabet not in AH_IH_ARPABETS]
+# vocal arpabets + ER OW UW
+VOCAL_STARTING_ARPABETS = VOCAL_ARPABETS[:]
+VOCAL_STARTING_ARPABETS.extend(["ER", "OW", "UW"])
 
 # all consonant arpabets
 CONSONANT_ARPABETS = ['B', "CH", 'D', "DH", 'F', 'G', "HH", "JH", 'K', 'L', 'M', 'N', "NG", 'P', 'R', 'S', "SH", 'T', "TH", 'V', 'W', 'Y', 'Z', "ZH"]
@@ -197,7 +200,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
              arpabet_phoneme_sequence[i] in AH_IH_ARPABETS :
           if arpabet_phoneme_sequence[i] == "AH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
-              if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
+              if arpabet_phoneme_sequence[i+2] in VOCAL_STARTING_ARPABETS :
                 # obs_flag = True
                 patterns = [
                   re.compile(r"^([JT])?UG"),
@@ -252,7 +255,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                   ])
                   i += 3; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'K' :
-              if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
+              if arpabet_phoneme_sequence[i+2] in VOCAL_STARTING_ARPABETS :
                 # obs_flag = True
                 patterns = [
                   re.compile(r"([BLY])UCC"),
@@ -318,7 +321,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                   i += 3; rule_found_flag = True
           elif arpabet_phoneme_sequence[i] == "IH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
-              if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
+              if arpabet_phoneme_sequence[i+2] in VOCAL_STARTING_ARPABETS :
                 # obs_flag = True
                 patterns = [
                   re.compile(r"AG"),
@@ -370,7 +373,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                   ])
                   i += 3; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'K' :
-              if arpabet_phoneme_sequence[i+2] in VOCAL_ARPABETS :
+              if arpabet_phoneme_sequence[i+2] in VOCAL_STARTING_ARPABETS :
                 # obs_flag = True
                 patterns = [
                   re.compile(r"EC[AEIOU]"),
