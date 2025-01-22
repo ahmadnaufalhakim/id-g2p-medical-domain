@@ -430,12 +430,14 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
         if TWO_PHN_COND(i) and \
            arpabet_phoneme_sequence[i] == "DH" and \
            arpabet_phoneme_sequence[i+1] == 'D' :
+          # obs_flag = True
           ipa_phoneme_sequence.extend(['t', 'd'])
           i += 2; rule_found_flag = True
         # G|K HH|L|R|W|Y => g|k h|l|r|w|j
         if TWO_PHN_COND(i) and \
            arpabet_phoneme_sequence[i] in ['G', 'K'] and \
            arpabet_phoneme_sequence[i+1] in ["HH", 'L', 'R', 'W', 'Y'] :
+          # obs_flag = True
           ipa_phoneme_sequence.extend([
             DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]],
             DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+1]],
@@ -449,12 +451,14 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
            arpabet_phoneme_sequence[i+1] in ['G', 'K'] and \
            i+1 == len(arpabet_phoneme_sequence)-1 :
           if arpabet_phoneme_sequence[i] in VOCAL_ARPABETS :
+            # obs_flag = True
             ipa_phoneme_sequence.extend([
               DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]],
               'ʔ'
             ])
             i += 2; rule_found_flag = True
           elif arpabet_phoneme_sequence[i] in R_ENDING_ARPABETS :
+            # obs_flag = True
             ipa_phoneme_sequence.extend([
               DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]],
               DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+1]]
@@ -464,6 +468,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
         if ONE_PHN_COND(i) and \
            arpabet_phoneme_sequence[i] == "AH" and i==len(arpabet_phoneme_sequence)-1 and \
            grapheme.endswith('A') :
+          # obs_flag = True
           ipa_phoneme_sequence.extend(['a'])
           i += 1; rule_found_flag = True
         # default
