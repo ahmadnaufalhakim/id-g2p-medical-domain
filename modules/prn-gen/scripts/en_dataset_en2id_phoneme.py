@@ -550,11 +550,27 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 ipa_phoneme_sequence.extend(['i', "tʃ"])
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'D' :
-              # obs_flag = True
+              obs_flag = True
               if i+1 < len(arpabet_phoneme_sequence)-1 :
-                pass
+                əd_patterns = [
+                  re.compile(r"ZAD"),
+                  re.compile(r"ED(?!$)")
+                ]
+                n_match = sum(bool(əd_pattern.search(grapheme)) for əd_pattern in əd_patterns)
+                if n_match < 1 :
+                  ipa_phoneme_sequence.extend(['i', 'd'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['ə', 'd'])
+                  i += 2; rule_found_flag = True
               else :
-                pass
+                əd_pattern = re.compile(r"ED$")
+                if əd_pattern.search(grapheme) :
+                  ipa_phoneme_sequence.extend(['ə', 'd'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['i', 'd'])
+                  i += 2; rule_found_flag = True
         # DH D => t d
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "DH" and \
