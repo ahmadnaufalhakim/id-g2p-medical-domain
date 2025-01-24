@@ -442,18 +442,26 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'B' :
               # obs_flag = True
-              ab_patterns = [
-                re.compile(r"OUB"),
-                re.compile(r"UB(?!$)"),
-                re.compile(r"UB$")
-              ]
-              n_match = sum(bool(ab_pattern.search(grapheme)) for ab_pattern in ab_patterns)
-              if n_match < 1 :
-                ipa_phoneme_sequence.extend(['ə', 'b'])
-                i += 2; rule_found_flag = True
+              if i+1 < len(arpabet_phoneme_sequence)-1 :
+                ab_patterns = [
+                  re.compile(r"OUB"),
+                  re.compile(r"UB(?!$)")
+                ]  
+                n_match = sum(bool(ab_pattern.search(grapheme)) for ab_pattern in ab_patterns)
+                if n_match < 1 :
+                  ipa_phoneme_sequence.extend(['ə', 'b'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['a', 'b'])
+                  i += 2; rule_found_flag = True
               else :
-                ipa_phoneme_sequence.extend(['a', 'b'])
-                i += 2; rule_found_flag = True
+                ab_pattern = re.compile(r"UB$")
+                if ab_pattern.search(grapheme) :
+                  ipa_phoneme_sequence.extend(['a', 'b'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['ə', 'b'])
+                  i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == "CH" :
               # obs_flag = True
               atʃ_patterns = [
