@@ -562,7 +562,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               ipa_phoneme_sequence.extend(['ə', 'l'])
               i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'M' :
-              obs_flag = True
+              # obs_flag = True
               ipa_phoneme_sequence.extend(['ə', 'm'])
               i += 2; rule_found_flag = True
           elif arpabet_phoneme_sequence[i] == "IH" :
@@ -671,6 +671,15 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 i += 2; rule_found_flag = True
               else :
                 ipa_phoneme_sequence.extend(['i', 'l'])
+                i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'M' :
+              obs_flag = True
+              əm_pattern = re.compile(r"EM")
+              if əm_pattern.search(grapheme) :
+                ipa_phoneme_sequence.extend(['ə', 'm'])
+                i += 2; rule_found_flag = True
+              else :
+                ipa_phoneme_sequence.extend(['i', 'm'])
                 i += 2; rule_found_flag = True
         # DH D => t d
         if TWO_PHN_COND(i, rule_found_flag) and \
