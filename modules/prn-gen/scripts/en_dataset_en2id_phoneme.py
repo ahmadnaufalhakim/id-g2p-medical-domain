@@ -557,6 +557,9 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               else :
                 ipa_phoneme_sequence.extend(['ə', "dʒ"])
                 i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'L' :
+              obs_flag = True
+              pass
           elif arpabet_phoneme_sequence[i] == "IH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
               # obs_flag = True
@@ -643,7 +646,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 ipa_phoneme_sequence.extend(['i', 'h'])
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == "JH" :
-              obs_flag = True
+              # obs_flag = True
               ədʒ_patterns = [
                 re.compile(r"AG[AEIOU]"),
                 re.compile(r"ED?G")
@@ -695,11 +698,15 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
             i += 2; rule_found_flag = True
         # AH<eos> => a (A<eos> in grapheme)
         if ONE_PHN_COND(i, rule_found_flag) and \
-           arpabet_phoneme_sequence[i] == "AH" and i==len(arpabet_phoneme_sequence)-1 and \
-           grapheme.endswith('A') :
+           arpabet_phoneme_sequence[i] == "AH" and i==len(arpabet_phoneme_sequence)-1 :
           # obs_flag = True
-          ipa_phoneme_sequence.extend(['a'])
-          i += 1; rule_found_flag = True
+          ei_pattern = re.compile(r"(^V).*AE$")
+          if ei_pattern.search(grapheme) :
+            ipa_phoneme_sequence.extend(['ei'])
+            i += 1; rule_found_flag = True
+          else :
+            ipa_phoneme_sequence.extend(['a'])
+            i += 1; rule_found_flag = True
         # default
         if not rule_found_flag :
           ipa_phoneme_sequence.extend(DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]].split())
