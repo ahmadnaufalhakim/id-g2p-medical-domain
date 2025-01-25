@@ -549,7 +549,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 ipa_phoneme_sequence.extend(['ə', 'h'])
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == "JH" :
-              obs_flag = True
+              # obs_flag = True
               adʒ_pattern = re.compile(r"UDG")
               if adʒ_pattern.search(grapheme) :
                 ipa_phoneme_sequence.extend(['a', "dʒ"])
@@ -641,6 +641,19 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 i += 2; rule_found_flag = True
               else :
                 ipa_phoneme_sequence.extend(['i', 'h'])
+                i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == "JH" :
+              obs_flag = True
+              ədʒ_patterns = [
+                re.compile(r"AG[AEIOU]"),
+                re.compile(r"ED?G")
+              ]
+              n_match = sum(bool(ədʒ_pattern.search(grapheme)) for ədʒ_pattern in ədʒ_patterns)
+              if n_match < 1 :
+                ipa_phoneme_sequence.extend(['i', "dʒ"])
+                i += 2; rule_found_flag = True
+              else :
+                ipa_phoneme_sequence.extend(['ə', "dʒ"])
                 i += 2; rule_found_flag = True
         # DH D => t d
         if TWO_PHN_COND(i, rule_found_flag) and \
