@@ -702,7 +702,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
           # obs_flag = True
           ei_pattern = re.compile(r"(^V).*AE$")
           if ei_pattern.search(grapheme) :
-            ipa_phoneme_sequence.extend(['ei'])
+            ipa_phoneme_sequence.extend(["ei"])
             i += 1; rule_found_flag = True
           else :
             ipa_phoneme_sequence.extend(['a'])
