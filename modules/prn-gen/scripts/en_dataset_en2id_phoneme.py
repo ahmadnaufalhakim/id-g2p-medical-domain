@@ -575,7 +575,7 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 ipa_phoneme_sequence.extend(['ə', 'n'])
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == "NG" :
-              obs_flag = True
+              # obs_flag = True
               aŋ_pattern = re.compile(r"UH?N(CK?|G|K)")
               if aŋ_pattern.search(grapheme) :
                 ipa_phoneme_sequence.extend(['a', 'ŋ'])
@@ -700,26 +700,34 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 ipa_phoneme_sequence.extend(['i', 'm'])
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'N' :
-              # obs_flag = True
+              obs_flag = True
               if i>0 and i+1 < len(arpabet_phoneme_sequence)-1 :
                 ən_pattern = re.compile(r"^(?!IN).*EN(?!K).*(?<!EN)$")
+                ənz_pattern = re.compile(r"IANS$")
                 if ən_pattern.search(grapheme) :
                   ipa_phoneme_sequence.extend(['ə', 'n'])
                   i += 2; rule_found_flag = True
-                else :
-                  ipa_phoneme_sequence.extend(['i', 'n'])
-                  i += 2; rule_found_flag = True
-              elif i+1 == len(arpabet_phoneme_sequence)-1 :
-                ən_pattern = re.compile(r"EN$")
-                if ən_pattern.search(grapheme) :
-                  ipa_phoneme_sequence.extend(['ə', 'n'])
-                  i += 2; rule_found_flag = True
-                else :
-                  ipa_phoneme_sequence.extend(['i', 'n'])
-                  i += 2; rule_found_flag = True
+                elif ənz_pattern.search(grapheme) and i+1 == len(arpabet_phoneme_sequence)-1-1 :
+                  ipa_phoneme_sequence.extend(['ə', 'n', 'z'])
+                  i += 3; rule_found_flag = True
+                elif i+1 == len(arpabet_phoneme_sequence)-1 :
+                  ən_patterns = [
+                    re.compile(r"EN$"),
+                    re.compile(r"IAN$")
+                  ]
+                  n_match = sum(bool(ən_pattern.search(grapheme)) for ən_pattern in ən_patterns)
+                  if n_match < 1 :
+                    ipa_phoneme_sequence.extend(['i', 'n'])
+                    i += 2; rule_found_flag = True
+                  else :
+                    ipa_phoneme_sequence.extend(['ə', 'n'])
+                    i += 2; rule_found_flag = True
               else :
                 ipa_phoneme_sequence.extend(['i', 'n'])
                 i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == "NG" :
+              # obs_flag = True
+              pass
         # DH D => t d
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "DH" and \
