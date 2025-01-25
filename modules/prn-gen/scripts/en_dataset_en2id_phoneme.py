@@ -769,7 +769,8 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == "NG" :
               # obs_flag = True
-              pass
+              ipa_phoneme_sequence.extend(['i', 'ŋ'])
+              i += 2; rule_found_flag = True
         # IY IH => i [j|next token == 'i', will be handled in IH <constant> cases] <corresp-IH>
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "IY" and \
