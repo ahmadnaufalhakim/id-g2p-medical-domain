@@ -559,7 +559,8 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                 i += 2; rule_found_flag = True
             elif arpabet_phoneme_sequence[i+1] == 'L' :
               obs_flag = True
-              pass
+              ipa_phoneme_sequence.extend(['ə', 'l'])
+              i += 2; rule_found_flag = True
           elif arpabet_phoneme_sequence[i] == "IH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
               # obs_flag = True
