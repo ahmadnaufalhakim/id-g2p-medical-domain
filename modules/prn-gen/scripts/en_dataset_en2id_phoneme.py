@@ -775,6 +775,32 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               # obs_flag = True
               ipa_phoneme_sequence.extend(['i', 'ŋ'])
               i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'P' :
+              # obs_flag = True
+              if i==0 :
+                əp_pattern = re.compile(r"^EP")
+                if əp_pattern.search(grapheme) :
+                  ipa_phoneme_sequence.extend(['ə', 'p'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['i', 'p'])
+                  i += 2; rule_found_flag = True
+              else :
+                ep_pattern = re.compile(r"(?!^)EPP")
+                əp_pattern = re.compile(r"^(?!EP).*(?<!E)EP(?!P)(?!.*IP).*")
+                if ep_pattern.search(grapheme) :
+                  if arpabet_phoneme_sequence[i-1] == "IY" :
+                    ipa_phoneme_sequence.pop()
+                  ipa_phoneme_sequence.extend(['e', 'p'])
+                  i += 2; rule_found_flag = True
+                elif əp_pattern.search(grapheme) :
+                  if arpabet_phoneme_sequence[i-1] == "IY" :
+                    ipa_phoneme_sequence.pop()
+                  ipa_phoneme_sequence.extend(['ə', 'p'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['i', 'p'])
+                  i += 2; rule_found_flag = True
         # IY IH => i [j|next token == 'i', will be handled in IH <constant> cases] <corresp-IH>
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "IY" and \
