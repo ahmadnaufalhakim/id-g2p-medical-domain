@@ -603,6 +603,19 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               # obs_flag = True
               ipa_phoneme_sequence.extend(['ə', 'r'])
               i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'S' :
+              # obs_flag = True
+              if i==0 :
+                as_pattern = re.compile(r"^US")
+                if as_pattern.search(grapheme) :
+                  ipa_phoneme_sequence.extend(['a', 's'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['ə', 's'])
+                  i += 2; rule_found_flag = True
+              else :
+                ipa_phoneme_sequence.extend(['ə', 's'])
+                i += 2; rule_found_flag = True
           elif arpabet_phoneme_sequence[i] == "IH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
               # obs_flag = True
