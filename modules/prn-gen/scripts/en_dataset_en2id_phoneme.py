@@ -851,6 +851,17 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
                   ipa_phoneme_sequence.pop()
                 ipa_phoneme_sequence.extend(['ə', 's'])
                 i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == "SH" :
+              # obs_flag = True
+              əsj_pattern = re.compile(r"ESH")
+              if əsj_pattern.search(grapheme) :
+                if i>0 and arpabet_phoneme_sequence[i-1] == "IY" :
+                  ipa_phoneme_sequence.pop()
+                ipa_phoneme_sequence.extend(['ə', "sj"])
+                i += 2; rule_found_flag = True
+              else :
+                ipa_phoneme_sequence.extend(['i', "sj"])
+                i += 2; rule_found_flag = True
         # IY IH => i [j|next token == 'i', will be handled in IH <constant> cases] <corresp-IH>
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "IY" and \
