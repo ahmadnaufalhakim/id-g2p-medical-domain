@@ -986,6 +986,38 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               # obs_flag = True
               ipa_phoneme_sequence.extend(['i', 'j'])
               i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'Z' :
+              # obs_flag = True
+              if i==0 :
+                əz_pattern = re.compile(r"^EZ")
+                if əz_pattern.search(grapheme) :
+                  ipa_phoneme_sequence.extend(['ə', 'z'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['i', 'z'])
+                  i += 2; rule_found_flag = True
+              elif i>0 and i+1 < len(arpabet_phoneme_sequence)-1 :
+                əz_pattern = re.compile(r"^(?!E(S|Z))(?!.*IS)(?!.*US).*EZ(?!S?$)(?!.*IS)(?!.*US).*")
+                if əz_pattern.search(grapheme) :
+                  if arpabet_phoneme_sequence[i-1] == "IY" :
+                    ipa_phoneme_sequence.pop()
+                  ipa_phoneme_sequence.extend(['ə', 'z'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['i', 'z'])
+                  i += 2; rule_found_flag = True
+                pass
+              elif i+1 == len(arpabet_phoneme_sequence)-1 :
+                əz_pattern = re.compile(r"('|E)S$")
+                if əz_pattern.search(grapheme) :
+                  if arpabet_phoneme_sequence[i-1] == "IY" :
+                    ipa_phoneme_sequence.pop()
+                  ipa_phoneme_sequence.extend(['ə', 'z'])
+                  i += 2; rule_found_flag = True
+                else :
+                  ipa_phoneme_sequence.extend(['i', 'z'])
+                  i += 2; rule_found_flag = True
+              pass
         # IY IH => i [j|next token == 'i', will be handled in IH <constant> cases] <corresp-IH>
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "IY" and \
