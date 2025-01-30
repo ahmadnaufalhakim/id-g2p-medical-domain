@@ -677,6 +677,19 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               # obs_flag = True
               ipa_phoneme_sequence.extend(['ə', 'j'])
               i += 2; rule_found_flag = True
+            elif arpabet_phoneme_sequence[i+1] == 'Z' :
+              # obs_flag = True
+              az_patterns = [
+                re.compile(r"UZZ"),
+                re.compile(r"A'S$")
+              ]
+              n_match = sum(bool(az_pattern.search(grapheme)) for az_pattern in az_patterns)
+              if n_match < 1 :
+                ipa_phoneme_sequence.extend(['ə', 'z'])
+                i += 2; rule_found_flag = True
+              else :
+                ipa_phoneme_sequence.extend(['a', 'z'])
+                i += 2; rule_found_flag = True
           elif arpabet_phoneme_sequence[i] == "IH" :
             if arpabet_phoneme_sequence[i+1] == 'G' :
               # obs_flag = True
