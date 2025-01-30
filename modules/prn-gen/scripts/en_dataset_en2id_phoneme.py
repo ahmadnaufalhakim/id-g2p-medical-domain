@@ -174,9 +174,8 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
             DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+2]]
           ])
           i += 3; rule_found_flag = True
-        # <vocal-except-AH-IH> G|K <consonant-except-HH-L-R-W-Y> => <corresp-vocal-except-AH-IH> ʔ <corresp-consonant-except-HH-L-R-W-Y>
-        # <vocal-except-AH-IH> G|K <HH-L-R-W-Y> => <corresp-vocal-except-AH-IH> g|k <corresp-HH-L-R-W-Y>
-        #TODO: need checking if VOCAL_ARPABETS should be changed to AH_IH_EXCLUDED_VOCAL_ARPABETS
+        # <vocal-except-AH-IH> G|K <consonant-or-vocal-starting> => <corresp-vocal-except-AH-IH> <CORRESP-CASE> <corresp-consonant-or-vocal-starting>
+        # <AH-IH> G|K <consonant-or-vocal-starting> => <corresp-AH-IH> <CORRESP-CASE> <corresp-consonant-or-vocal-starting>
         if THREE_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] in AH_IH_EXCLUDED_VOCAL_ARPABETS :
           if arpabet_phoneme_sequence[i+1] in ['G', 'K'] :
@@ -1024,6 +1023,18 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
               # obs_flag = True
               ipa_phoneme_sequence.extend(['i', 'z'])
               i += 2; rule_found_flag = True
+        # <sos>AO N => a n (<sos>UN in grapheme)
+        if TWO_PHN_COND(i, rule_found_flag) and \
+           arpabet_phoneme_sequence[i] == "AO" and \
+           arpabet_phoneme_sequence[i+1] == 'N' :
+          # obs_flag = True
+          an_pattern = re.compile(r"^UN")
+          if an_pattern.search(grapheme) and i==0 :
+            ipa_phoneme_sequence.extend(['a', 'n'])
+            i += 2; rule_found_flag = True
+          else :
+            ipa_phoneme_sequence.extend(['o', 'n'])
+            i += 2; rule_found_flag = True
         # IY IH => i [j|next token == 'i', will be handled in IH <constant> cases] <corresp-IH>
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i] == "IY" and \
