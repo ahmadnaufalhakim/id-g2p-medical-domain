@@ -109,7 +109,6 @@ IPA_TO_2_LETTER_ARPABET = {
 }
 
 rows = set()
-
 with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
      open(os.path.join(DATA_DIR, "en/validation.csv")) as val_csv_read, \
      open(os.path.join(DATA_DIR, "en/test.csv")) as test_csv_read :
@@ -128,7 +127,6 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
   rows.update(tuple(row) for row in test_csv_reader)
 
   rows = sorted(rows)
-
   for row in rows :
     grapheme = row[0]
     arpabet_phoneme_sequence = row[1].split()
@@ -1059,14 +1057,13 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
             DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i+1]],
           ])
           i += 2; rule_found_flag = True
-        # <vocal> G|K<eos> => <corresp-vocal> ʔ
+        # <vocal-except-AH-IH> G|K<eos> => <corresp-vocal-except-AH-IH> ʔ
         # <r-ending> G|K<eos> => <corresp-r-ending> g|k
-        #TODO: VOCAL_ARPABETS might need to be replaced with AH_IH_EXCLUDED_VOCAL_ARPABETS
         #TODO: more checking needed!! nested conditions are not mutually exclusive!! might have to resort to defaults
         if TWO_PHN_COND(i, rule_found_flag) and \
            arpabet_phoneme_sequence[i+1] in ['G', 'K'] and \
            i+1 == len(arpabet_phoneme_sequence)-1 :
-          if arpabet_phoneme_sequence[i] in VOCAL_ARPABETS :
+          if arpabet_phoneme_sequence[i] in AH_IH_EXCLUDED_VOCAL_ARPABETS :
             # obs_flag = True
             ipa_phoneme_sequence.extend([
               DEFAULT_ARPABET_TO_IPA[arpabet_phoneme_sequence[i]],
@@ -1102,5 +1099,5 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
     if obs_flag :
       print(row[0])
       print(row[1], ipa_phoneme_sequence)
-    # else :
-    #   print(row[0], row[1], ipa_phoneme_sequence)
+    else :
+      print(row[0], row[1], ipa_phoneme_sequence)
