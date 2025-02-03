@@ -46,19 +46,19 @@ with open(os.path.join(DATA_DIR, "en_ma/en_train_converted.csv")) as en_train_cs
     test_rows.add((row[0].lower(), row[-1], "ma"))  
     ma_test_words.add(row[0])
   for row in en_train_csv_reader :
-    if row[0] not in ma_train_words and \
-       row[0] not in ma_val_words and \
-       row[0] not in ma_test_words :
+    if row[0].lower() not in ma_train_words and \
+       row[0].lower() not in ma_val_words and \
+       row[0].lower() not in ma_test_words :
       train_rows.add((row[0].lower(), row[-1], "en"))
   for row in en_val_csv_reader :
-    if row[0] not in ma_train_words and \
-       row[0] not in ma_val_words and \
-       row[0] not in ma_test_words :
+    if row[0].lower() not in ma_train_words and \
+       row[0].lower() not in ma_val_words and \
+       row[0].lower() not in ma_test_words :
       val_rows.add((row[0].lower(), row[-1], "en"))
   for row in en_test_csv_reader :
-    if row[0] not in ma_train_words and \
-       row[0] not in ma_val_words and \
-       row[0] not in ma_test_words :
+    if row[0].lower() not in ma_train_words and \
+       row[0].lower() not in ma_val_words and \
+       row[0].lower() not in ma_test_words :
       test_rows.add((row[0].lower(), row[-1], "en"))
 
   train_csv_writer.writerow(["word", "arpabet_phoneme_sequence", "lang"])

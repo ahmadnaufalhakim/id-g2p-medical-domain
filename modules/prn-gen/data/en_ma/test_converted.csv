@@ -3,8 +3,8 @@ word,arpabet_phoneme_sequence,lang
 a'bah,AA Q B AA HH,ma
 a-go-go,AA G AO G AO,ma
 aancor,AA N K AO R,en
-aaronson,AA R AX N S AX N,en
 aaronson,EH R AX N S AX N,en
+aaronson,AA R AX N S AX N,en
 ab'ad,AA B Q AA D,ma
 aba,AA B AA,ma
 abad,AA B AA D,ma
@@ -14,7 +14,6 @@ abduct,EH B D AA Q T,en
 abducting,AX B D AA Q T IY NG,en
 abducting,EH B D AA Q T IY NG,en
 abercrombie,EH B AX R K R AA M B IY,en
-abet,AX B EH T,en
 abeyta,AA B EY T AA,en
 abjad,AA B JH AA D,ma
 abled,EY B AX L D,en
@@ -38,8 +37,8 @@ absolution,EH B S AX L UW SH AX N,en
 absorben,AA B S AO R B EH N,ma
 absorbers,AX B Z AO R B AX R Z,en
 absorptif,AA B S AO R P T IY F,ma
-absorption,AX B Z AO R P SH AX N,en
 absorption,AX B S AO R P SH AX N,en
+absorption,AX B Z AO R P SH AX N,en
 absurdity,AX B S AX R D AX T IY,en
 absurdly,AX B S AX R D L IY,en
 academe,EH K AX D IY M,en
@@ -54,8 +53,8 @@ accredit,AX K R EH D IY T,en
 accumulator,AX K Y UW M Y AX L EY T AX R,en
 accumulators,AX K Y UW M Y AX L EY T AX R Z,en
 accuray's,EH K Y AX R EY Z,en
-accusation,EH K Y AX Z EY SH AX N,en
 accusation,EH K Y UW Z EY SH AX N,en
+accusation,EH K Y AX Z EY SH AX N,en
 ace,EY S,en
 acey,EY S IY,en
 achieve,AX CH IY V,en
@@ -80,7 +79,6 @@ adab,AA D AA B,ma
 adachi,AA D AA K IY,en
 adah,EH D AA,en
 adalia,AA D AA L IY AA,en
-adam,EH D AX M,en
 adamczak,AA D AX M CH EH Q,en
 adamec,AX D AA M EH Q,en
 adapting,AX D EH P T IY NG,en
@@ -111,8 +109,8 @@ adoring,AX D AO R IY NG,en
 adrda,EY D AX R D AA,en
 adroitly,AX D R OY T L IY,en
 adulation,EH JH AX L EY SH AX N,en
-adult,AX D AX L T,en
 adult,EH D AX L T,en
+adult,AX D AX L T,en
 adulterate,AX D AX L T AX R EY T,en
 adulterated,AX D AX L T AX R EY T AX D,en
 adun,AA D UW N,ma
@@ -126,7 +124,6 @@ adventists,EH D V EH N T AX S,en
 adventists,EH D V EH N T IY S T S,en
 adventurer,AX D V EH N CH AX R AX R,en
 adventurer,EH D V EH N CH AX R AX R,en
-adverbial,EH D V AX R B IY AX L,en
 adverbs,EH D V AX R B Z,en
 advertise,EH D V AX R T AY Z,en
 advertisements,EH D V AX R T AY Z M AX N T S,en
@@ -150,8 +147,8 @@ aerostatika,AA EH R AO S T AA T IY K AA,ma
 aerostats,EH R AO W S T EH T S,en
 affectation,EH F EH Q T EY SH AX N,en
 affirmations,EH F AX R M EY SH AX N Z,en
-affix,EH F IY Q S,en
 affix,AX F IY Q S,en
+affix,EH F IY Q S,en
 affleck,EH F L EH Q,en
 affluence,EH F L UW AX N S,en
 affluent,EH F L UW AX N T,en
@@ -179,7 +176,6 @@ aggravating,EH G R AX V EY T IY NG,en
 aggress,AX G R EH S,en
 aggy,EH G IY,en
 agility,AX JH IY L AX T IY,en
-agitator,EH JH AX T EY T AX R,en
 agnello,EH Q N EH L AO W,en
 agnostic,EH Q N AA S T IY Q,en
 agnostik,AA G N AO S T IY Q,ma
@@ -203,7 +199,6 @@ aiello,AY EH L AO W,en
 aimed,EY M D,en
 ain,AA IY N,ma
 ainulbanat,AY N UW L B AA N AA T,ma
-air,EH R,en
 airedale,EH R D EY L,en
 airfreight,EH R F R EY T,en
 airliner's,EH R L AY N AX R Z,en
@@ -220,8 +215,8 @@ akel,AX K EH L,en
 akens,EY K AX N Z,en
 akhirulkalam,AA K HH IY R UW L K AA L AA M,ma
 akibatnya,AA K IY B AA T NY AA,ma
-akins,EY K IY N Z,en
 akins,AX K IY N Z,en
+akins,EY K IY N Z,en
 akiyama,AA K IY Y AA M AA,en
 akrabnya,AA K R AA B NY AA,ma
 akronim,AA K R AO N IY M,ma
@@ -248,7 +243,6 @@ alat,AA L AA T,ma
 albania's,EH L B EY N IY AA Z,en
 albergo,AA L B EH R G AO W,en
 albie,AO L B IY,en
-album,EH L B AX M,en
 albumin,EH L B Y UW M AX N,en
 alcatel's,EH L K AX T EH L Z,en
 alcoa,EH L K AO W AA,en
@@ -313,7 +307,6 @@ alpharel,EH L F AX R EH L,en
 alquran,AA L K UW R AA N,ma
 alsatian,EH L S EY SH AX N,en
 altamirano,AA L T AA M IY R AA N AO W,en
-altar,AO L T AX R,en
 altarpiece,AO L T AX R P IY S,en
 alterman,AO L T AX R M AX N,en
 although,AO L D AO W,en
@@ -330,15 +323,14 @@ alumnus,AA L UW M N UW S,ma
 alur,AA L UW R,ma
 alurnya,AA L UW R NY AA,ma
 aluvium,AA L UW V IY UW M,ma
-alwaleed,EH L W AX L IY D,en
 alwaleed,AA L W AA L IY D,en
+alwaleed,EH L W AX L IY D,en
 alyssa,AX L IY S AA,en
 amabakdu,AA M AA B AA Q D UW,ma
 amacker,EH M AX K AX R,en
 amalfitano,AA M AA L F IY T AA N AO W,en
 amalgamate,AX M EH L G AX M EY T,en
 amali,AA M AA L IY,ma
-aman,AA M AX N,en
 amarah,AA M AA R AA HH,ma
 amaran,AA M AA R AA N,ma
 amari,AA M AA R IY,en
@@ -380,7 +372,6 @@ amiprilose,AX M IY P R AX L AO W S,en
 amit,AA M IY T,ma
 amitai,EH M IY T AY,en
 ammann,EH M AX N,en
-amnesia,EH M N IY Z AA,en
 amnesties,EH M N AX S T IY Z,en
 amo,AA M AO W,en
 amonium,AA M AO N IY UW M,ma
@@ -424,8 +415,8 @@ andante,AA N D AA N T EY,en
 anders,EH N D AX R Z,en
 andorra,EH N D AO R AA,en
 andreason,EH N D R IY S AX N,en
-andreotti,EH N D R IY AA D IY,en
 andreotti,AA N D R IY AA T IY,en
+andreotti,EH N D R IY AA D IY,en
 andrepont,AA N D R EY P AO W N T,en
 andria,EH N D R IY AA,en
 android,EH N D R OY D,en
@@ -439,8 +430,8 @@ angeli,AA NG G EH L IY,en
 angelica,EH N JH EH L AX K AA,en
 angelica,EH N JH AX L IY K AA,en
 angelico,AA NG G EH L IY K AO W,en
-angelino's,AA NG G EH L IY N AO W Z,en
 angelino's,EH N JH AX L IY N AO W Z,en
+angelino's,AA NG G EH L IY N AO W Z,en
 angelinos,EH N JH AX L IY N AO W Z,en
 angelinos,EH NG G AX L IY N AO W Z,en
 angels,EY N JH AX L Z,en
@@ -499,10 +490,10 @@ anthems,EH N T AX M Z,en
 anthon,EH N T AX N,en
 anthropological,EH N T R AX P AX L AA JH AX K AX L,en
 antiballistic,EH N T IY B AX L IY S T IY Q,en
-antibiotic,EH N T AY B AY AA T IY Q,en
 antibiotic,EH N T IY B AY AA T IY Q,en
-antibiotics,EH N T AY B AY AA T IY Q S,en
+antibiotic,EH N T AY B AY AA T IY Q,en
 antibiotics,EH N T IY B AY AA T IY Q S,en
+antibiotics,EH N T AY B AY AA T IY Q S,en
 antibody,EH N T IY B AA D IY,en
 antic,EH N T IY Q,en
 antidepresan,AA N T IY D EH P R EH S AA N,ma
@@ -511,8 +502,8 @@ antiphon,EH N T IY F AA N,en
 antireformers,EH N T AY R AX F AO R M AX R Z,en
 antireformers,EH N T IY R AX F AO R M AX R Z,en
 antitakeover,EH N T IY T EY K AO W V AX R,en
-antitax,EH N T IY T EH Q S,en
 antitax,EH N T AY T EH Q S,en
+antitax,EH N T IY T EH Q S,en
 antitrust,EH N T AY T R AX S T,en
 antivirus,AA N T IY V IY R UW S,ma
 antonovich,EH N T AA N AX V IY CH,en
@@ -562,10 +553,7 @@ apresiatif,AA P R EH S IY AA T IY F,ma
 aptitudes,EH P T AX T UW D Z,en
 apuh,AA P UW HH,ma
 aquilar,AA K W IY L AA R,en
-ara,EH R AA,en
-arab,EH R AX B,en
 arab,AA R AA B,ma
-arab,EY R AX B,en
 arabichon's,AX R EH B IY SH AO N Z,en
 arafat,AA R AX F AA T,en
 arah,AA R AA HH,ma
@@ -620,7 +608,6 @@ arnold,AA R N AX L D,en
 arnolphe,AA R N AA L F IY,en
 arnwine,AA R N W AY N,en
 arnzen,AA R N Z AX N,en
-aroma,AX R AO W M AA,en
 aronan,AA R AO N AA N,ma
 arone,AX R AO W N,en
 arons,AA R AO W N Z,en
@@ -630,8 +617,8 @@ arpino,AA R P IY N AO W,en
 arriaga,AA R IY AA G AA,en
 arrogance,EH R AX G AX N S,en
 arslanian,AA R S L EY N IY AX N,en
-arsonist,AA R S AX N AX S T,en
 arsonist,AA R S AX N IY S T,en
+arsonist,AA R S AX N AX S T,en
 arsonists,AA R S AX N IY S T S,en
 arsonists,AA R S AX N AX S T S,en
 artale,AA R T AA L IY,en
@@ -663,7 +650,6 @@ ashlin,EH SH L IY N,en
 ashur,EH SH AX R,en
 ashwell,EH SH W EH L,en
 asia's,EY Z AA Z,en
-asian,EY Z AX N,en
 asic,EH Z IY Q,en
 asimilasi,AA S IY M IY L AA S IY,ma
 asimtot,AA S IY M T AO T,ma
@@ -671,7 +657,6 @@ ask,EH S K,en
 askington,EH S K IY NG T AX N,en
 aslin,AX S L IY N,en
 aslinya,AA S L IY NY AA,ma
-asmara,EH Z M AA R AA,en
 asmaradanta,AA S M AA R AA D AA N T AA,ma
 asmaraloka,AA S M AA R AA L AO K AA,ma
 aspects,EH S P EH Q T S,en
@@ -727,8 +712,8 @@ attribution,EH T R IY B Y UW SH AX N,en
 auber,AO B AX R,en
 auble,AO B AX L,en
 auch,AO CH,en
-audience,AA D IY AX N S,en
 audience,AO D IY AX N S,en
+audience,AA D IY AX N S,en
 audiences,AA D IY AX N S AX Z,en
 audiences,AO D IY AX N S AX Z,en
 auditioned,AO D IY SH AX N D,en
@@ -835,13 +820,10 @@ backup,B EH K AX P,en
 backus,B EH K AX S,en
 backwaters,B EH K W AO T AX R Z,en
 bacot,B AA CH AO T,ma
-bad,B EH D,en
-bade,B EY D,en
 badger,B EH JH AX R,en
 badgered,B EH JH AX R D,en
 badgett,B EH JH AX T,en
 badgley,B EH JH L IY,en
-badminton,B EH D M IY N T AX N,en
 badura,B AA D UW R AA,en
 baduyut,B AA D UW Y UW T,ma
 bafta,B AA F T AA,ma
@@ -860,9 +842,7 @@ bahrain,B AY R EY N,en
 baier,B EY AX R,en
 bailiffs,B EY L IY F S,en
 bainter,B EY N T AX R,en
-bait,B EY T,en
 baiting,B EY T IY NG,en
-baja,B AA HH AA,en
 bajan,B AA JH AA N,ma
 bajigur,B AA JH IY G UW R,ma
 bak,B AA Q,ma
@@ -884,8 +864,8 @@ balinski,B AX L IY N S K IY,en
 balks,B AO Q S,en
 balladur,B EH L AX D AX R,en
 ballantine,B EH L AX N T AY N,en
-ballasts,B EH L AX S,en
 ballasts,B EH L AX S T S,en
+ballasts,B EH L AX S,en
 ballin,B EH L IY N,en
 ballooned,B AX L UW N D,en
 balloons,B AX L UW N Z,en
@@ -894,13 +874,12 @@ balsley,B EH L S L IY,en
 baltsa,B AO L T S AA,en
 balu,B AA L UW,ma
 balzarini,B AA L Z AA R IY N IY,en
-bam,B EH M,en
 bambu,B AA M B UW,ma
 bambung,B AA M B UW NG,ma
 bambungan,B AA M B UW NG AA N,ma
 banbury,B EH N B EH R IY,en
-banca,B EH NG K AA,en
 banca,B AA NG K AA,en
+banca,B EH NG K AA,en
 bancik,B AA N CH IY Q,ma
 bancroft's,B EH N K R AO F T S,en
 bancserve,B EH N K S AX R V,en
@@ -956,13 +935,11 @@ bare,B EH R,en
 bareng,B AA R AX NG,ma
 barest,B EH R AX S T,en
 barey,B EH R IY,en
-bargains,B AA R G IY N Z,en
 bargains,B AA R G AX N Z,en
+bargains,B AA R G IY N Z,en
 bargar,B AA R G AA R,en
-bari,B AA R IY,en
 barile,B AA R AX L,en
 barinco,B AX R IY NG K AO W,en
-baring,B EH R IY NG,en
 barked,B AA R K T,en
 barkers,B AA R K AX R Z,en
 barkett,B AA R K AX T,en
@@ -1010,8 +987,8 @@ baston,B EH S T AX N,en
 basung,B AA S UW NG,ma
 bataan,B AA T AA Q AA N,ma
 batai,B AA T AY,ma
-bather,B EH D AX R,en
 bather,B EY D AX R,en
+bather,B EH D AX R,en
 bathgate,B EH T G EY T,en
 bathing,B EY D IY NG,en
 bathrick,B EH T R IY Q,en
@@ -1079,8 +1056,8 @@ bedegap,B AX D AX G AA P,ma
 bedil,B AX D IY L,ma
 bedinger,B EH D IY NG AX R,en
 bedouins,B EH D UW IY N Z,en
-bedouins,B EH D AO W AX N Z,en
 bedouins,B EH D AX W AX N Z,en
+bedouins,B EH D AO W AX N Z,en
 bedroom,B EH D R UW M,en
 bedwell,B EH D W EH L,en
 beeper,B IY P AX R,en
@@ -1148,8 +1125,8 @@ beloh,B EH L AO HH,ma
 belolok,B AX L AO L AO Q,ma
 belong,B AX L AO NG,en
 beloon,B AX L AO Q AO N,ma
-beloved,B AX L AX V D,en
 beloved,B AX L AX V AX D,en
+beloved,B AX L AX V D,en
 belting,B EH L T IY NG,en
 beltsville,B EH L T S V AX L,en
 belum,B AX L UW M,ma
@@ -1560,7 +1537,6 @@ blasini,B L AX S IY N IY,en
 blasko,B L AA S K AO W,en
 blasphemous,B L EH S F AX M AX S,en
 blasted,B L EH S T AX D,en
-blaster,B L EH S T AX R,en
 blaszak,B L AA SH AX Q,en
 blatter,B L EH T AX R,en
 bleed,B L IY D,en
@@ -1576,7 +1552,6 @@ bloating,B L AO W T IY NG,en
 block's,B L AA Q S,en
 blockade,B L AA K EY D,en
 bloemer,B L AO W M AX R,en
-blok,B L AA Q,en
 blokes,B L AO W K S,en
 blood's,B L AX D Z,en
 blossomed,B L AA S AX M D,en
@@ -1686,15 +1661,14 @@ boros,B AO R AO S,ma
 borowiec,B AX R AW IY Q,en
 bortle,B AO R T AX L,en
 boruff,B AO R AA F,en
-bos,B AA S,en
 boslego,B AO S L EY G AO W,en
 bosnia's,B AA Z N IY AA Z,en
 bosqi,B AA S K IY,en
 bosse,B AA S,en
 bosserman,B AO S AX R M AX N,en
 boston's,B AO S T AX N Z,en
-botanically,B AX T EH N AX K L IY,en
 botanically,B AX T EH N AX K AX L IY,en
+botanically,B AX T EH N AX K L IY,en
 botelho,B AO W T EH L AO W,en
 botello,B AO W T EH L AO W,en
 bother,B AA D AX R,en
@@ -1752,16 +1726,16 @@ braking,B R EY K IY NG,en
 brammer,B R EH M AX R,en
 brand,B R EH N D,en
 brand's,B R EH N D Z,en
-brandenstein,B R EH N D EH N S T IY N,en
 brandenstein,B R EH N D EH N S T AY N,en
+brandenstein,B R EH N D EH N S T IY N,en
 brandname,B R EH N D N EY M,en
 branko,B R EH NG K AO W,en
 brannan,B R EH N AX N,en
 brannick,B R EH N IY Q,en
 brannon,B R EH N AX N,en
 branon,B R EH N AX N,en
-bras,B R AA S,en
 bras,B R EH S,en
+bras,B R AA S,en
 brashears,B R EH SH IY R Z,en
 brassy,B R EH S IY,en
 brata,B R AA T AA,ma
@@ -1793,7 +1767,6 @@ breen,B R IY N,en
 brees,B R IY Z,en
 breitenbach,B R AY T AX N B AA Q,en
 brekke,B R EH Q,en
-brem,B R EH M,en
 bremmer,B R EH M AX R,en
 bremner,B R EH M N AX R,en
 brendsel,B R EH N D S AX L,en
@@ -1875,7 +1848,6 @@ brownlow,B R AW N L AO W,en
 browser,B R AW Z AX R,en
 brozek,B R AO W Z EH Q,en
 bruce's,B R UW S AX Z,en
-bruder,B R UW D AX R,en
 brueggen,B R UW G AX N,en
 bruen,B R UW N,en
 brugh,B R AX,en
@@ -1955,8 +1927,8 @@ buffs,B AA F S,en
 buford,B Y UW F AX R D,en
 bugar,B UW G AA R,ma
 bugh,B Y UW G,en
-bugling,B Y UW G L IY NG,en
 bugling,B Y UW G AX L IY NG,en
+bugling,B Y UW G L IY NG,en
 bugs,B AA Q Z,en
 buhl,B Y UW L,en
 buhler,B UW L AX R,en
@@ -1978,7 +1950,6 @@ bumbalough,B AX M B AX L AW,en
 bumbu,B UW M B UW,ma
 bumiputra,B UW M IY P UW T R AA,ma
 bumpas,B AX M P AX Z,en
-bumper,B AX M P AX R,en
 buna,B UW N AA,ma
 bungaan,B UW NG AA Q AA N,ma
 bungalo,B UW NG AA L AO,ma
@@ -1989,7 +1960,6 @@ bunian,B UW N IY AA N,ma
 bunnies,B AX N IY Z,en
 bunowski,B UW N AW S K IY,en
 buntang,B UW N T AA NG,ma
-bunting,B AX N T IY NG,en
 bunting,B UW N T IY NG,ma
 bunuh,B UW N UW HH,ma
 bunuhan,B UW N UW HH AA N,ma
@@ -2078,7 +2048,6 @@ cabik,CH AA B IY Q,ma
 cabir,CH AA B IY R,ma
 cable,K EY B AX L,en
 cableone,K EY B AX L W AX N,en
-cabo,K EH B AO W,en
 cacahan,CH AA CH AA HH AA N,ma
 caccamise,K AA K AA M AX S,en
 cadbury,K EH D B EH R IY,en
@@ -2124,9 +2093,8 @@ calon,CH AA L AO N,ma
 calories,K EH L AO R IY Z,en
 calung,CH AA L UW NG,ma
 calvert,K EH L V AX R T,en
-calvinist,K EH L V AX N AX S T,en
 calvinist,K EH L V IY N IY S T,en
-cam,K EH M,en
+calvinist,K EH L V AX N AX S T,en
 camaros,K AX M AA R AO W S,en
 cambuk,CH AA M B UW Q,ma
 cameras,K EH M R AX Z,en
@@ -2153,8 +2121,8 @@ cangking,CH AA NG K IY NG,ma
 cangkingan,CH AA NG K IY NG AA N,ma
 cangkuk,CH AA NG K UW Q,ma
 cangkul,CH AA NG K UW L,ma
-canisters,K EH N IY S T AX R Z,en
 canisters,K EH N AX S T AX R Z,en
+canisters,K EH N IY S T AX R Z,en
 cankers,K EH NG K AX R Z,en
 cannavo,K AA N AA V AO W,en
 cannone,K AA N AO W N IY,en
@@ -2167,8 +2135,8 @@ cantas,CH AA N T AA S,ma
 canup,K EH N AX P,en
 canvass,K EH N V AX S,en
 capabilities,K EY P AX B IY L AX T IY Z,en
-capacitors,K AX P EH S IY T AX R Z,en
 capacitors,K AX P EH S AX T AX R Z,en
+capacitors,K AX P EH S IY T AX R Z,en
 capcom,K EH P K AX M,en
 capelle,K AX P EH L,en
 capgome,CH AA P G AO M EH,ma
@@ -2289,8 +2257,8 @@ caudillo,K AO D IY L AO W,en
 cauliflower,K AA L AX F L AW AX R,en
 caution,K AA SH AX N,en
 caution,K AO SH AX N,en
-cautioned,K AO SH AX N D,en
 cautioned,K AA SH AX N D,en
+cautioned,K AO SH AX N D,en
 cavalli,K AX V EH L IY,en
 cavanah,K EH V AX N AX,en
 caveman,K EY V M EH N,en
@@ -2346,8 +2314,8 @@ cengut,CH AX NG UW T,ma
 cent,S EH N T,en
 centel's,S EH N T EH L Z,en
 centerpiece,S EH N T AX R P IY S,en
-centers,S EH N T AX R Z,en
 centers,S EH N AX R Z,en
+centers,S EH N T AX R Z,en
 centerville,S EH N T AX R V IY L,en
 centner,S EH N T N AX R,en
 centola,CH EH N T AO W L AA,en
@@ -2355,8 +2323,8 @@ centong,CH EH N T AO NG,ma
 centoxin,S EH N T AA Q S IY N,en
 centralism,S EH N T R AX L IY Z AX M,en
 centrella,S EH N T R EH L AA,en
-cents,S EH N S,en
 cents,S EH N T S,en
+cents,S EH N S,en
 century,S EH N CH AX R IY,en
 ceples,CH EH P L AX S,ma
 cerabut,CH AX R AA B UW T,ma
@@ -2373,15 +2341,14 @@ ceri,CH EH R IY,ma
 ceritaan,CH AX R IY T AA Q AA N,ma
 ceritakan,CH AX R IY T AA K AA N,ma
 ceritera,CH AX R IY T AX R AA,ma
-cerna,CH EH R N AA,en
 cernuda,S AX R N UW D AA,en
 cerompong,CH AX R AO M P AO NG,ma
 cerpen,CH AX R P EH N,ma
 cerrato,CH AX R AA T AO W,en
 certainties,S AX R T AX N T IY Z,en
 cervera,CH AX R V EH R AA,en
-cessna's,S EH Z N AA Z,en
 cessna's,S EH S N AA Z,en
+cessna's,S EH Z N AA Z,en
 cetera,CH AX T AX R AA,ma
 ceti,CH EH T IY,ma
 cetok,CH AX T AO Q,ma
@@ -2422,8 +2389,8 @@ chas,CH AA Z,en
 chasers,CH EY S AX R Z,en
 chason,CH EH S AX N,en
 chateaux,SH AX T AO W,en
-chatichai's,CH EH T IY CH AY Z,en
 chatichai's,CH EH T AX K AY Z,en
+chatichai's,CH EH T IY CH AY Z,en
 chatihachi,CH EH T IY HH AA CH IY,en
 chatswood,CH EH T S W UW D,en
 chaunce,CH AO N S,en
@@ -2451,8 +2418,8 @@ chemistry,K EH M IY S T R IY,en
 chemotherapy,K IY M AO W T EH R AX P IY,en
 chennault,CH EH N AO L T,en
 chenowitz,CH EH N AX W IY T S,en
-cherico,K AX R IY K AO W,en
 cherico,CH AX R IY K AO W,en
+cherico,K AX R IY K AO W,en
 cherney,CH AX R N IY,en
 cherokee's,CH EH R AX K IY Z,en
 chert,CH AX R T,en
@@ -2484,8 +2451,8 @@ chimie,CH IY M IY,en
 china's,CH AY N AA Z,en
 chipello,CH IY P EH L AO W,en
 chiquita,CH IY K IY T AA,en
-chiquita,K IY K W IY T AA,en
 chiquita,CH IY K W IY T AA,en
+chiquita,K IY K W IY T AA,en
 chisman,CH IY S M AX N,en
 chissano,CH IY S AA N AO W,en
 chitchat,CH IY T CH EH T,en
@@ -2524,8 +2491,8 @@ chyron,CH AY R AX N,en
 ciak,CH IY AA Q,ma
 ciampi,CH AO M P IY,en
 ciaramitaro,CH AX R AA M IY T AA R AO W,en
-ciba,S IY B AA,en
 ciba,S AY B AA,en
+ciba,S IY B AA,en
 ciccarone,S IY K AX R AO W N,en
 cicely,S IY S AX L IY,en
 cicik,CH IY CH IY Q,ma
@@ -2542,8 +2509,8 @@ cingak,CH IY NG AA Q,ma
 cintamani,CH IY N T AA M AA N IY,ma
 cintanya,CH IY N T AA NY AA,ma
 cipok,CH IY P AO Q,ma
-cipollone,S IY P AX L AO W N,en
 cipollone,S IY P AX L AO W N IY,en
+cipollone,S IY P AX L AO W N,en
 cipratan,CH IY P R AA T AA N,ma
 circuit,S AX R K AX T,en
 circulated,S AX R K Y AX L EY T AX D,en
@@ -2591,8 +2558,8 @@ clicked,K L IY Q T,en
 clifton,K L IY F T AX N,en
 climber,K L AY M AX R,en
 climbing,K L AY M IY NG,en
-clinically,K L IY N AX K L IY,en
 clinically,K L IY N AX K AX L IY,en
+clinically,K L IY N AX K L IY,en
 clinton,K L IY N T AX N,en
 clio,K L IY AO W,en
 clipboard,K L IY P B AO R D,en
@@ -2637,8 +2604,8 @@ cockiness,K AA K IY N AX S,en
 cockney,K AA Q N IY,en
 cockroft,K AA K R AX F T,en
 coday,K AO W D EY,en
-coddling,K AA D AX L IY NG,en
 coddling,K AA D L IY NG,en
+coddling,K AA D AX L IY NG,en
 code's,K AO W D Z,en
 codes,K AO W D Z,en
 coehlo,K AO W L AO W,en
@@ -2664,8 +2631,8 @@ colen,K AO W L AX N,en
 coleng,CH AO L EH NG,ma
 coleridge,K AO W L R IY JH,en
 coles,K AO W L Z,en
-coleson,K AO W L S AX N,en
 coleson,K AA L AX S AX N,en
+coleson,K AO W L S AX N,en
 colestipol,K AO W L S T IY P AA L,en
 colier,K AO W L IY AX R,en
 collard,K AA L AX R D,en
@@ -2715,10 +2682,10 @@ commando,K AX M EH N D AO W,en
 commands,K AX M EH N D Z,en
 commemorate,K AX M EH M AX R EY T,en
 commies,K AA M IY Z,en
-commingled,K AA M IY NG G AX L D,en
 commingled,K AO W M IY NG G AX L D,en
-commision,K AX M IY SH AX N,en
+commingled,K AA M IY NG G AX L D,en
 commision,K AX M IY Z AX N,en
+commision,K AX M IY SH AX N,en
 commitee,K AA M IY T IY,en
 committed,K AX M IY T AX D,en
 commodities,K AX M AA D AX T IY Z,en
@@ -2773,8 +2740,8 @@ conclude,K AX N K L UW D,en
 concurrent,K AX N K AX R AX N T,en
 condenser,K AX N D EH N S AX R,en
 condiment,K AA N D AX M AX N T,en
-conditionally,K AX N D IY SH AX N AX L IY,en
 conditionally,K AX N D IY SH N AX L IY,en
+conditionally,K AX N D IY SH AX N AX L IY,en
 conditioned,K AX N D IY SH AX N D,en
 confederation,K AX N F EH D AX R EY SH AX N,en
 confetti,K AX N F EH T IY,en
@@ -2793,8 +2760,8 @@ conglomerate,K AX N G L AA M AX R AX T,en
 congratulations,K AX N G R EH CH AX L EY SH AX N Z,en
 congregation's,K AA NG G R AX G EY SH AX N Z,en
 congregational,K AA NG G R AX G EY SH AX N AX L,en
-congress',K AA N G R AX S IY Z,en
 congress',K AA NG G R AX S,en
+congress',K AA N G R AX S IY Z,en
 congressional,K AX N G R EH SH AX N AX L,en
 congresswomen,K AA NG G R AX S W IY M IY N,en
 conjugal,K AA N JH AX G AX L,en
@@ -2921,8 +2888,8 @@ corpuz,K AO R P UW Z,en
 correia,K AX R EY IY AA,en
 correnti,K AX R EH N T IY,en
 corrib,K AO R IY B,en
-corridor,K AO R IY D AX R,en
 corridor,K AO R AX D AX R,en
+corridor,K AO R IY D AX R,en
 corridors,K AO R IY D AX R Z,en
 corridors,K AO R AX D AX R Z,en
 corrin,K AO R IY N,en
@@ -3001,8 +2968,8 @@ crackers,K R EH K AX R Z,en
 crackle,K R EH K AX L,en
 crafts,K R EH F T S,en
 crafts,K R EH F S,en
-craftsmen,K R EH F S M EH N,en
 craftsmen,K R EH F T S M EH N,en
+craftsmen,K R EH F S M EH N,en
 crafty,K R EH F T IY,en
 craggy,K R EH G IY,en
 crail,K R EY L,en
@@ -3091,8 +3058,8 @@ crucially,K R UW SH AX L IY,en
 cruel,K R UW L,en
 cruel,K R UW AX L,en
 cruisers,K R UW Z AX R Z,en
-crumbling,K R AX M B AX L IY NG,en
 crumbling,K R AX M B L IY NG,en
+crumbling,K R AX M B AX L IY NG,en
 crumley,K R AX M L IY,en
 crummy,K R AX M IY,en
 crumple,K R AX M P AX L,en
@@ -3105,7 +3072,6 @@ cry,K R AY,en
 cryer,K R AY AX R,en
 crystallography,K R IY S T AX L AA G R AX F IY,en
 cryster,K R AY S T AX R,en
-cuba,K Y UW B AA,en
 cubicles,K Y UW B AX K AX L Z,en
 cucunda,CH UW CH UW N D AA,ma
 cucunya,CH UW CH UW NY AA,ma
@@ -3136,7 +3102,6 @@ cungkilan,CH UW NG K IY L AA N,ma
 cupit,K Y UW P IY T,en
 cupo,K Y UW P AO W,en
 cupp,K AX P,en
-cur,K AX R,en
 curacao,K Y UW R AX S AW,en
 curbstone,K AX R B S T AO W N,en
 curls,K AX R L Z,en
@@ -3211,8 +3176,8 @@ damar,D AA M AA R,ma
 dame's,D EY M Z,en
 dameron,D AA M EH R AO N,en
 damietta,D EH M IY EH T AA,en
-damme,D EY M,en
 damme,D EH M,en
+damme,D EY M,en
 dammer,D EH M AX R,en
 danced,D EH N S T,en
 dancers,D EH N S AX R Z,en
@@ -3244,17 +3209,17 @@ dasarian,D AA S AA R IY AA N,ma
 daseke,D EY S AX K IY,en
 dashiki,D AX SH IY K IY,en
 data,D AA T AA,ma
-datacomm,D EH T AX K AA M,en
 datacomm,D EY T AX K AA M,en
+datacomm,D EH T AX K AA M,en
 datanglah,D AA T AA NG L AA HH,ma
-datapower,D EH T AX P AW R,en
 datapower,D EY T AX P AW R,en
+datapower,D EH T AX P AW R,en
 dataram,D EH T AX R EH M,en
 dataram,D EY T AX R EH M,en
 date,D EY T,en
 datext,D EH T EH Q S T,en
-datsun's,D EH T S AX N Z,en
 datsun's,D AA T S AX N Z,en
+datsun's,D EH T S AX N Z,en
 daubed,D AO B D,en
 daum,D AO M,en
 daunan,D AA UW N AA N,ma
@@ -3271,9 +3236,6 @@ dax's,D EH Q S AX Z,en
 dayan,D AA Y AA N,ma
 daycare,D EY K EH R,en
 daylights,D EY L AY T S,en
-de,D EY,en
-de,D AX,en
-de,D IY,en
 de,D EH,ma
 deadbeat,D EH D B IY T,en
 deadbeats,D EH D B IY T S,en
@@ -3287,8 +3249,8 @@ dealing,D IY L IY NG,en
 dealmaking,D IY L M EY K IY NG,en
 dealmeida,D AX L M IY D AA,en
 deanda,D IY EH N D AA,en
-deandrea,D IY EH D R EY AA,en
 deandrea,D EH D R IY AA,en
+deandrea,D IY EH D R EY AA,en
 deanna,D IY EH N AA,en
 debas,D AX B AA S,ma
 debate,D AX B EY T,en
@@ -3340,8 +3302,8 @@ defino,D AX F IY N AO W,en
 defiore,D AX F IY AO R IY,en
 deflationary,D AX F L EY SH AX N EH R IY,en
 deflects,D AX F L EH Q T S,en
-deforrest,D EY F AO R AX S T,en
 deforrest,D AX F AO R AX S T,en
+deforrest,D EY F AO R AX S T,en
 deftly,D EH F T L IY,en
 defusco,D AX F UW S K AO W,en
 degener,D EH G IY N AX R,en
@@ -3369,8 +3331,8 @@ delapaz,D EY L AA P AA Z,en
 delays,D AX L EY Z,en
 delcamp,D EH L K EH M P,en
 delee,D EH L IY,en
-delellis,D AX L EH L AX S,en
 delellis,D EH L AX L AX S,en
+delellis,D AX L EH L AX S,en
 deleting,D AX L IY T IY NG,en
 delfino,D EH L F IY N AO W,en
 delftware,D EH L F T W EH R,en
@@ -3380,8 +3342,8 @@ delicia,D EH L IY CH AA,en
 delillo,D AX L AX L AO W,en
 delineates,D AX L IY N IY EY T S,en
 delio,D EY L IY AO W,en
-deliverance,D AX L IY V AX R AX N S,en
 deliverance,D AX L IY V R AX N S,en
+deliverance,D AX L IY V AX R AX N S,en
 delivered,D AX L IY V AX R D,en
 dell,D EH L,en
 dellavecchia,D EH L AX V EH K IY AA,en
@@ -3391,7 +3353,6 @@ delorme,D EH L AO R M IY,en
 delpriore,D EH L P R IY AO R IY,en
 delrio,D EH L R IY AO W,en
 delsignore,D EH L S IY Q N AO R IY,en
-delta,D EH L T AA,en
 deltona's,D EH L T AO W N AA Z,en
 delzer,D EH L Z AX R,en
 demaggio,D AX M AA JH IY AO W,en
@@ -3432,8 +3393,8 @@ denouncing,D AX N AW N S IY NG,en
 dens,D EH N Z,en
 denson,D EH N S AX N,en
 dentam,D AX N T AA M,ma
-dentist,D EH N T AX S T,en
 dentist,D EH N T IY S T,en
+dentist,D EH N T AX S T,en
 dentition,D EH N T IY SH AX N,en
 denude,D AX N UW D,en
 denunciation,D AX N AX N S IY EY SH AX N,en
@@ -3467,8 +3428,6 @@ derel,D AX R EH L,ma
 derik,D AX R IY Q,ma
 deritaan,D AX R IY T AA Q AA N,ma
 deriving,D AX R AY V IY NG,en
-derma,D AX R M AA,en
-derman,D AX R M AX N,en
 dermatologists,D AX R M AX T AA L AX JH IY S T S,en
 derrickson,D EH R IY Q S AX N,en
 derring,D EH R IY NG,en
@@ -3513,7 +3472,6 @@ destiny,D EH S T AX N IY,en
 destroying,D AX S T R OY IY NG,en
 destructiveness,D AX S T R AA Q T IY V N AX S,en
 destruksi,D EH S T R UW Q S IY,ma
-detail,D IY T EY L,en
 detailer,D IY T EY L AX R,en
 detained,D AX T EY N D,en
 detect,D AX T EH Q T,en
@@ -3534,10 +3492,10 @@ detroiters,D AX T R OY T AX R Z,en
 detroiters,D IY T R OY T AX R Z,en
 deupree,D UW P R IY,en
 deux,D UW,en
-devalle,D AX V EH L,en
 devalle,D AX V EH L IY,en
-devaluation,D IY V EH L Y UW EY SH AX N,en
+devalle,D AX V EH L,en
 devaluation,D AX V EH L Y UW EY SH AX N,en
+devaluation,D IY V EH L Y UW EY SH AX N,en
 devastating,D EH V AX S T EY T IY NG,en
 deveaux,D AX V AO W,en
 developed,D AX V EH L AX P T,en
@@ -3557,8 +3515,8 @@ dewalt,D UW AX L T,en
 dewarr,D UW AX R,en
 deweese,D UW IY Z,en
 dewitz,D EH W IY T S,en
-dexterity,D EH Q S T EH R IY T IY,en
 dexterity,D EH Q S T EH R AX T IY,en
+dexterity,D EH Q S T EH R IY T IY,en
 deyo,D EY AO W,en
 deyoung,D EH Y AA NG,en
 diabolical,D AY AX B AA L AX K AX L,en
@@ -3604,10 +3562,10 @@ diddy,D IY D IY,en
 dideoxycytidine,D IY D IY AA Q S IY S AY T IY D AY N,en
 diderita,D IY D AX R IY T AA,ma
 didiang,D IY D IY AA NG,ma
-didn't,D IY D AX N,en
 didn't,D IY D N T,en
 didn't,D IY D AX N T,en
 didn't,D IY N T,en
+didn't,D IY D AX N,en
 didonato,D IY D AO W N AA T AO W,en
 didonna,D IY D AA N AA,en
 diebel,D IY B AX L,en
@@ -3617,14 +3575,13 @@ dierking,D AY AX R K IY NG,en
 dies,D IY EH S,ma
 diesel,D IY AX S AX L,ma
 diesing,D IY S IY NG,en
-diet,D AY AX T,en
 dieter,D IY T AX R,en
 dieterle,D IY T AX R AX L,en
 dietitian,D AY AX T IY SH AX N,en
 dietrich,D IY T R IY Q,en
+difelice,D IY F EH L AX S,en
 difelice,D IY F EH L IY S,en
 difelice,D IY F AX L IY CH EY,en
-difelice,D IY F EH L AX S,en
 diffused,D IY F Y UW Z D,en
 difraksi,D IY F R AA Q S IY,ma
 digest's,D AY JH EH S T S,en
@@ -3674,7 +3631,6 @@ dimmed,D IY M D,en
 dimpled,D IY M P AX L D,en
 dimsdale,D IY M Z D EY L,en
 dimunculkan,D IY M UW N CH UW L K AA N,ma
-dina,D IY N AA,en
 dinamai,D IY N AA M AA IY,ma
 dinars,D AY N AX R Z,en
 dinars,D IY N AA R Z,en
@@ -3713,8 +3669,8 @@ dirangkum,D IY R AA NG K UW M,ma
 dirasakannya,D IY R AA S AA K AA N NY AA,ma
 dirayu,D IY R AA Y UW,ma
 directly,D AX R EH Q T L IY,en
-directly,D IY R EH K L IY,en
 directly,D AY R EH K L IY,en
+directly,D IY R EH K L IY,en
 diremehkan,D IY R EH M EH HH K AA N,ma
 direnzo,D IY R EH N Z AO W,en
 direstui,D IY R AX S T UW IY,ma
@@ -3722,8 +3678,8 @@ diris,D IY R IY S,ma
 dirt,D AX R T,en
 disabatino,D IY S AA B AA T IY N AO W,en
 disabato,D IY S AA B AA T AO W,en
-disadvantaged,D IY S AX D V EH N T AX JH D,en
 disadvantaged,D IY S AX D V EH N AX JH D,en
+disadvantaged,D IY S AX D V EH N T AX JH D,en
 disadvantageous,D IY S EH D V EH N T EY JH AX S,en
 disaffect,D IY S AX F EH Q T,en
 disahkan,D IY S AA HH K AA N,ma
@@ -3743,8 +3699,8 @@ disconcert,D IY S K AX N S AX R T,en
 disconcerting,D IY S K AX N S AX R T IY NG,en
 discotheque,D IY S K AO W T EH Q,en
 discounters,D IY S K AW N AX R R Z,en
-discoverable,D IY S K AX V AX R AX B AX L,en
 discoverable,D IY S K AX V R AX B AX L,en
+discoverable,D IY S K AX V AX R AX B AX L,en
 diselesaikan,D IY S AX L AX S AY K AA N,ma
 disembark,D IY S EH M B AA R K,en
 disequilibrium,D IY S IY K W AX L IY B R IY AX M,en
@@ -3814,8 +3770,8 @@ divall,D IY V AX L,en
 divens,D AY V AX N Z,en
 diversions,D AY V AX R Z AX N Z,en
 diversions,D IY V AX R Z AX N Z,en
-diverted,D AY V AX R T AX D,en
 diverted,D IY V AX R T AX D,en
+diverted,D AY V AX R T AX D,en
 divesting,D AY V EH S T IY NG,en
 divests,D AY V EH S T S,en
 divided,D IY V AY D AX D,en
@@ -3823,8 +3779,8 @@ divinitas,D IY V IY N IY T AX S,en
 divorces,D IY V AO R S AX Z,en
 divulged,D AY V AX L JH D,en
 divulged,D IY V AX L JH D,en
-divulging,D AY V AX L JH IY NG,en
 divulging,D IY V AX L JH IY NG,en
+divulging,D AY V AX L JH IY NG,en
 divvied,D IY V IY D,en
 diwawancarai,D IY W AA W AA N CH AA R AA IY,ma
 dix,D IY K S,en
@@ -3845,17 +3801,17 @@ dockham,D AA K HH AX M,en
 dockstader,D AA Q S T AX D AX R,en
 doctorates,D AA Q T AX R AX T S,en
 doctrinal,D AA Q T R AX N AX L,en
+documented,D AA K Y UW M EH N T AX D,en
 documented,D AA K Y AX M EH N AX D,en
 documented,D AA K Y UW M EH N AX D,en
-documented,D AA K Y UW M EH N T AX D,en
 documented,D AA K Y AX M EH N T AX D,en
 dodd,D AA D,en
 dodet,D AO D EH T,ma
 dodgen,D AA JH AX N,en
 dodong,D AO D AO NG,ma
 doenges,D AO W N JH AX Z,en
-doerflinger,D AO R F AX L IY NG AX R,en
 doerflinger,D AO R F L IY NG AX R,en
+doerflinger,D AO R F AX L IY NG AX R,en
 doerr,D AO R,en
 doersam,D AO R S AX M,en
 doesn't,D AX Z AX N T,en
@@ -3879,9 +3835,9 @@ dom,D AO M,ma
 doman,D UW M AX N,en
 dome's,D AO W M Z,en
 domed,D AO W M D,en
+domenici,D AO W M AX N IY CH IY,en
 domenici,D AX M EH N AX CH IY,en
 domenici,D AO W M EH N IY CH IY,en
-domenici,D AO W M AX N IY CH IY,en
 domenici's,D AO W M AX N IY CH IY Z,en
 domenici's,D AX M EH N AX CH IY Z,en
 domenici's,D AO W M EH N IY CH IY Z,en
@@ -3894,8 +3850,6 @@ donat,D AO N AA T,ma
 donata,D AX N AA T AA,en
 donatists,D AA N AX T IY S T S,en
 donde,D AA N D,en
-dong,D AO NG,en
-dong,D AO NG G,en
 donia,D AO W N IY AA,en
 donnelley's,D AA N EH L IY Z,en
 donnelley's,D AA N AX L IY Z,en
@@ -3920,8 +3874,6 @@ dorminey,D AO R M IY N IY,en
 dorrie,D AO R IY,en
 dorsi,D AO R S IY,en
 dorthea,D AO R D IY AA,en
-dos,D AO W S,en
-dos,D AO S,en
 dose,D AO W S,en
 doss,D AO S,en
 dot,D AO T,ma
@@ -3976,8 +3928,6 @@ droege,D R AO W JH,en
 dromer,D R AO W M AX R,en
 drones,D R AO W N Z,en
 drool,D R UW L,en
-drop,D R AO P,en
-drop,D R AA P,en
 drown,D R AW N,en
 dru,D R UW,en
 druckenmiller,D R AA K AX N M IY L AX R,en
@@ -3986,13 +3936,13 @@ drummer,D R AX M AX R,en
 dryers,D R AY AX R Z,en
 drypoint,D R AY P OY N T,en
 duanya,D UW AA NY AA,ma
-dubcek,D AA B CH EH Q,en
 dubcek,D UW B CH EH Q,en
+dubcek,D AA B CH EH Q,en
 duberstein's,D UW B AX R S T IY N Z,en
 duberstein's,D UW B AX R S T AY N Z,en
 dubes,D UW B EH S,ma
-dubilier,D UW B AX L AY AX R,en
 dubilier,D UW B AX L IY R,en
+dubilier,D UW B AX L AY AX R,en
 duboff,D AA B AO F,en
 dubrawski,D UW B R AW S K IY,en
 dubroc,D AA B R AO Q,en
@@ -4017,8 +3967,8 @@ duggin,D AA G IY N,en
 dugout,D AA G AW T,en
 duhr,D AX R,en
 dukakis,D UW K AA K AX S,en
-dukakis',D UW K AA K IY S IY Z,en
 dukakis',D UW K AA K AX S,en
+dukakis',D UW K AA K IY S IY Z,en
 dulay,D Y UW L EY,en
 dulcie,D AX L K IY,en
 dullea,D AX L IY AA,en
@@ -4028,8 +3978,8 @@ dulmage,D AX L M AX JH,en
 dulude,D Y UW L UW D,en
 dumais,D AX M EY,en
 duman,D UW M AX N,en
-dumas,D UW M AX Z,en
 dumas,D UW M AA,en
+dumas,D UW M AX Z,en
 dumbest,D AX M AX S T,en
 dumez,D UW M EH Z,en
 dumire,D UW M IY R EY,en
@@ -4078,8 +4028,8 @@ eachus,IY CH AX S,en
 eaddy,IY D IY,en
 eagleton,IY G AX L T AX N,en
 eakle,IY K AX L,en
-eardley,AX R D L IY,en
 eardley,IY R D L IY,en
+eardley,AX R D L IY,en
 earless,IY R L AX S,en
 earnestly,AX R N AX S T L IY,en
 earnhart,AX R N HH AA R T,en
@@ -4157,7 +4107,6 @@ egregiously,AX G R IY JH AX S L IY,en
 egypt's,IY JH AX P T S,en
 egypt's,IY JH IY P T S,en
 egyptair,IY JH IY P T EH R,en
-eh,EH,en
 ehmen,EH M EH N,en
 ehrenfeld,EH R AX N F EH L D,en
 ehrenhalt,EH R AX N HH AO L T,en
@@ -4191,7 +4140,6 @@ elaine's,IY L EY N Z,en
 elaine's,AX L EY N Z,en
 elam,EH L AX M,en
 elasticity,IY L EH S T IY S AX T IY,en
-elastomer,AX L EH S T AX M AX R,en
 elata,EH L AA T AA,en
 elater,AX L EY T AX R,en
 elater,EH L AX T AX R,en
@@ -4211,8 +4159,8 @@ electrocutions,AX L EH Q T R AX K Y UW SH AX N Z,en
 electromechanical,AX L EH Q T R AO W M AX K EH N AX K AX L,en
 electrosound,AX L EH Q T R AO W S AW N D,en
 eleen,EH L IY N,en
-eleventh,IY L EH V AX N T,en
 eleventh,AX L EH V AX N T,en
+eleventh,IY L EH V AX N T,en
 elfman,EH L F M AX N,en
 elgart,EY L G AA R T,en
 elgie,EH L JH IY,en
@@ -4234,8 +4182,8 @@ ellison,EH L IY S AX N,en
 ellsworth,EH L Z W AX R T,en
 elmhurst,EH L M HH AX R S T,en
 elmwood,EH L M W UW D,en
-eloise,AX L OY Z,en
 eloise,EH L AO W IY Z,en
+eloise,AX L OY Z,en
 elope,AX L AO W P,en
 elpiji,EH L P IY JH IY,ma
 elrica,EH L R AX K AA,en
@@ -4256,8 +4204,8 @@ embarkation,EH M B AA R K EY SH AX N,en
 embat,AX M B AA T,ma
 embek,EH M B EH Q,ma
 embezzled,AX M B EH Z AX L D,en
-embezzling,AX M B EH Z L IY NG,en
 embezzling,AX M B EH Z AX L IY NG,en
+embezzling,AX M B EH Z L IY NG,en
 embezzling,EH M B EH Z AX L IY NG,en
 embezzling,EH M B EH Z L IY NG,en
 embik,AX M B IY Q,ma
@@ -4292,8 +4240,8 @@ emry,EH M R IY,en
 emslie,EH M S AX L IY,en
 emulated,EH M Y AX L EY T AX D,en
 ena,EH N AA,en
-enactments,EH N EH Q M AX N T S,en
 enactments,EH N EH Q T M AX N T S,en
+enactments,EH N EH Q M AX N T S,en
 enactments,EH N EH Q M AX N S,en
 enamel,IY N EH M AX L,en
 enau,AX N AW,ma
@@ -4309,11 +4257,11 @@ enclosure,IY N K L AO W Z AX R,en
 encouraged,EH N K AX R AX JH D,en
 encouraged,IY N K AX R AX JH D,en
 endah,EH N D AA HH,ma
-endangered,EH N D EY N JH AX R D,en
 endangered,IY N D EY N JH AX R D,en
+endangered,EH N D EY N JH AX R D,en
 endeavor's,IY N D EH V AX R Z,en
-endeavoring,IY N D EH V AX R IY NG,en
 endeavoring,IY N D EH V R IY NG,en
+endeavoring,IY N D EH V AX R IY NG,en
 endemis,EH N D EH M IY S,ma
 enders,EH N D AX R Z,en
 endocrine,EH N D AO W K R AY N,en
@@ -4349,17 +4297,17 @@ enrich,IY N R IY CH,en
 enriches,EH N R IY CH AX Z,en
 enshroud,IY N SH R AW D,en
 entail,EH N T EY L,en
-entangling,IY N T EH NG L IY NG,en
 entangling,EH N T EH NG L IY NG,en
+entangling,IY N T EH NG L IY NG,en
 enterline,EH N T AX R L AY N,en
 enterprising,EH N AX R P R AY Z IY NG,en
 enterprising,EH N T AX R P R AY Z IY NG,en
 enters,EH N AX R Z,en
 enters,EH N T AX R Z,en
-entertainer's,EH N T AX R T EY N AX R Z,en
 entertainer's,EH N AX R T EY N AX R Z,en
-entertainment,EH N AX R T EY N M AX N T,en
+entertainer's,EH N T AX R T EY N AX R Z,en
 entertainment,EH N T AX R T EY N M AX N T,en
+entertainment,EH N AX R T EY N M AX N T,en
 enthusiastic,IY N T UW Z IY EH S T IY Q,en
 entreaties,EH N T R IY T IY Z,en
 entregrowth,EH N T R AX G R AO W T,en
@@ -4381,8 +4329,8 @@ ephraim,IY F R AX M,en
 ephron,EH F R AX N,en
 epicure,EH P AX K Y UW R,en
 epicurean,EH P AX K Y UW R IY AX N,en
-epidemic,EH P AX D EH M IY Q,en
 epidemic,EH P IY D EH M IY Q,en
+epidemic,EH P AX D EH M IY Q,en
 epidemiologists,EH P AX D IY M IY AA L AX JH IY S T S,en
 episcopal,AX P IY S K AX P AX L,en
 episode,EH P IY S AO D AX,ma
@@ -4421,15 +4369,15 @@ erra,EH R AA,en
 errands,EH R AX N D Z,en
 errett,EH R AX T,en
 ers,AX R Z,en
-ersatz,EH R S AA T S,en
 ersatz,EH R Z AA T S,en
+ersatz,EH R S AA T S,en
 ertman,AX R T M AX N,en
 escada,EH S K AA D AA,en
 escalate,EH S K AX L EY T,en
 escarcega,EH S K AA R CH EH G AA,en
 escarpment,EH S K AA R P M AX N T,en
-escobar's,EH S K AO W B AA R Z,en
 escobar's,EH S K AX B AA R Z,en
+escobar's,EH S K AO W B AA R Z,en
 escort,EH S K AO R T,en
 escrowed,EH S K R AO W D,en
 esham,EH SH AX M,en
@@ -4471,8 +4419,8 @@ evacuating,IY V EH K Y AX W EY T IY NG,en
 evacuating,AX V EH K Y AX W EY T IY NG,en
 evancho,EH V AA N K AO W,en
 evangelis,EH V AA NG EH L IY S,ma
-evangelism,IY V EH N JH AX L IY Z AX M,en
 evangelism,AX V EH N JH AX L IY Z AX M,en
+evangelism,IY V EH N JH AX L IY Z AX M,en
 evangelist,AX V EH N JH AX L IY S T,en
 evangelist,IY V EH N JH AX L IY S T,en
 evanson,EH V AX N S AX N,en
@@ -4482,8 +4430,8 @@ evaporating,AX V EH P AX R EY T IY NG,en
 eveland,IY V L AX N D,en
 evenings,IY V N IY NG Z,en
 evenson,EH V AX N S AX N,en
-event's,IY V EH N T S,en
 event's,AX V EH N T S,en
+event's,IY V EH N T S,en
 everbach,EH V AX R B AA Q,en
 everex,EH V AX R AX Q S,en
 everitt,EH V AX R IY T,en
@@ -4495,10 +4443,10 @@ everyone's,EH V R IY W AX N Z,en
 everytime,EH V R IY T AY M,en
 evin,EH V IY N,en
 eviscerate,AX V IY S AX R EY T,en
-evolutionary,EH V AX L UW SH AX N EH R IY,en
 evolutionary,IY V AO W L UW SH AX N EH R IY,en
-evolutionary,EH V AO W L UW SH AX N EH R IY,en
+evolutionary,EH V AX L UW SH AX N EH R IY,en
 evolutionary,IY V AX L UW SH AX N EH R IY,en
+evolutionary,EH V AO W L UW SH AX N EH R IY,en
 ewald,Y UW AX L D,en
 ewen,Y UW AX N,en
 ewes,Y UW Z,en
@@ -4529,8 +4477,8 @@ exhausting,AX Q Z AO S T IY NG,en
 exhibitions,EH Q S AX B IY SH AX N Z,en
 exhibits,AX Q Z IY B AX T S,en
 exhumes,EH Q S HH Y UW M Z,en
-exiled,EH Q Z AY L D,en
 exiled,EH Q S AY L D,en
+exiled,EH Q Z AY L D,en
 exists,AX Q Z IY S T S,en
 exner,EH Q S N AX R,en
 exodus,EH Q S AX D AX S,en
@@ -4660,8 +4608,8 @@ faunce,F AO N S,en
 faustus,F AO S T AX S,en
 favero,F AA V EH R AO W,en
 favored,F EY V AX R D,en
-favorite,F EY V AX R IY T,en
 favorite,F EY V R AX T,en
+favorite,F EY V AX R IY T,en
 favorites,F EY V AX R IY T S,en
 favorites,F EY V R AX T S,en
 fayanne,F EY IY N,en
@@ -4726,8 +4674,8 @@ fetch,F EH CH,en
 fetches,F EH CH AX Z,en
 fetherolf,F EH T AX R AO W L F,en
 fetid,F EH T AX D,en
-fetishist,F EH T IY SH AX S T,en
 fetishist,F EH T IY SH IY S T,en
+fetishist,F EH T IY SH AX S T,en
 fetter,F EH T AX R,en
 fettig,F EH T IY Q,en
 feuer,F Y UW AX R,en
@@ -4744,8 +4692,8 @@ fielden,F IY L D AX N,en
 fielding,F IY L D IY NG,en
 fields,F IY L D Z,en
 fiends,F IY N D Z,en
-fiennes,F IY EH N EH S,en
 fiennes,F Y EH N EH S,en
+fiennes,F IY EH N EH S,en
 fiftieth,F IY F T IY AX T,en
 fifty,F IY F T IY,en
 figel,F IY G AX L,en
@@ -4790,8 +4738,8 @@ finland's,F IY N L AX N D Z,en
 finne,F IY N,en
 finnish,F IY N IY SH,en
 fiorucci,F IY AO R UW CH IY,en
-fire,F AY R,en
 fire,F AY AX R,en
+fire,F AY R,en
 firebombing,F AY AX R B AA M IY NG,en
 firedamp,F AY AX R D EH M P,en
 firefighter,F AY R F AY T AX R,en
@@ -4857,12 +4805,12 @@ florin,F L AO R IY N,en
 flouted,F L AW T AX D,en
 flower,F L AW AX R,en
 fluctuations,F L AA Q CH UW EY SH AX N Z,en
-fluids,F L UW IY D Z,en
 fluids,F L UW AX D Z,en
+fluids,F L UW IY D Z,en
 flukes,F L UW K S,en
 flume,F L UW M,en
-fluoresce,F L AO R EH S,en
 fluoresce,F L UW R EH S,en
+fluoresce,F L AO R EH S,en
 flury,F L UW R IY,en
 flury,F L AX R IY,en
 flus,F L UW Z,en
@@ -4903,8 +4851,8 @@ footnoted,F UW T N AO W T AX D,en
 footnoting,F UW T N AO W T IY NG,en
 footpath,F UW T P EH T,en
 foraging,F AO R AX JH IY NG,en
-forbids,F AX R B IY D Z,en
 forbids,F AO B IY D Z,en
+forbids,F AX R B IY D Z,en
 ford's,F AO R D Z,en
 fords,F AO R D Z,en
 forebear,F AO R B EH R,en
@@ -4916,8 +4864,8 @@ foretelling,F AO R T EH L IY NG,en
 forethought,F AO R T AO T,en
 forget,F AX R G EH T,en
 forget,F AO R G EH T,en
-forgetting,F AX R G EH T IY NG,en
 forgetting,F AO R G EH T IY NG,en
+forgetting,F AX R G EH T IY NG,en
 forgone,F AO R G AA N,en
 forinash,F AO R IY N EH SH,en
 forint,F AO R IY N T,en
@@ -4929,16 +4877,16 @@ formats,F AO R M EH T S,en
 formbey,F AO R M B IY,en
 formby,F AO R M B IY,en
 formulate,F AO R M Y AX L EY T,en
-formulation,F AO R M Y AX L EY SH AX N,en
 formulation,F AO R M Y UW L EY SH AX N,en
+formulation,F AO R M Y AX L EY SH AX N,en
 forney,F AO R N IY,en
 forquer,F AO R K AX R,en
 forsell,F AO R S AX L,en
 fortifiers,F AO R T AX F AY AX R Z,en
 fortner,F AO R T N AX R,en
 fortney,F AO R T N IY,en
-fortunately,F AO R CH UW N AX T L IY,en
 fortunately,F AO R CH AX N AX T L IY,en
+fortunately,F AO R CH UW N AX T L IY,en
 fortune's,F AO R CH UW N Z,en
 fortune's,F AO R CH AX N Z,en
 fosco,F AA S K AO W,en
@@ -4986,8 +4934,8 @@ frayed,F R EY D,en
 fraze,F R EY Z,en
 frazzle,F R EH Z AX L,en
 frease,F R IY Z,en
-frederick,F R EH D AX R IY Q,en
 frederick,F R EH D R IY Q,en
+frederick,F R EH D AX R IY Q,en
 frederico,F R EH D AX R IY K AO W,en
 fredrick,F R EH D R IY Q,en
 fredriksen,F R AX D R IY Q S AX N,en
@@ -4996,10 +4944,10 @@ freedland,F R IY D L AX N D,en
 freefall,F R IY F AO L,en
 freelancer,F R IY L EH N S AX R,en
 freeman,F R IY M AX N,en
-freewheeling,F R IY HH W IY L IY NG,en
 freewheeling,F R IY W IY L IY NG,en
-freidman,F R AY D M AX N,en
+freewheeling,F R IY HH W IY L IY NG,en
 freidman,F R IY D M AX N,en
+freidman,F R AY D M AX N,en
 freight,F R EY T,en
 freightways,F R EY T W EY Z,en
 freimark,F R AY M AA R K,en
@@ -5086,8 +5034,8 @@ gab,G EH B,en
 gabay,G EH B EY,en
 gabele,G AX B EH L EY,en
 gable,G EY B AX L,en
-gabler,G EY B L AX R,en
 gabler,G EY B AX L AX R,en
+gabler,G EY B L AX R,en
 gabriel's,G EY B R IY AX L Z,en
 gabrielle,G AA B R IY EH L,en
 gadd,G EH D,en
@@ -5102,7 +5050,6 @@ gaines,G EY N Z,en
 gainful,G EY N F AX L,en
 gainsco,G EY N S K AO W,en
 gaitan,G AY T AA N,en
-galang,G EH L AX NG,en
 galax,G EH L EH Q S,en
 galenical,G AX L EH N AX K AX L,en
 galeria,G EH L AX R IY AA,en
@@ -5165,7 +5112,6 @@ garrets,G EH R AX T S,en
 garro,G AA R AO W,en
 garstin,G AA R S T AX N,en
 gartin,G AA R T IY N,en
-garuda,G AX R UW D AA,en
 garver,G AA R V AX R,en
 garwin,G AA R W IY N,en
 gasaway,G EH S AX W EY,en
@@ -5304,7 +5250,6 @@ gilmartin,G IY L M AA R T IY N,en
 gilt,G IY L T,en
 gilvin,G IY L V IY N,en
 gimme,G IY M IY,en
-gin,JH IY N,en
 ginandjar,JH IY N EH N JH AX R,en
 gingerly,JH IY N JH AX R L IY,en
 ginning,JH IY N IY NG,en
@@ -5332,8 +5277,8 @@ glassburn,G L EH S B AX R N,en
 glasses,G L EH S AX Z,en
 glassford,G L EH S F AO R D,en
 glassmaking,G L EH S M EY K IY NG,en
-glassman,G L EH S M AX N,en
 glassman,G L EH S M EH N,en
+glassman,G L EH S M AX N,en
 glaude,G L AO D,en
 glaus,G L AO Z,en
 glazunov,G L EH Z UW N AA V,en
@@ -5348,7 +5293,6 @@ glimpses,G L IY M P S AX Z,en
 glinting,G L IY N T IY NG,en
 glitter,G L IY T AX R,en
 gloat,G L AO W T,en
-global,G L AO W B AX L,en
 globulins,G L AA B Y AX L IY N Z,en
 gloomily,G L UW M AX L IY,en
 gloria,G L AO R IY AA,en
@@ -5395,7 +5339,6 @@ golob,G AO W L AX B,en
 golongan,G AO L AO NG AA N,ma
 golphin,G AO W L F IY N,en
 gomory,G AO W M AX R IY,en
-gong,G AO NG,en
 goodbyes,G IY D B AY Z,en
 goodbyes,G UW D B AY Z,en
 goode,G UW D,en
@@ -5406,13 +5349,13 @@ goodley,G UW D L IY,en
 goodrich's,G UW D R IY CH AX Z,en
 goodroe,G UW D R AO W,en
 goodrum,G UW D R AX M,en
-goodstein,G UW D S T IY N,en
 goodstein,G UW D S T AY N,en
+goodstein,G UW D S T IY N,en
 goodwine,G UW D W AY N,en
 goosey,G UW S IY,en
 goossens,G UW S AX N Z,en
-gorbachev,G AO R B AX CH EH V,en
 gorbachev,G AO R B AX CH AO F,en
+gorbachev,G AO R B AX CH EH V,en
 gorda,G AO R D AA,en
 gordian,G AO R D IY AX N,en
 gordner,G AO R D N AX R,en
@@ -5447,13 +5390,13 @@ grackles,G R EH K AX L Z,en
 graders,G R EY D AX R Z,en
 grado,G R AA D AO W,en
 grads,G R EH D Z,en
-graduate,G R EH JH AX W AX T,en
 graduate,G R EH JH AX W EY T,en
 graduate,G R EH JH UW W AX T,en
+graduate,G R EH JH AX W AX T,en
 graduate,G R EH JH UW EY T,en
 grafting,G R EH F T IY NG,en
-graham,G R EH M,en
 graham,G R EY AX M,en
+graham,G R EH M,en
 grains,G R EY N Z,en
 grames,G R EY M Z,en
 gramley,G R EH M L IY,en
@@ -5465,14 +5408,14 @@ grammys,G R EH M IY Z,en
 granade,G R AX N EY D,en
 grandberry,G R EH N D B EH R IY,en
 granddaughter's,G R EH N D AO T AX R Z,en
-grandfather,G R EH N D F AA D AX R,en
 grandfather,G R EH N F AA D AX R,en
+grandfather,G R EH N D F AA D AX R,en
 grandson,G R EH N D S AX N,en
 grandstaff,G R EH N S T EH F,en
 grandstaff,G R EH N D S T EH F,en
 graney,G R EY N IY,en
-granted,G R EH N AX D,en
 granted,G R EH N T AX D,en
+granted,G R EH N AX D,en
 granum,G R EH N AX M,en
 graphs,G R EH F S,en
 grassia,G R AA S IY AA,en
@@ -5582,8 +5525,8 @@ guay,G EY,en
 gudger,G AA JH AX R,en
 guerilla,G AX R IY L AA,en
 guerry,G AX R IY,en
-guesstimate,G EH S T IY M IY T,en
 guesstimate,G EH S T IY M EY T,en
+guesstimate,G EH S T IY M IY T,en
 gugatan,G UW G AA T AA N,ma
 gugusan,G UW G UW S AA N,ma
 guichard,G IY SH AA R D,en
@@ -5620,7 +5563,6 @@ guni,G UW N IY,ma
 gunnerson,G AX N AX R S AX N,en
 gunnysack,G AX N IY S EH Q,en
 gunslingers,G AX N S L IY NG AX R Z,en
-guntur,G AX N T AX R,en
 gunung,G UW N UW NG,ma
 gupta,G UW P T AA,en
 gurian,G Y UW R IY AX N,en
@@ -5640,8 +5582,8 @@ guzman,G UW Z M AA N,en
 guzman,G AX Z M AX N,en
 guzzler,G AA Z L AX R,en
 guzzlers,G AA Z L AX R Z,en
-guzzling,G AA Z AX L IY NG,en
 guzzling,G AA Z L IY NG,en
+guzzling,G AA Z AX L IY NG,en
 gwennie,G W EH N IY,en
 gwinnett,G W IY N EH T,en
 gyllenhammar,JH IY L EH N HH EH M AX R,en
@@ -5651,7 +5593,6 @@ gynecologists,G AY N AX K AA L AX JH AX S T S,en
 gyosai,G Y AO W S EY,en
 gyrations,JH AY R EY SH AX N Z,en
 gyrocompass,JH AY R AO W K AX M P AX S,en
-ha,HH AA,en
 ha'aretz,HH AA R EH T S,en
 haavelmo,HH AA V EH L M AO W,en
 habeas,HH EH B IY AX S,en
@@ -5719,8 +5660,8 @@ halwa,HH AA L W AA,ma
 hambley,HH EH M B L IY,en
 hambrecht,HH EH M B R EH Q T,en
 hamed,HH EH M D,en
-hamler,HH EH M L AX R,en
 hamler,HH EH M AX L AX R,en
+hamler,HH EH M L AX R,en
 hamlisch's,HH EH M L IY SH AX Z,en
 hammar,HH EH M AX R,en
 hammermill,HH EH M AX R M IY L,en
@@ -5778,7 +5719,6 @@ hardesty,HH AA R D AX S T IY,en
 hardiman,HH AA R D IY M AX N,en
 hardnett,HH AA R D N AX T,en
 hare's,HH EH R Z,en
-harem,HH EH R AX M,en
 harff,HH AA R F,en
 harganya,HH AA R G AA NY AA,ma
 hargreaves,HH AA R G R IY V Z,en
@@ -5867,12 +5807,12 @@ hazelwood,HH EY Z AX L W UW D,en
 he'll,HH IY L,en
 headhunters,HH EH D HH AX N T AX R Z,en
 headlund,HH EH D L AX N D,en
-headquarters,HH EH D K AO R T AX R Z,en
 headquarters,HH EH D K W AO R T AX R Z,en
+headquarters,HH EH D K AO R T AX R Z,en
 healer,HH IY L AX R,en
 healthamerica,HH IY L T AX M EH R AX K AA,en
-healthcorp,HH EH L T K AO R P,en
 healthcorp,HH EH L T K AO R,en
+healthcorp,HH EH L T K AO R P,en
 healthsouth,HH EH L T S AW T,en
 healthy,HH EH L T IY,en
 heap,HH IY P,en
@@ -5950,8 +5890,8 @@ henle,HH EH N AX L,en
 hennelly,HH EH N AX L IY,en
 hennington,HH EH N IY NG T AX N,en
 henricks,HH EH N R IY Q S,en
-henriquez,AA N R IY Q,en
 henriquez,HH EH N R IY K EH Z,en
+henriquez,AA N R IY Q,en
 henry,HH EH N R IY,en
 hensley,HH EH N Z L IY,en
 hentges,HH EH N T JH AX Z,en
@@ -5961,8 +5901,8 @@ hepatitis,HH EH P AA T IY T IY S,ma
 heppe,HH EH P,en
 heptathlon,HH EH P T EH T L AA N,en
 herber,HH AX R B AX R,en
-herbicide,HH AX R B IY S AY D,en
 herbicide,AX R B IY S AY D,en
+herbicide,HH AX R B IY S AY D,en
 herders,HH AX R D AX R Z,en
 hereditary,HH AX R EH D AX T EH R IY,en
 herington,HH EH R IY NG T AX N,en
@@ -5980,14 +5920,14 @@ hersant,HH AX R S AX N T,en
 herschel's,HH AX R SH AX L Z,en
 hershkowitz,HH AX R SH K AX W IY T S,en
 hersman,HH AX R S M AX N,en
-herve,HH AX R V EY,en
 herve,HH AX R V,en
-herzegovina,HH EH R T S AX G AO W V IY N AA,en
+herve,HH AX R V EY,en
 herzegovina,HH AX R T S AX G AO W V IY N AA,en
+herzegovina,HH EH R T S AX G AO W V IY N AA,en
 herzfeld,HH AX R Z F EH L D,en
 herzing,HH AX R Z IY NG,en
-hesler,HH EH S L AX R,en
 hesler,HH EH S AX L AX R,en
+hesler,HH EH S L AX R,en
 hessel,HH EH S AX L,en
 hessler,HH EH S L AX R,en
 heterosexuality,HH EH T AX R AO W S EH Q SH UW EH L IY T IY,en
@@ -6041,7 +5981,6 @@ hilma,HH IY L M AA,en
 himpit,HH IY M P IY T,ma
 hinchcliff,HH IY N CH K L IY F,en
 hinderman,HH AY N D AX R M AX N,en
-hindu,HH IY N D UW,en
 hinduism,HH IY N JH UW IY Z AX M,en
 hines,HH AY N Z,en
 hinges,HH IY N JH AX Z,en
@@ -6063,8 +6002,8 @@ hispanics,HH IY S P EH N IY Q S,en
 histeria,HH IY S T EH R IY AA,ma
 histrionic,HH IY S T R IY AA N IY Q,en
 hitchens,HH IY CH AX N Z,en
-hitschler,HH IY CH L AX R,en
 hitschler,HH IY T S L AX R,en
+hitschler,HH IY CH L AX R,en
 hitsman,HH IY T S M AX N,en
 hixon,HH IY Q S AX N,en
 hladky,HH L EH D K IY,en
@@ -6084,8 +6023,8 @@ hodes,HH AO W D Z,en
 hodges,HH AA JH AX Z,en
 hodgkin,HH AA JH K IY N,en
 hodnett,HH AA D N AX T,en
-hoechst's,HH AO W K S T S,en
 hoechst's,HH AO W SH T S,en
+hoechst's,HH AO W K S T S,en
 hoefer,HH AO W F AX R,en
 hoefs,HH AO W F S,en
 hoekstra,HH AO W K S T R AA,en
@@ -6139,10 +6078,9 @@ homestead's,HH AO W M S T EH D Z,en
 homogenize,HH AO W M AA JH AX N AY Z,en
 homola,HH AX M AA L AA,en
 honcho,HH AO N CH AO W,en
-honda,HH AO N D AA,en
 honduran,HH AA N D UW R AX N,en
-honestly,AA N AX S L IY,en
 honestly,AA N AX S T L IY,en
+honestly,AA N AX S L IY,en
 honeybees,HH AX N IY B IY Z,en
 honeymooned,HH AX N IY M UW N D,en
 honeymooners,HH AX N IY M UW N AX R Z,en
@@ -6181,8 +6119,8 @@ hornbuckle,HH AO R N B AX K AX L,en
 hornere,HH AO R N AX R,en
 hornet,HH AO R N AX T,en
 horns,HH AO R N Z,en
-hornstein,HH AO R N S T IY N,en
 hornstein,HH AO R N S T AY N,en
+hornstein,HH AO R N S T IY N,en
 hornyak,HH AO R N Y EH Q,en
 horsemen,HH AO R S M AX N,en
 horseshoe,HH AO R S SH UW,en
@@ -6192,8 +6130,8 @@ hosick,HH AA S IY Q,en
 hospitalize,HH AO S P IY T AX L AY Z,en
 hostage,HH AA S T AX JH,en
 hosterman,HH AO W S T AX R M AX N,en
-hostile,HH AA S T AX L,en
 hostile,HH AA S T AY L,en
+hostile,HH AA S T AX L,en
 hostler,HH AA S L AX R,en
 hot,HH AA T,en
 hotaling,HH AA T AX L IY NG,en
@@ -6255,8 +6193,8 @@ hummel,HH AX M AX L,en
 humor,HH UW M AO R,ma
 humoral,HH Y UW M AX R AX L,en
 humpal,HH AX M P AX L,en
-humpherys,HH AX M F AX R IY Z,en
 humpherys,HH AX M F R IY Z,en
+humpherys,HH AX M F AX R IY Z,en
 hunger,HH AA NG G AX R,en
 hunnell,HH AX N AX L,en
 hunnicutt,HH AX N AX K AX T,en
@@ -6264,8 +6202,8 @@ huntress,HH AX N T R AX S,en
 hunts',HH AX N T S,en
 hupe,HH Y UW P,en
 hura,HH UW R AA,ma
-hurdler,HH AX R D AX L AX R,en
 hurdler,HH AX R D L AX R,en
+hurdler,HH AX R D AX L AX R,en
 hurford,HH AX R F AX R D,en
 hurless,HH AX R L AX S,en
 hurly,HH AX R L IY,en
@@ -6311,8 +6249,8 @@ hypoxia,HH AY P AA Q S IY AA,en
 hyraxes,HH AY R EH Q S AX Z,en
 hyre,HH AY R,en
 hysong,HH AY S AO NG,en
-hyundai,HH AX N D EY,en
 hyundai,HH Y AX N D EY,en
+hyundai,HH AX N D EY,en
 iacovelli,IY AA K AO W V EH L IY,en
 iago,IY AA G AO W,en
 iantha,IY AA N T AA,en
@@ -6374,8 +6312,8 @@ impression,IY M P R EH SH AX N,en
 imprints,IY M P R IY N T S,en
 imreg,IY M R EH Q,en
 inactivation,IY N EH Q T IY V EY SH AX N,en
-inadvertence,IY N EH D V AX R T AX N S,en
 inadvertence,IY N AX D V AX R T AX N S,en
+inadvertence,IY N EH D V AX R T AX N S,en
 inamura,IY N AX M UW R AA,en
 inbio,IY N B AY AO W,en
 inbound,IY N B AW N D,en
@@ -6404,14 +6342,12 @@ indianapolis,IY N D IY AX N EH P AX L AX S,en
 indicates,IY N D AX K EY T S,en
 indiscretions,IY N D IY S K R EH SH AX N Z,en
 indispensable,IY N D IY S P EH N S AX B AX L,en
-individual,IY N D AX V IY JH AX W AX L,en
 indonesia,IY N D AO W N IY Z AA,en
 indonesians,IY N D AO W N IY S IY AX N Z,en
 indonesians,IY N D AO W N IY Z AX N Z,en
 indung,IY N D UW NG,ma
 indus,IY N D AX S,en
 industri,IY N D UW S T R IY,ma
-industri,IY N D AX S T R IY,en
 industrialisasi,IY N D UW S T R IY AA L IY S AA S IY,ma
 industrialize,IY N D AX S T R IY AX L AY Z,en
 industrywide,IY N D AX S T R IY W AY D,en
@@ -6500,8 +6436,8 @@ insupportable,IY N S AX P AO R T AX B AX L,en
 insurgents,IY N S AX R JH AX N T S,en
 insurgents',IY N S AX R JH AX N T S,en
 intangibles,IY N T EH N JH AX B AX L Z,en
-integrates,IY N T AX G R EY T S,en
 integrates,IY N AX G R EY T S,en
+integrates,IY N T AX G R EY T S,en
 integrations,IY N T AX G R EY SH AX N Z,en
 integrations,IY N AX G R EY SH AX N Z,en
 intelek,IY N T EH L EH Q,ma
@@ -6511,8 +6447,8 @@ intentions,IY N T EH N CH AX N Z,en
 intercapital,IY N T AX R K EH P AX T AX L,en
 intercept,IY N AX R S EH P T,en
 intercept,IY N T AX R S EH P T,en
-intercession,IY N T AX R S EH SH AX N,en
 intercession,IY N AX R S EH SH AX N,en
+intercession,IY N T AX R S EH SH AX N,en
 intercontinental,IY N T AX R K AA N T AX N EH N T AX L,en
 interdict,IY N T AX R D IY Q T,en
 interference,IY N AX R F IY R AX N S,en
@@ -6521,18 +6457,18 @@ intergroup,IY N T AX R G R UW P,en
 interject,IY N T AX R JH EH Q T,en
 interlake's,IY N T AX R L EY Q S,en
 interleave,IY N T AX R L IY V,en
-intermediaries,IY N AX R M IY D IY EH R IY Z,en
 intermediaries,IY N T AX R M IY D IY EH R IY Z,en
+intermediaries,IY N AX R M IY D IY EH R IY Z,en
+intermediates,IY N AX R M IY D IY EY T S,en
 intermediates,IY N T AX R M IY D IY AX T S,en
 intermediates,IY N AX R M IY D IY AX T S,en
-intermediates,IY N AX R M IY D IY EY T S,en
 intermediates,IY N T AX R M IY D IY EY T S,en
 intermedic,IY N T AX R M EH D IY Q,en
 intermedics,IY N T AX R M EH D IY Q S,en
 intermix,IY N T AX R M IY Q S,en
 intermolecular,IY N T AX R M AX L EH K Y AX L AX R,en
-internationalism,IY N AX R N EH SH AX N AA L IY Z AX M,en
 internationalism,IY N T AX R N EH SH AX N AA L IY Z AX M,en
+internationalism,IY N AX R N EH SH AX N AA L IY Z AX M,en
 internist,IY N T AX R N IY S T,en
 interpart,IY N T AX R P AA R T,en
 interrogating,IY N T EH R AX G EY T IY NG,en
@@ -6542,7 +6478,6 @@ intersec,IY N T AX R S EH Q,en
 intersperses,IY N T AX R S P AX R S AX Z,en
 interstate's,IY N T AX R S T EY T S,en
 intertwining,IY N T AX R T W AY N IY NG,en
-interval,IY N T AX R V AX L,en
 intervenor,IY N T AX R V IY N AX R,en
 intervenors,IY N T AX R V IY N AX R Z,en
 intervention,IY N T AX R V EH N SH AX N,en
@@ -6553,15 +6488,15 @@ intimately,IY N T IY M AX T L IY,en
 intonasi,IY N T AO N AA S IY,ma
 intoning,IY N T AO W N IY NG,en
 intraocular,IY N T R AX AO W K Y UW L AX R,en
-introducing,IY N T R AO W D UW S IY NG,en
 introducing,IY N T R AX D UW S IY NG,en
+introducing,IY N T R AO W D UW S IY NG,en
 introspect,IY N T R AX S P EH Q T,en
 introver,IY N T R AO V EH R,ma
 intuitive,IY N T UW AX T IY V,en
 invader,IY N V EY D AX R,en
 invalid,IY N V AA L IY D,ma
-invalidated,IY N V EH L IY D EY T AX D,en
 invalidated,IY N V EH L AX D EY T AX D,en
+invalidated,IY N V EH L IY D EY T AX D,en
 invalidating,IY N V EH L AX D EY T IY NG,en
 invasi,IY N V AA S IY,ma
 inventarisasi,IY N V EH N T AA R IY S AA S IY,ma
@@ -6584,8 +6519,8 @@ iraq,AY R AA Q,en
 iraq,IY R AA Q,en
 irby,AX R B IY,en
 irene's,AY R IY N Z,en
-ireton,AY AX R T AX N,en
 ireton,IY R AX T AA N,en
+ireton,AY AX R T AX N,en
 iretta,IY R EH T AA,en
 irimajiri,AY R IY M AX JH IY R IY,en
 irradiate,IY R EY D IY EY T,en
@@ -6608,8 +6543,8 @@ isoelectronic,AY S AO W AX L EH Q T R AA N IY Q,en
 isothermal,AY S AX T AX R M AX L,en
 isotonic,AY S AX T AA N IY Q,en
 isotopes,AY S AX T AO W P S,en
-israel's,IY Z R IY AX L Z,en
 israel's,IY Z R EY L Z,en
+israel's,IY Z R IY AX L Z,en
 israeli,IY Z R EY L IY,en
 israeli's,IY Z R EY L IY Z,en
 issuable,IY SH UW AX B AX L,en
@@ -6633,8 +6568,8 @@ ja,Y AA,en
 jabar,JH AX B AA R,en
 jabbing,JH EH B IY NG,en
 jacket,JH EH K AX T,en
-jacobin,JH EH K AX B AX N,en
 jacobin,JH EH K AX B IY N,en
+jacobin,JH EH K AX B AX N,en
 jacobite,JH EH K AX B AY T,en
 jacot,JH EH K AX T,en
 jacque,Z EY Q,en
@@ -6651,7 +6586,6 @@ jakab,JH EH K AX B,en
 jala,JH AA L AA,ma
 jalar,JH AA L AA R,ma
 jaluran,JH AA L UW R AA N,ma
-jam,JH EH M,en
 jamaica,JH AX M EY K AA,en
 jamroz,Y AA M R AO W Z,en
 jams,JH EH M Z,en
@@ -6679,15 +6613,15 @@ jarryd,JH EH R IY D,en
 jarvis,JH AA R V AX S,en
 jasanya,JH AA S AA NY AA,ma
 jasmin,JH EH Z M IY N,en
-jasmine,JH EH Z M IY N,en
 jasmine,JH EH Z M AX N,en
+jasmine,JH EH Z M IY N,en
 jasper,JH EH S P AX R,en
 jaundiced,JH AO N D IY S T,en
 javanese,JH AA V AX N IY Z,en
 jaycee,JH EY S IY,en
 jayne,JH EY N,en
-jeancourt,Z AA NG K AO R T,en
 jeancourt,JH IY N K AO R T,en
+jeancourt,Z AA NG K AO R T,en
 jeanine,JH AX N IY N,en
 jeans,JH IY N Z,en
 jeer,JH IY R,en
@@ -6722,8 +6656,8 @@ jesus',JH IY Z AX S,en
 jetborne,JH EH T B AO R N,en
 jeti,JH EH T IY,ma
 jeumont,JH UW M AA N T,en
-jewels,JH UW AX L Z,en
 jewels,JH UW L Z,en
+jewels,JH UW AX L Z,en
 jewess,JH UW AX S,en
 jewett,JH UW AX T,en
 jezewski,Y AX Z EH F S K IY,en
@@ -6786,8 +6720,8 @@ juggle,JH AA G AX L,en
 jujitsu,JH UW JH IY T S UW,ma
 juju,JH UW JH UW,en
 julang,JH UW L AA NG,ma
-juliann,JH UW L Y AX N,en
 juliann,JH UW L IY EH N,en
+juliann,JH UW L Y AX N,en
 juliet,JH UW L IY EH T,en
 julieta,Y UW L IY T AA,en
 juling,JH UW L IY NG,ma
@@ -6818,7 +6752,6 @@ juvenile's,JH UW V AX N AX L Z,en
 juvenile's,JH UW V AX N AY L Z,en
 juxtaposed,JH AX Q S T AX P AO W Z D,en
 kabart,K AX B AA R T,en
-kabul,K AA B UW L,en
 kada,K AA D AA,ma
 kadaster,K AA D AA S T AX R,ma
 kael,K EY L,en
@@ -6848,7 +6781,6 @@ kammerer,K EH M AX R AX R,en
 kammeyer,K EH M AY AX R,en
 kampe,K EH M P,en
 kampungnya,K AA M P UW NG NY AA,ma
-kanan,K EY N AX N,en
 kandahar,K EH N D AX HH AA R,en
 kangaroo,K EH NG G AX R UW,en
 kangaroos,K EH NG G AX R UW Z,en
@@ -6913,7 +6845,6 @@ kauffman,K AO F M AX N,en
 kaufhold,K AW F HH AO W L D,en
 kaufman,K AO F M AX N,en
 kaufmann,K AO F M AX N,en
-kaul,K AO L,en
 kaum,K AA UW M,ma
 kauterima,K AW T AX R IY M AA,ma
 kavan,K EY V AX N,en
@@ -7065,7 +6996,6 @@ kemungkinan,K AX M UW NG K IY N AA N,ma
 kenaf,K EH N AA F,ma
 kenakalan,K AX N AA K AA L AA N,ma
 kenalan,K AX N AA L AA N,ma
-kenan,K IY N AX N,en
 kender,K EH N D AX R,en
 kenduduk,K AX N D UW D UW Q,ma
 kenealy,K EH N IY AX L IY,en
@@ -7078,14 +7008,14 @@ kennett,K EH N AX T,en
 kenning,K EH N IY NG,en
 keno,K IY N AO W,en
 kensel,K EH N S EH L,ma
-kensler,K EH N S AX L AX R,en
 kensler,K EH N S L AX R,en
+kensler,K EH N S AX L AX R,en
 kent's,K EH N T S,en
 kenya,K AX NY AA,ma
 kenyal,K AX NY AA L,ma
 kenyit,K AX NY IY T,ma
-keokuk,K IY AO W K UW Q,en
 keokuk,K IY AO W K AX Q,en
+keokuk,K IY AO W K UW Q,en
 kepai,K AX P AY,ma
 kepandaian,K AX P AA N D AY AA N,ma
 kepantasan,K AX P AA N T AA S AA N,ma
@@ -7270,8 +7200,8 @@ klimer,K L IY M AX R,en
 klindt,K L IY N T,en
 klinger,K L IY NG AX R,en
 klingerman,K L IY NG AX R M AX N,en
-klingler,K L IY NG G L AX R,en
 klingler,K L IY NG G AX L AX R,en
+klingler,K L IY NG G L AX R,en
 klinis,K L IY N IY S,ma
 klinke,K L IY NG K,en
 klintworth,K L IY N T W AX R T,en
@@ -7332,7 +7262,6 @@ koger,K AO W G AX R,en
 kohout,K AO W AW T,en
 kohring,K AO R IY NG,en
 kojak,K AO W JH EH Q,en
-kok,K AA Q,en
 kokate,K AO W K AA T EY,en
 kokoh,K AO K AO HH,ma
 kokusai,K AA K Y UW S AY,en
@@ -7340,15 +7269,15 @@ kolber,K AO W L B AX R,en
 kolbo,K AO W L B AO W,en
 kolektif,K AO L EH Q T IY F,ma
 kolibri,K AO L IY B R IY,ma
-kollmorgen,K AO W L M AO R G AX N,en
 kollmorgen,K AO L M AO R G AX N,en
+kollmorgen,K AO W L M AO R G AX N,en
 koloid,K AO L AO IY D,ma
 kolski,K AO W L S K IY,en
 kolterman,K AO W L T AX R M AX N,en
 komatsu,K AO W M AA T S UW,en
 komite,K AO M IY T EH,ma
-komodo,K AX M AO W D AO W,en
 komodo,K AO W M AO W D AO W,en
+komodo,K AX M AO W D AO W,en
 kompanyon,K AO M P AA NY AO N,ma
 kompatibel,K AO M P AA T IY B AX L,ma
 kompromi,K AO M P R AO M IY,ma
@@ -7367,7 +7296,6 @@ konsolidasi,K AO N S AO L IY D AA S IY,ma
 konstitusi,K AO N S T IY T UW S IY,ma
 konsultan,K AO N S UW L T AA N,ma
 konsultasi,K AO N S UW L T AA S IY,ma
-kontras,K AA N T R AX S,en
 kontrolir,K AO N T R AO L IY R,ma
 kontur,K AO N T UW R,ma
 konzi,K AA N Z IY,en
@@ -7378,7 +7306,6 @@ kooning,K UW N IY NG,en
 koopmann,K UW P M AX N,en
 kopek,K AO W P AX Q,en
 kopelman,K AO W P AX L M AX N,en
-koper,K AO W P AX R,en
 koperal,K AO P AX R AA L,ma
 koppe,K AA P,en
 koppell,K AA P AX L,en
@@ -7456,7 +7383,6 @@ kruer,K R UW AX R,en
 krummel,K R AX M AX L,en
 krysiak,K R IY S IY EH Q,en
 ksiazek,K S Y AA Z EH Q,en
-ku,K UW,en
 kualifikasi,K UW AA L IY F IY K AA S IY,ma
 kuas,K UW AA S,ma
 kubacki,K AA B AA T S K IY,en
@@ -7519,7 +7445,6 @@ kysor,K AY S AX R,en
 kyzar,K IY Z AX R,en
 l'express,L EH Q S P R EH S,en
 lab,L AA B,ma
-lab,L EH B,en
 labatt,L AX B EH T,en
 labeau,L AX B AO W,en
 labell,L AX B EH L,en
@@ -7551,23 +7476,22 @@ laforce,L AA F AO R S,en
 laggard,L EH G AX R D,en
 lagos,L EY G AO S,en
 laguna,L AX Q UW N AA,en
-lahaie,L AX HH AY,en
 lahaie,L EH HH IY,en
+lahaie,L AX HH AY,en
 lahti,L AA T IY,en
 laiche,L EY CH,en
 laidler,L EY D L AX R,en
 lainan,L AA IY N AA N,ma
 lainhart,L AY N HH AA R T,en
 lairmore,L EH R M AO R,en
-laissez,L EY Z EY,en
 laissez,L EH Z EY,en
+laissez,L EY Z EY,en
 lajur,L AA JH UW R,ma
 laker,L EY K AX R,en
 lakes',L EY Q S,en
 laknatullah,L AA Q N AA T UW L L AA HH,ma
 lakukanlah,L AA K UW K AA N L AA HH,ma
 lam,L EH M,en
-lama,L AA M AA,en
 lambatnya,L AA M B AA T NY AA,ma
 lamberson,L EH M B AX R S AX N,en
 lambing,L EH M IY NG,en
@@ -7575,8 +7499,8 @@ lambright,L EH M B R AY T,en
 lambros,L EH M B R AO W Z,en
 lament,L AX M EH N T,en
 lamere,L AA M EH R EY,en
-laminate,L EH M AX N EY T,en
 laminate,L EH M AX N AX T,en
+laminate,L EH M AX N EY T,en
 lamine,L AX M IY N,en
 lamine's,L AX M IY N Z,en
 laminer,L EH M AX N AX R,en
@@ -7623,7 +7547,6 @@ lanphier,L EH N F IY R,en
 lanser,L EH N S AX R,en
 lant,L EH N T,en
 lanterman,L EH N T AX R M AX N,en
-lap,L EH P,en
 lap,L AA P,ma
 lapage,L AA P AX JH,en
 lapham,L EH F AX M,en
@@ -7659,8 +7582,8 @@ latta,L EH T AA,en
 laubhan,L AW B HH AX N,en
 laudicina,L AO D IY CH IY N AA,en
 laughingly,L EH F IY NG L IY,en
-laughlin,L AA F L IY N,en
 laughlin,L AA K L IY N,en
+laughlin,L AA F L IY N,en
 laughman,L EH F M AX N,en
 laughridge,L EH F R IY JH,en
 launched,L AO N CH T,en
@@ -7673,7 +7596,6 @@ laurens,L AO R AX N Z,en
 lauretarian,L AO R AX T EH R IY AX N,en
 laurino,L AO R IY N AO W,en
 lausanne,L AO S EH N,en
-laut,L AO T,en
 lavalle,L AA V AA L IY,en
 lavinia,L AX V IY N Y AA,en
 laviolette,L EH V IY AO W L EH T,en
@@ -7717,8 +7639,8 @@ lebow's,L AX B AO W Z,en
 lebur,L AX B UW R,ma
 lecates,L AX K EY T S,en
 lechmere,L EH Q M IY R,en
-lecithin,L EH S AX T AX N,en
 lecithin,L EH S IY T IY N,en
+lecithin,L EH S AX T AX N,en
 lecli,L EH K L IY,en
 ledden,L EH D AX N,en
 ledezma,L EY D EY Z M AA,en
@@ -7771,16 +7693,16 @@ lemp,L EH M P,en
 lenan,L EH N AA N,ma
 lender's,L EH N D AX R Z,en
 lengkuas,L AX NG K UW AA S,ma
-lengthen,L EH NG T AX N,en
 lengthen,L EH NG K T AX N,en
+lengthen,L EH NG T AX N,en
 lengths,L EH NG K T S,en
 lengths,L EH NG T S,en
 lenhart,L EH N HH AA R T,en
 lenington,L EH N IY NG T AX N,en
 lenker,L EH NG K AX R,en
 lennig,L EH N IY Q,en
-leno's,L IY N AO W Z,en
 leno's,L EH N AO W Z,en
+leno's,L IY N AO W Z,en
 lenses,L EH N Z AX Z,en
 lent,L EH N T,en
 lentils,L EH N T AX L Z,en
@@ -7886,8 +7808,8 @@ lisbeth,L IY S B AX T,en
 lisensi,L IY S EH N S IY,ma
 lisowski,L IY S AO F S K IY,en
 lissack,L IY S AX Q,en
-listeners,L IY S N AX R Z,en
 listeners,L IY S AX N AX R Z,en
+listeners,L IY S N AX R Z,en
 listens,L IY S AX N Z,en
 listeria,L IY S T IY R IY AA,en
 listerine,L IY S T AX R IY N,en
@@ -7895,8 +7817,8 @@ listing,L IY S T IY NG,en
 listlessly,L IY S T L AX S L IY,en
 liszka,L IY SH K AA,en
 lite,L AY T,en
-litem,L AY T EH M,en
 litem,L IY T EH M,en
+litem,L AY T EH M,en
 liter,L IY T EH R,ma
 liter,L IY T AX R,ma
 litigant,L IY T IY G AX N T,en
@@ -7964,7 +7886,6 @@ lopes,L AO P EH S,ma
 lopping,L AA P IY NG,en
 lorah,L AO R AX,en
 lordi,L AO R D IY,en
-lorek,L AO R IY Q,en
 loria,L AO R IY AA,en
 lorillard,L AO R AX L AA R D,en
 lorincz,L AO R IY N CH,en
@@ -7997,7 +7918,6 @@ lowrie,L AO R IY,en
 lows,L AO W Z,en
 lowy,L AO W IY,en
 loy,L OY,en
-loyal,L OY AX L,en
 loyd,L OY D,en
 loyer,L OY AX R,en
 loyola,L OY AO W L AA,en
@@ -8063,8 +7983,8 @@ lutzke,L AX T S K IY,en
 luwes,L UW W AX S,ma
 lxi,L K S IY,en
 lyall,L AY AX L,en
-lyanne,L IY EH N,en
 lyanne,L AY EH N,en
+lyanne,L IY EH N,en
 lyden,L AY D AX N,en
 lyford,L IY F AX R D,en
 lynchburg,L IY N CH B AX R G,en
@@ -8087,8 +8007,8 @@ machida,M AX CH IY D AA,en
 machine's,M AX SH IY N Z,en
 machineries,M AX SH IY N R IY Z,en
 machineries,M AX SH IY N AX R IY Z,en
-machismo,M AX CH IY Z M AO W,en
 machismo,M AX K IY Z M AO W,en
+machismo,M AX CH IY Z M AO W,en
 machuca,M AX CH UW K AA,en
 maciag,M AX K EY Q,en
 macintosh,M EH K AX N T AO SH,en
@@ -8133,14 +8053,12 @@ maggi,M AA G G IY,ma
 magic,M EH JH IY Q,en
 maginn,M EH JH IY N,en
 magister,M AA G IY S T EH R,ma
-maglaj,M AA G L AY,en
 maglaj,M EH G L AY,en
+maglaj,M AA G L AY,en
 maglica,M EH G L AX K AA,en
 magliocco,M AA G L IY AO W K AO W,en
 magma's,M EH Q M AA Z,en
 magnavox,M EH Q N AX V AA Q S,en
-magnesium,M EH Q N IY Z IY AX M,en
-magnet,M EH Q N AX T,en
 magneti,M EH Q N EH T IY,en
 magnitudes,M EH Q N AX T UW D Z,en
 magrane,M EH G R EY N,en
@@ -8149,8 +8067,8 @@ mahady,M AX HH AA D IY,en
 maharaja's,M AA HH AX R AA Z AA Z,en
 maharajahs,M AA HH AX R AA JH AX Z,en
 mahe,M EY HH IY,en
-mahen,M EY AX N,en
 mahen,M EY HH EH N,en
+mahen,M EY AX N,en
 maher,M AA R,en
 mahindra,M AX HH IY N D R AA,en
 mahvi,M AA V IY,en
@@ -8207,11 +8125,9 @@ managing,M EH N AX JH IY NG,en
 manakah,M AA N AA K AA HH,ma
 manassas,M EH N AA S AX S,en
 manco,M EH NG K AO W,en
-manda,M EH N D AA,en
 mandible,M EH N D AX B AX L,en
 mandible,M EH N D IY B AX L,en
 mandich,M EH N D IY Q,en
-mandolin,M EH N D AX L IY N,en
 mandor,M AA N D AO R,ma
 mandrake,M EH N D R EY Q,en
 mandt,M EH N T,en
@@ -8263,7 +8179,6 @@ margasatwa,M AA R G AA S AA T W AA,ma
 marginalizes,M AA R JH AX N AX L AY Z AX Z,en
 margolis,M AA R G AO W L AX S,en
 margret's,M AA R G R EH T S,en
-mari,M AA R IY,en
 marianas,M AA R IY EH N AX S,en
 maricle,M EH R AX K AX L,en
 marielitos,M AA R IY EH L IY T AO W S,en
@@ -8341,8 +8256,8 @@ matchup,M EH CH AX P,en
 matera,M AA T EH R AA,en
 materiil,M AA T EH R IY Q IY L,ma
 materna,M AA T EH R N AA,en
-matewan,M EY T W AA N,en
 matewan,M EH T UW AA N,en
+matewan,M EY T W AA N,en
 matheney,M EH T AX N IY,en
 mathwig,M EH T W IY Q,en
 matic,M EH T IY Q,en
@@ -8370,8 +8285,8 @@ maule,M AO L,en
 maunya,M AA UW NY AA,ma
 maurice's,M AO R IY S AX Z,en
 mauricio,M AW R IY S IY AO W,en
-mauritania,M AO R IY T EY N Y AA,en
 mauritania,M AO R IY T EY N IY AA,en
+mauritania,M AO R IY T EY N Y AA,en
 maus,M AO Z,en
 max's,M EH Q S AX Z,en
 maxa,M EH Q S AA,en
@@ -8388,12 +8303,12 @@ maybee,M EY B IY,en
 mayerson,M EY AX R S AX N,en
 mayhan,M EY AX N,en
 mayon,M EY AO N,en
-mazda's,M AA Z D AA Z,en
 mazda's,M EH Z D AA Z,en
+mazda's,M AA Z D AA Z,en
 mazeltov,M AA Z AX L T AA F,en
 mazhab,M AA Z HH AA B,ma
-mazon,M AX Z AO W N,en
 mazon,M AA Z AO N,en
+mazon,M AX Z AO W N,en
 mazur,M EH Z AX R,en
 mazurkas,M AX Z AX R K AX Z,en
 mazzie,M EH Z IY,en
@@ -8479,8 +8394,8 @@ mclish,M AX K L IY SH,en
 mcluckie,M AX K L AA K IY,en
 mcmanamon,M AX Q M EH N AX M AX N,en
 mcmasters,M AX Q M EH S T AX R Z,en
-mcmillian,M AX Q M IY L Y AX N,en
 mcmillian,M AX Q M IY L AX N,en
+mcmillian,M AX Q M IY L Y AX N,en
 mcmurtrey,M AX Q M AX R T R IY,en
 mcnealy,M AX Q N IY L IY,en
 mcneel,M AX Q N IY L,en
@@ -8493,8 +8408,8 @@ mcquire,M AX K W AY R,en
 mcroy,M AX K R OY,en
 mcsorley,M AX Q S AO R L IY,en
 mcsween,M AX Q S W IY N,en
-mctavish,M AX Q T EH V IY SH,en
 mctavish,M AX Q T EY V IY SH,en
+mctavish,M AX Q T EH V IY SH,en
 mcwherter,M AX K W AX R T AX R,en
 mead's,M IY D Z,en
 meal,M IY L,en
@@ -8679,8 +8594,8 @@ memugar,M AX M UW G AA R,ma
 memulai,M AX M UW L AY,ma
 memunggah,M AX M UW NG G AA HH,ma
 memungut,M AX M UW NG UW T,ma
-menachem,M EH N AX HH EH M,en
 menachem,M AX N AA HH AX M,en
+menachem,M EH N AX HH EH M,en
 menacing,M EH N AX S IY NG,en
 menambah,M AX N AA M B AA HH,ma
 menampung,M AX N AA M P UW NG,ma
@@ -8958,7 +8873,6 @@ menolak,M AX N AO L AA Q,ma
 menoleh,M AX N AO L EH HH,ma
 menongkat,M AX N AO NG K AA T,ma
 menopause,M EH N AX P AW Z,en
-mental,M EH N T AX L,en
 mentaus,M AX N T AA UW S,ma
 menteri,M AX N T AX R IY,ma
 menthol,M EH N T AO L,en
@@ -9050,7 +8964,6 @@ merrihew,M AX R IY HH Y UW,en
 merrill's,M EH R AX L Z,en
 merrin,M EH R IY N,en
 mers,M AX R Z,en
-merta,M EH R T AA,en
 mertins,M AX R T IY N Z,en
 merumitkan,M AX R UW M IY T K AA N,ma
 meryll,M EH R AX L,en
@@ -9137,9 +9050,9 @@ mikado,M IY K AA D AO W,en
 mikesh,M IY K AX SH,en
 mikol,M IY K AO L,en
 mikolajczak,M IY K AA L AY CH EH Q,en
-milan,M AY L EH N,en
 milan,M IY L AA N,en
 milan,M AX L AA N,en
+milan,M AY L EH N,en
 miletich,M IY L AX T IY Q,en
 milgram,M IY L G R EH M,en
 miliar,M IY L IY AA R,ma
@@ -9172,7 +9085,6 @@ mimic,M IY M IY Q,en
 mimis,M IY M IY S,ma
 minaret,M IY N AX R EH T,en
 minatnya,M IY N AA T NY AA,ma
-minda,M IY N D AA,en
 mindless,M AY N D L AX S,en
 mindy,M IY N D IY,en
 miner's,M AY N AX R Z,en
@@ -9190,7 +9102,6 @@ minium,M IY N IY AX M,en
 minkler,M IY NG K L AX R,en
 minks,M IY NG K S,en
 minniti,M IY N IY T IY,en
-minor,M AY N AX R,en
 minow,M IY N AO W,en
 minoxidil,M IY N AA Q S IY D IY L,en
 minshew,M IY N SH UW,en
@@ -9212,9 +9123,9 @@ miscast,M IY S K EH S T,en
 miscreants,M IY S K R IY AX N T S,en
 miscue,M IY S K Y UW,en
 misdiagnosed,M IY S D AY AX Q N AO W Z D,en
-miserables,M IY Z AX R AX B AX L Z,en
-miserables,M IY Z R AX B AX L Z,en
 miserables,M IY Z AX R AA B,en
+miserables,M IY Z R AX B AX L Z,en
+miserables,M IY Z AX R AX B AX L Z,en
 mishaps,M IY S HH EH P S,en
 mishkin,M IY SH K IY N,en
 misiewicz,M IY S AX V IY CH,en
@@ -9236,16 +9147,16 @@ mississauga,M IY S IY S AO G AA,en
 mississippian,M IY S IY S IY P IY AX N,en
 mississippis,M IY S IY S IY P IY Z,en
 missoula,M IY Z UW L AA,en
-misspeak,M IY S S P IY Q,en
 misspeak,M IY S P IY Q,en
+misspeak,M IY S S P IY Q,en
 misspelled,M IY S S P EH L D,en
 misspelled,M IY S P EH L D,en
 misteri,M IY S T EH R IY,ma
 misterius,M IY S T EH R IY UW S,ma
 mistreat,M IY S T R IY T,en
 mistrial,M IY S T R AY AX L,en
-mistry,M IY S T R IY,en
 mistry,M IY S T R AY,en
+mistry,M IY S T R IY,en
 misuraca,M IY S UW R AA K AA,en
 mitek,M AY T EH Q,en
 mittal,M IY T AA L,en
@@ -9254,8 +9165,8 @@ mitterrand's,M IY T AX R EH N D Z,en
 mitzi,M IY T S IY,en
 mixed,M IY Q S T,en
 mixner,M IY Q S N AX R,en
-mizel,M AY Z AX L,en
 mizel,M AY Z EH L,en
+mizel,M AY Z AX L,en
 mizuno,M IY Z UW N AO W,en
 moakley,M AO W K L IY,en
 moans,M AO W N Z,en
@@ -9268,7 +9179,6 @@ mocarski,M AX K AA R S K IY,en
 mocks,M AA Q S,en
 mod,M AO D,en
 model,M AO D EH L,ma
-moderator,M AA D AX R EY T AX R,en
 modernizing,M AA D AX R N AY Z IY NG,en
 modestine,M AO W D EH S T IY N IY,en
 modic,M AA D IY Q,en
@@ -9291,7 +9201,6 @@ molter,M AO W L T AX R,en
 mom,M AA M,en
 moment's,M AO W M AX N T S,en
 momentarily,M AO W M AX N T EH R AX L IY,en
-momentum,M AO W M EH N T AX M,en
 monarki,M AO N AA R K IY,ma
 mondale,M AA N D EY L,en
 money,M AX N IY,en
@@ -9306,8 +9215,8 @@ monies,M AX N IY Z,en
 monologue,M AA N AX L AO Q,en
 monorails,M AA N AX R EY L Z,en
 monovalent,M AA N AX V EY L AX N T,en
-monroeville,M AA N R AO W V IY L,en
 monroeville,M AX N R AO W V IY L,en
+monroeville,M AA N R AO W V IY L,en
 monsanto's,M AA N S EH N T AO W Z,en
 monsignors,M AA N S IY N Y AX R Z,en
 monster,M AA N S T AX R,en
@@ -9422,12 +9331,11 @@ mulls,M AX L Z,en
 mulrooney,M AX L R UW N IY,en
 multicolor,M AX L T IY K AX L AX R,en
 multiemployer,M AX L T IY AX M P L OY AX R,en
-multilateral,M AX L T IY L EH T AX R AX L,en
 multimate,M AX L T IY M EY T,en
 multinasional,M UW L T IY N AA S IY AO N AA L,ma
 multiprocessor,M AX L T IY P R AA S EH S AX R,en
-multitude,M AX L T AX T Y UW D,en
 multitude,M AX L T AX T UW D,en
+multitude,M AX L T AX T Y UW D,en
 mulvihill,M AX L V IY HH IY L,en
 mum,M AX M,en
 mumme,M AX M,en
@@ -9492,7 +9400,6 @@ myung,M Y AA NG,en
 nabiah,N AA B IY AA HH,ma
 nacional,N EY S IY AX N AX L,en
 nader's,N EY D AX R Z,en
-nadir,N EY D AX R,en
 nafi,N AA F IY,ma
 nagel,N EY G AX L,en
 nags,N EH Q Z,en
@@ -9598,9 +9505,8 @@ nesler,N EH S L AX R,en
 nesler,N EH S AX L AX R,en
 nestapa,N AX S T AA P AA,ma
 nesters,N EH S T AX R Z,en
-nestlings,N EH S T L IY NG Z,en
 nestlings,N EH S L IY NG Z,en
-net,N EH T,en
+nestlings,N EH S T L IY NG Z,en
 netra,N EH T R AA,ma
 netralis,N EH T R AA L IY S,ma
 nettled,N EH T AX L D,en
@@ -9610,8 +9516,8 @@ netview,N EH T V Y UW,en
 networks',N EH T W AX R K S,en
 neubecker,N UW B EH K AX R,en
 neuenschwander,N UW AX N SH W AO N D AX R,en
-neukirchen,N UW K AX R CH AX N,en
 neukirchen,N UW K IY R CH AX N,en
+neukirchen,N UW K AX R CH AX N,en
 neurofibromatosis,N UW R AO W F AY B R AO W M AX T AO W S AX S,en
 neurosurgeons,N UW R AO W S AX R JH AX N Z,en
 neurotic,N UW R AA T IY Q,en
@@ -9725,8 +9631,8 @@ norfolk,N AO R F AX Q,en
 noriega's,N AO R IY EY G AA Z,en
 norling,N AO R L IY NG,en
 norma,N AO R M AA,ma
-normally,N AO R M L IY,en
 normally,N AO R M AX L IY,en
+normally,N AO R M L IY,en
 normandy,N AO R M AX N D IY,en
 norming,N AO R M IY NG,en
 norsemen,N AO R S M IY N,en
@@ -9746,7 +9652,6 @@ nourished,N AX R IY SH T,en
 nova's,N AO W V AA Z,en
 novacek,N AA V AX CH EH Q,en
 novato,N AO W V AA T AO W,en
-novel,N AA V AX L,en
 novice,N AA V AX S,en
 novicki,N AX V IY T S K IY,en
 novinger,N AO W V IY NG AX R,en
@@ -9782,12 +9687,12 @@ nut's,N AX T S,en
 nuttall,N AX T AX L,en
 nuveen,N UW V IY N,en
 nyala,NY AA L AA,ma
-nycum,N IY K AX M,en
 nycum,N AY K AX M,en
+nycum,N IY K AX M,en
 nyeret,NY AX R EH T,ma
 nyiur,NY IY UW R,ma
-nylander,N IY L AX N D AX R,en
 nylander,N AY L AX N D AX R,en
+nylander,N IY L AX N D AX R,en
 nyquist,N AY K W IY S T,en
 o'connor,AO W K AA N AX R,en
 o'glove,AO W G L AX V,en
@@ -9807,8 +9712,8 @@ obeying,AO W B EY IY NG,en
 objection,AX B JH EH Q SH AX N,en
 objective,AX B JH EH Q T IY V,en
 obligasi,AO B L IY G AA S IY,ma
-oblinger,AO W B AX L IY NG AX R,en
 oblinger,AO W B L IY NG AX R,en
+oblinger,AO W B AX L IY NG AX R,en
 oblivion,AX B L IY V IY AX N,en
 obo,AO B AO,ma
 oboyle,AO W B OY L,en
@@ -9827,8 +9732,8 @@ obstruction,AX B S T R AA Q SH AX N,en
 obstructions,AX B S T R AA Q SH AX N Z,en
 obtains,AX B T EY N Z,en
 obuchowski,AO W B UW CH AO W S K IY,en
-obuchowski,AO W B UW K AW S K IY,en
 obuchowski,AO W B Y UW K AW S K IY,en
+obuchowski,AO W B UW K AW S K IY,en
 obvious,AA B V IY AX S,en
 oceanographic,AO W SH AX N AX G R EH F IY Q,en
 octahedral,AA Q T AX HH IY D R AX L,en
@@ -9879,8 +9784,8 @@ oldani,AO W L D AA N IY,en
 oldfashioned,AO W L D F EH SH AX N D,en
 oldham,AO W L D AX M,en
 oldsters,AO W L D S T AX R Z,en
-ole,AO W L,en
 ole,AO W L EY,en
+ole,AO W L,en
 oleg,AO W L AX Q,en
 oleksy,AX L EH Q S IY,en
 oleng,AO L EH NG,ma
@@ -9916,7 +9821,6 @@ open,AO W P AX N,en
 opener,AO W P AX N AX R,en
 operable,AA P AX R AX B AX L,en
 operational,AA P AX R EY SH AX N AX L,en
-operator,AA P AX R EY T AX R,en
 operettas,AA P AX R EH T AX Z,en
 opfer,AA P F AX R,en
 ophelia,AX F IY L Y AA,en
@@ -9928,7 +9832,6 @@ optics,AA P T IY Q S,en
 optimist,AA P T IY M IY S T,en
 optimistic,AA P T IY M IY S T IY Q,en
 optimize,AA P T IY M AY Z,en
-optimum,AA P T IY M AX M,en
 optioned,AA P SH AX N D,en
 optioned,AO P SH AX N D,en
 oram,AO R AX M,en
@@ -9944,7 +9847,6 @@ oregano,AO R EH G AX N AO W,en
 oregano,AX R EH G AX N AO W,en
 orfield,AO R F IY L D,en
 org,AO R G,en
-organ,AO R G AX N,en
 organis,AO R G AA N IY S,ma
 organize,AO R G AX N AY Z,en
 orick,AO R IY Q,en
@@ -9953,8 +9855,8 @@ orientalis,AO R IY AX N T AA L IY S,ma
 orientated,AO R IY AX N T EY T AX D,en
 orientation,AO R IY EH N T EY SH AX N,en
 original,AX R IY JH AX N AX L,en
-oriordan,AO W R IY R D AX N,en
 oriordan,AO R IY R D AX N,en
+oriordan,AO W R IY R D AX N,en
 orisinal,AO R IY S IY N AA L,ma
 orlick,AO R L IY Q,en
 orman,AO R M AX N,en
@@ -9964,8 +9866,8 @@ orona,AO R AO W N AA,en
 orosz,AO R AX SH,en
 orphee,AO R F IY,en
 orran,AO R AA N,en
-orsburn,AO R Z B AX R N,en
 orsburn,AO R S B AX R N,en
+orsburn,AO R Z B AX R N,en
 orsino,AO R S IY N AO W,en
 orso,AO R S AO W,en
 orthodontics,AO R T AX D AA N T IY Q S,en
@@ -9974,7 +9876,6 @@ orthodontists,AO R T AX D AA N T AX S T S,en
 ortis,AO R T AX S,en
 ortwein,AO R T W AY N,en
 ortwin,AO R T W IY N,en
-osaka,AO W S AA K AA,en
 osamu,AO W S AA M UW,en
 oscillators,AA S AX L EY T AX R Z,en
 oscillatory,AA S AX L AX T AO R IY,en
@@ -10103,8 +10004,8 @@ pails,P EY L Z,en
 painkillers,P EY N K IY L AX R Z,en
 paintbrush,P EY N T B R AX SH,en
 paints,P EY N T S,en
-pajama,P AX JH EH M AA,en
 pajama,P AX JH AA M AA,en
+pajama,P AX JH EH M AA,en
 paksa,P AA Q S AA,ma
 palang,P AA L AA NG,ma
 palem,P AA L AX M,ma
@@ -10117,7 +10018,6 @@ palmisano,P AA L M IY S AA N AO W,en
 palo,P EH L AO W,en
 palos,P AA L AO W Z,en
 paltz,P AO L T S,en
-pamer,P EY M AX R,en
 pamitan,P AA M IY T AA N,ma
 pampel,P EH M P AX L,en
 pamper,P EH M P AX R,en
@@ -10137,8 +10037,8 @@ panful,P EH N F AX L,en
 pangkatnya,P AA NG K AA T NY AA,ma
 pangkuan,P AA NG K UW AA N,ma
 pangle,P EH NG G AX L,en
-pangloss,P EH NG G L AA S,en
 pangloss,P EH N G L AA S,en
+pangloss,P EH NG G L AA S,en
 pangs,P EH NG Z,en
 pangsa,P AA NG S AA,ma
 pankratz,P EH NG K R AX T S,en
@@ -10157,12 +10057,10 @@ papan,P AA P AA N,ma
 papandreou,P AX P EH N D R IY UW,en
 paperboy,P EY P AX R B OY,en
 papua,P EH P Y UW AA,en
-par,P AA R,en
 parabola,P AA R AA B AO L AA,ma
 parabolic,P EH R AX B AA L IY Q,en
 parachutes,P EH R AX SH UW T S,en
 parade,P AA R AA D AX,ma
-parade,P AX R EY D,en
 paradee,P EH R AX D IY,en
 parakeets,P EH R AX K IY T S,en
 parallels,P EH R AX L EH L Z,en
@@ -10194,8 +10092,8 @@ parretti,P AX R EH T IY,en
 parris,P EH R AX S,en
 parrow,P EH R AO W,en
 parsimony,P AA R S AX M AO W N IY,en
-partially,P AA R SH AX L IY,en
 partially,P AA R SH L IY,en
+partially,P AA R SH AX L IY,en
 particle,P AA R T AX K AX L,en
 particularity,P AX R T AX K Y AX L EH R AX T IY,en
 parties',P AA R T IY Z,en
@@ -10205,7 +10103,6 @@ partners,P AA R T N AX R Z,en
 parton,P AA R T AX N,en
 parut,P AA R UW T,ma
 pary,P AA R IY,en
-pas,P AA Z,en
 pasca,P AA S CH AA,ma
 pascoe,P EH S K AO W,en
 pasing,P EY S IY NG,en
@@ -10289,8 +10186,8 @@ peddling,P EH D L IY NG,en
 peden,P EH D AX N,en
 pedicure,P EH D AX K Y AX R,en
 pedicure,P EH D AX K Y AO R,en
-pedophile,P EH D AO W F AY L,en
 pedophile,P EH D AX F IY L,en
+pedophile,P EH D AO W F AY L,en
 pedophiliac,P EH D AX F IY L Y EH Q,en
 pedroli,P EH D R AO W L IY,en
 pedros,P EY D R AO W Z,en
@@ -10312,7 +10209,6 @@ pejam,P AX JH AA M,ma
 pejantan,P AX JH AA N T AA N,ma
 pekarangan,P AX K AA R AA NG AA N,ma
 pekerjaannya,P AX K AX R JH AA Q AA N NY AA,ma
-peking,P IY K IY NG,en
 pekuk,P AX K UW Q,ma
 pelabur,P AX L AA B UW R,ma
 pelacur,P AX L AA CH UW R,ma
@@ -10526,8 +10422,8 @@ penyumbat,P AX NY UW M B AA T,ma
 peony,P IY AX N IY,en
 pepagan,P AX P AA G AA N,ma
 pepenadores,P EH P EH N AX D AO R EH Z,en
-peper,P EH P AX R,ma
 peper,P EH P EH R,ma
+peper,P EH P AX R,ma
 pepet,P EH P EH T,ma
 pepper,P EH P AX R,en
 peppering,P EH P AX R IY NG,en
@@ -10581,7 +10477,6 @@ perhaps,P AX R HH EH P S,en
 peria,P AX R IY AA,ma
 perigel,P AX R IY G AX L,ma
 perilously,P EH R AX L AX S L IY,en
-perin,P AX R IY N,en
 perincit,P AX R IY N CH IY T,ma
 perindustrian,P AX R Q IY N D UW S T R IY AA N,ma
 perini,P AX R IY N IY,en
@@ -10662,7 +10557,6 @@ peta's,P IY T AA Z,en
 petaling,P AX T AA L IY NG,ma
 petanda,P AX T AA N D AA,ma
 petang,P AX T AA NG,ma
-pete,P IY T,en
 petia,P AX T IY AA,ma
 petis,P AX T IY S,ma
 petisi,P EH T IY S IY,ma
@@ -10689,17 +10583,17 @@ pfeiffer,F AY F AX R,en
 pfenninger,F EH N IY NG AX R,en
 pflug,F L UW G,en
 phagocyte,F EH G AX S AY T,en
-phalanges,F AX L EH N JH IY Z,en
 phalanges,F AX L EY N JH AX Z,en
+phalanges,F AX L EH N JH IY Z,en
 phan,F EH N,en
-phantoms,F EH N AX M Z,en
 phantoms,F EH N T AX M Z,en
+phantoms,F EH N AX M Z,en
 pharaon,F EH R AO W N,en
 pharo,F AA R AO W,en
 pheasant,F EH Z AX N T,en
 phedra,F EH D R AA,en
-phenol,F IY N AA L,en
 phenol,F EH N AX L,en
+phenol,F IY N AA L,en
 phenylthaline,F IY N AX L T EY L IY N,en
 philadelphia's,F AX L AX D EH L F IY AA Z,en
 philadelphian,F AX L AX D EH L F IY AX N,en
@@ -10709,8 +10603,8 @@ philibert,F IY L IY B AX R T,en
 philp,F IY L P,en
 phinney,F IY N IY,en
 phlogopite,F L AA G AX P AY T,en
-phnom,F N AA M,en
 phnom,P AX N AA M,en
+phnom,F N AA M,en
 phoebe,F IY B IY,en
 phoenician,F AX N IY SH AX N,en
 phonetics,F AX N EH T IY Q S,en
@@ -10781,11 +10675,10 @@ pinneo,P IY N IY AO W,en
 pinney,P IY N IY,en
 pino's,P IY N AO W Z,en
 pins,P IY N Z,en
-pinsoneault,P IY N S AX N AO L T,en
 pinsoneault,P IY N S AX N AO W,en
+pinsoneault,P IY N S AX N AO L T,en
 pinstripe,P IY N S T R AY P,en
 pintal,P IY N T AA L,ma
-pintar,P IY N T AA R,en
 pintas,P IY N T AA S,ma
 pioneered,P AY AX N IY R D,en
 pionir,P IY AO N IY R,ma
@@ -10811,17 +10704,16 @@ placed,P L EY S T,en
 placidly,P L EH S IY D L IY,en
 plainclothes,P L EY N K L AO W Z,en
 plainfield,P L EY N F IY L D,en
-plaintiff,P L EY N T AX F,en
 plaintiff,P L EY N AX F,en
+plaintiff,P L EY N T AX F,en
 plaintiff's,P L EY N IY F S,en
 plaintiff's,P L EY N T IY F S,en
 planting,P L EH N T IY NG,en
 plantings,P L EH N T IY NG Z,en
 plasticizer,P L EH S T AX S AY Z AX R,en
 plateaued,P L EH T AO W D,en
-platform,P L EH T F AO R M,en
-platinum's,P L EH T AX N AX M Z,en
 platinum's,P L EH T N AX M Z,en
+platinum's,P L EH T AX N AX M Z,en
 platner,P L EH T N AX R,en
 platona,P L AA T AO W N AA,en
 platters,P L EH T AX R Z,en
@@ -10833,8 +10725,8 @@ playground,P L EY G R AW N,en
 playwright,P L EY R AY T,en
 pleasant,P L EH Z AX N T,en
 pleasants,P L EH Z AX N T S,en
-plebiscite,P L EH B AX S AY T,en
 plebiscite,P L IY B IY S AY T,en
+plebiscite,P L EH B AX S AY T,en
 plessinger,P L EH S IY NG AX R,en
 plied,P L AY D,en
 plitt,P L IY T,en
@@ -10844,7 +10736,6 @@ plucker,P L AA K AX R,en
 plumage,P L UW M AX JH,en
 plunged,P L AX N JH D,en
 plunkett,P L AA NG K AX T,en
-plus,P L AX S,en
 plutonic,P L UW T AA N IY Q,en
 plying,P L AY IY NG,en
 poaching,P AO W CH IY NG,en
@@ -10852,7 +10743,6 @@ pocono,P AO W K AX N AO W,en
 pocus,P AO W K AX S,en
 podgurski,P AA JH AX R S K IY,en
 podium,P AO D IY UW M,ma
-podium,P AO W D IY AX M,en
 poeschel,P AO W SH AX L,en
 pogue,P AO W G,en
 poh,P AO W,en
@@ -10908,7 +10798,6 @@ porcupine,P AO R K Y AX P AY N,en
 porpoise,P AO R P AX S,en
 porreca,P AO R EH K AA,en
 porro,P AO R AO W,en
-port,P AO R T,en
 portela,P AO R T EH L AA,en
 portentous,P AO R T EH N T AX S,en
 porterages,P AO R T AX R AX JH AX Z,en
@@ -10955,8 +10844,8 @@ praun,P R AO N,en
 prause,P R AO Z,en
 prawn,P R AO N,en
 praxis,P R EH Q S AX S,en
-prayers,P R EH R Z,en
 prayers,P R EY AX R Z,en
+prayers,P R EH R Z,en
 preachy,P R IY CH IY,en
 preamble,P R IY EH M B AX L,en
 prebble,P R EH B AX L,en
@@ -10979,8 +10868,8 @@ prejudice,P R EH JH AA D AX S,en
 preludes,P R EY L UW D Z,en
 premark,P R IY M AA R K,en
 preposisi,P R EH P AO S IY S IY,ma
-presbyterian,P R EH S B IY T IY R IY AX N,en
 presbyterian,P R EH Z B IY T IY R IY AX N,en
+presbyterian,P R EH S B IY T IY R IY AX N,en
 presence,P R EH Z AX N S,en
 presenters,P R EH Z AX N T AX R Z,en
 presenters,P R IY Z EH N T AX R Z,en
@@ -10990,8 +10879,8 @@ presides,P R IY Z AY D Z,en
 presson,P R EH S AX N,en
 pressuring,P R EH SH AX R IY NG,en
 prestage,P R EH S T AX JH,en
-presumed,P R IY Z UW M D,en
 presumed,P R AX Z UW M D,en
+presumed,P R IY Z UW M D,en
 presumptuous,P R IY Z AX M P CH AX W AX S,en
 presupposes,P R IY S AX P AO W Z AX Z,en
 presupposition,P R IY S AX P AX Z IY SH AX N,en
@@ -11000,12 +10889,12 @@ pretending,P R IY T EH N D IY NG,en
 pretext,P R IY T EH Q S T,en
 pretties,P R AX T IY Z,en
 pretzel,P R EH T Z AX L,en
-prevent,P R AX V EH N T,en
 prevent,P R IY V EH N T,en
-preventing,P R IY V EH N IY NG,en
-preventing,P R AX V EH N T IY NG,en
+prevent,P R AX V EH N T,en
 preventing,P R IY V EH N T IY NG,en
 preventing,P R AX V EH N IY NG,en
+preventing,P R AX V EH N T IY NG,en
+preventing,P R IY V EH N IY NG,en
 previously,P R IY V IY AX S L IY,en
 previte,P R EH V AY T,en
 preyer,P R EY AX R,en
@@ -11032,10 +10921,10 @@ printout,P R IY N T AW T,en
 prinz,P R IY N Z,en
 prisk,P R IY S K,en
 prison's,P R IY Z AX N Z,en
-prisoners,P R IY Z AX N AX R Z,en
 prisoners,P R IY Z N AX R Z,en
-prisoners',P R IY Z AX N AX R Z,en
+prisoners,P R IY Z AX N AX R Z,en
 prisoners',P R IY Z N AX R Z,en
+prisoners',P R IY Z AX N AX R Z,en
 pristine,P R IY S T IY N,en
 pritt,P R IY T,en
 privatized,P R AY V AX T AY Z D,en
@@ -11104,7 +10993,6 @@ protector,P R AX T EH Q T AX R,en
 prothallus,P R AO W T EH L AX S,en
 prothorax,P R AO W T AO R EH Q S,en
 proto,P R AO W T AX,en
-proton,P R AO W T AA N,en
 protons,P R AO W T AA N Z,en
 protract,P R AO W T R EH Q T,en
 proudest,P R AW D AX S T,en
@@ -11121,8 +11009,8 @@ prudish,P R UW D IY SH,en
 pruette,P R UW EH T,en
 prunedale,P R UW N D EY L,en
 przybocki,P R AX Z B AA K IY,en
-psalm,S AA L M,en
 psalm,S AA M,en
+psalm,S AA L M,en
 psarouthakis,S EH R UW T AA K AX S,en
 psi,S AY,en
 psikiater,P S IY K IY AA T AX R,ma
@@ -11150,8 +11038,8 @@ pulcini,P UW L CH IY N IY,en
 pulos,P UW L AO W Z,en
 puluh,P UW L UW HH,ma
 puluhan,P UW L UW HH AA N,ma
-pumpkins,P AX M P K AX N Z,en
 pumpkins,P AX M K AX N Z,en
+pumpkins,P AX M P K AX N Z,en
 pun,P UW N,ma
 punca,P UW N CH AA,ma
 puncak,P UW N CH AA Q,ma
@@ -11163,14 +11051,12 @@ punctured,P AA NG K CH AX R D,en
 punic,P Y UW N IY Q,en
 punitive,P Y UW N AX T IY V,en
 puppy,P AX P IY,en
-pura,P Y UW R AA,en
-pura,P UW R AA,en
 purdie,P AX R D IY,en
 puri,P UW R IY,en
 purified,P Y UW R AX F AY D,en
 purinton,P Y UW R IY N T AX N,en
-purity,P Y UW R AX T IY,en
 purity,P Y UW R IY T IY,en
+purity,P Y UW R AX T IY,en
 purple,P AX R P AX L,en
 purportedly,P AX R P AO R T AX D L IY,en
 purring,P AX R IY NG,en
@@ -11179,8 +11065,8 @@ purses,P AX R S AX Z,en
 pursifull,P AX R S IY F AX L,en
 puru,P UW R UW,ma
 pusch,P AX SH,en
-puss,P AX S,en
 puss,P UW S,en
+puss,P AX S,en
 puterbaugh,P Y UW T AX R B AO,en
 putihnya,P UW T IY HH NY AA,ma
 putranya,P UW T R AA NY AA,ma
@@ -11206,8 +11092,8 @@ qualcomm,K W AA L K AA M,en
 qualify,K W AA L AX F AY,en
 quang,K W AO NG,en
 quant,K W EH N T,en
-quarantines,K W AO R AX N T IY N Z,en
 quarantines,K W AO R AX N T AY N Z,en
+quarantines,K W AO R AX N T IY N Z,en
 quarters',K W AO R T AX R Z,en
 quaternary,K W AA T AX R N EH R IY,en
 quattrone,K W AA T R AO W N IY,en
@@ -11219,8 +11105,8 @@ queries,K W IY R IY Z,en
 quesenberry,K W IY Z AX N B EH R IY,en
 question,K W EH S CH AX N,en
 question,K W EH SH AX N,en
-question's,K W EH SH AX N Z,en
 question's,K W EH S CH AX N Z,en
+question's,K W EH SH AX N Z,en
 questioning,K W EH S CH AX N IY NG,en
 quiche,K IY SH,en
 quickly,K W IY K L IY,en
@@ -11246,8 +11132,8 @@ rabkin,R EH B K IY N,en
 rabourn,R AX B UW R N,en
 rabu,R AA B UW,ma
 racal,R EH K AX L,en
-racamier,R AX K EY M Y AX R,en
 racamier,R EH K AX M AY R,en
+racamier,R AX K EY M Y AX R,en
 racehorses,R EH S HH AO R S AX Z,en
 rachels,R EY CH AX L Z,en
 racket,R EH K AX T,en
@@ -11261,10 +11147,8 @@ rademaker,R EY D M EY K AX R,en
 radford,R EH D F AX R D,en
 radiant,R EY D IY AX N T,en
 radick,R EH D IY Q,en
-radin,R EH D IY N,en
 radioaktif,R AA D IY AO AA Q T IY F,ma
 radishes,R EH D IY SH AX Z,en
-radium,R EY D IY AX M,en
 radius,R AA D IY UW S,ma
 radosh,R AX D AO SH,en
 raggio,R AA JH IY AO W,en
@@ -11273,7 +11157,6 @@ rags,R EH Q Z,en
 ragsdale,R EH Q Z D EY L,en
 ragunathan,R AA G UW N AX T AA N,en
 rah,R AA,en
-rahman,R AA M AX N,en
 rai,R AY,ma
 raider,R EY D AX R,en
 raih,R AA IY HH,ma
@@ -11300,11 +11183,10 @@ ramel,R EH M AX L,en
 ramiro,R AX M IY R AO W,en
 ramlow,R EH M L AO W,en
 ramm,R EH M,en
-ramos,R AA M AO W S,en
 ramos,R EY M AO W S,en
+ramos,R AA M AO W S,en
 ramses,R EH M S IY Z,en
 ramzi,R EH M Z IY,en
-rana,R EH N AA,en
 rance's,R EH N S AX Z,en
 ranches,R EH N CH AX Z,en
 rancor,R EH NG K AX R,en
@@ -11325,11 +11207,11 @@ rao's,R AW Z,en
 rapat,R AA P AA T,ma
 rapatkan,R AA P AA T K AA N,ma
 raper,R EY P AX R,en
-raphael,R AA F AY EH L,en
 raphael,R AA F Y EH L,en
+raphael,R AA F AY EH L,en
 raphael,R EY F IY AX L,en
-rapid,R EH P IY D,en
 rapid,R EH P AX D,en
+rapid,R EH P IY D,en
 rapsodi,R AA P S AO D IY,ma
 rareness,R EH R N AX S,en
 rasa,R AA S AA,ma
@@ -11337,8 +11219,8 @@ rascals,R EH S K AX L Z,en
 rasche,R EH SH,en
 rasionalitas,R AA S IY AO N AA L IY T AA S,ma
 raskyn,R EH S K IY N,en
-rasmin,R EH S M AX N,en
 rasmin,R EH Z M IY N,en
+rasmin,R EH S M AX N,en
 rasmussen,R EH S M AX S AX N,en
 rasorite,R EH S AX R AY T,en
 ratatisements,R EH T AX T AY Z M AX N T S,en
@@ -11349,7 +11231,6 @@ ratner,R EH T N AX R,en
 rau,R AW,en
 raucher's,R AO CH AX R Z,en
 raung,R AA UW NG,ma
-raup,R AO P,en
 ravaged,R EH V AX JH D,en
 ravages,R EH V AX JH AX Z,en
 raved,R EY V D,en
@@ -11371,8 +11252,8 @@ reads,R IY D Z,en
 reaganesque,R EY G AX N EH S K,en
 reagans,R EY G AX N Z,en
 reagen,R IY G AX N,en
-reagent,R IY EY JH AX N T,en
 reagent,R IY JH AX N T,en
+reagent,R IY EY JH AX N T,en
 reaktif,R EH AA Q T IY F,ma
 reali,R IY L IY,en
 realigning,R IY AX L AY N IY NG,en
@@ -11420,8 +11301,8 @@ reclaimer,R IY K L EY M AX R,en
 reclaiming,R IY K L EY M IY NG,en
 reclamation,R EH K L AX M EY SH AX N,en
 recondition,R IY K AX N D IY SH AX N,en
-recounts,R IY K AW N T S,en
 recounts,R AX K AW N T S,en
+recounts,R IY K AW N T S,en
 recoverable,R AX K AX V AX R AX B AX L,en
 recovers,R AX K AX V AX R Z,en
 recovery,R AX K AX V AX R IY,en
@@ -11435,8 +11316,8 @@ recyclable,R IY S AY K L AX B AX L,en
 recycled,R IY S AY K AX L D,en
 redcay,R EH D K EY,en
 redeeming,R AX D IY M IY NG,en
-redemptive,R AX D EH M T IY V,en
 redemptive,R AX D EH M P T IY V,en
+redemptive,R AX D EH M T IY V,en
 redeploying,R IY D AX P L OY IY NG,en
 redial,R IY D AY AX L,en
 redirecting,R IY D AX R EH Q T IY NG,en
@@ -11454,8 +11335,8 @@ reenactment,R IY AX N EH Q T M AX N T,en
 reenactments,R IY AX N EH Q T M AX N T S,en
 reese,R IY S,en
 reese's,R IY S AX Z,en
-referenced,R EH F AX R AX N S T,en
 referenced,R EH F R AX N S T,en
+referenced,R EH F AX R AX N S T,en
 referred,R AX F AX R D,en
 refiled,R IY F AY L D,en
 reflected,R AX F L EH Q T AX D,en
@@ -11511,12 +11392,12 @@ relapsing,R AX L EH P S IY NG,en
 relay,R IY L EY,en
 release,R IY L IY S,en
 relegating,R EH L AX G EY T IY NG,en
-relented,R IY L EH N T AX D,en
-relented,R AX L EH N AX D,en
 relented,R IY L EH N AX D,en
 relented,R AX L EH N T AX D,en
-reliance,R AX L AY AX N S,en
+relented,R AX L EH N AX D,en
+relented,R IY L EH N T AX D,en
 reliance,R IY L AY AX N S,en
+reliance,R AX L AY AX N S,en
 relic,R EH L IY Q,en
 relies,R IY L AY Z,en
 relies,R AX L AY Z,en
@@ -11530,10 +11411,10 @@ remanded,R AX M EH N D AX D,en
 remas,R AX M AA S,ma
 remedying,R EH M AX D IY Y IY NG,en
 remeh,R EH M EH HH,ma
-remembering,R IY M EH M B AX R IY NG,en
 remembering,R AX M EH M B AX R IY NG,en
-remembering,R IY M EH M B R IY NG,en
 remembering,R AX M EH M B R IY NG,en
+remembering,R IY M EH M B R IY NG,en
+remembering,R IY M EH M B AX R IY NG,en
 remembers,R AX M EH M B AX R Z,en
 remembers,R IY M EH M B AX R Z,en
 remembrances,R AX M EH M B R AX N S AX Z,en
@@ -11567,8 +11448,8 @@ reo,R IY AO W,en
 reopen,R IY AO W P AX N,en
 reordering,R IY AO R D AX R IY NG,en
 repaid,R IY P EY D,en
-repaired,R AX P EH R D,en
 repaired,R IY P EH R D,en
+repaired,R AX P EH R D,en
 repay,R IY P EY,en
 repeat,R AX P IY T,en
 repeat,R IY P IY T,en
@@ -11580,8 +11461,8 @@ replacements,R IY P L EY S M AX N T S,en
 replicates,R EH P L AX K EY T S,en
 replicating,R EH P L AX K EY T IY NG,en
 reportable,R AX P AO R T AX B AX L,en
-reportedly,R IY P AO R T AX D L IY,en
 reportedly,R AX P AO R T AX D L IY,en
+reportedly,R IY P AO R T AX D L IY,en
 reporter,R AX P AO R T AX R,en
 repos,R IY P AO W Z,en
 reposition,R IY P AX Z IY SH AX N,en
@@ -11595,8 +11476,8 @@ repressing,R IY P R EH S IY NG,en
 repricing,R IY P R AY S IY NG,en
 reprimanded,R EH P R AX M EH N D AX D,en
 reprints,R IY P R IY N T S,en
-reprise,R AX P R AY Z,en
 reprise,R AX P R IY Z,en
+reprise,R AX P R AY Z,en
 reprobate,R EH P R AO B EY T,en
 reproducing,R IY P R AX D UW S IY NG,en
 repsher,R EH P SH AX R,en
@@ -11604,13 +11485,13 @@ republican,R AX P AA B L AX K AX N,en
 republican,R IY P AA B L AX K AX N,en
 republicanism,R AX P AA B L AX K AX N IY Z AX M,en
 repulsed,R IY P AX L S T,en
-reputed,R AX P Y UW T AX D,en
 reputed,R IY P Y UW T AX D,en
+reputed,R AX P Y UW T AX D,en
 request,R AX K W EH S T,en
 request,R IY K W EH S T,en
 requirement,R AX K W AY R M AX N T,en
-requires,R IY K W AY R Z,en
 requires,R IY K W AY AX R Z,en
+requires,R IY K W AY R Z,en
 resap,R AX S AA P,ma
 resch,R EH SH,en
 reschedulings,R IY SH K EH JH UW L IY NG Z,en
@@ -11632,13 +11513,13 @@ residen,R EH S IY D EH N,ma
 residu,R EH S IY D UW,ma
 resignations,R EH Z IY Q N EY SH AX N Z,en
 resigning,R IY Z AY N IY NG,en
-resins,R EH Z IY N Z,en
 resins,R EH Z AX N Z,en
+resins,R EH Z IY N Z,en
 resist,R IY Z IY S T,en
 resnick,R EH Z N IY Q,en
-reso,R IY Z AO W,en
 reso,R AX S AO W,en
 reso,R IY S AO W,en
+reso,R IY Z AO W,en
 resonansi,R EH S AO N AA N S IY,ma
 resort's,R IY Z AO R T S,en
 resources',R IY S AO R S IY Z,en
@@ -11648,8 +11529,8 @@ respected,R IY S P EH Q T AX D,en
 respectful,R AX S P EH Q T F AX L,en
 respironics,R EH S AX R AA N IY Q S,en
 respondents,R AX S P AA N D AX N T S,en
-response,R IY S P AA N S,en
 response,R AX S P AA N S,en
+response,R IY S P AA N S,en
 responsive,R AX S P AA N S IY V,en
 ressler,R EH S L AX R,en
 restated,R IY S T EY T AX D,en
@@ -11672,8 +11553,8 @@ retroactivity,R EH T R AO W EH Q T IY V IY T IY,en
 retrovir,R EH T R AO W V IY R,en
 retrying,R IY T R AY IY NG,en
 returnees,R AX T AX R N IY Z,en
-returning,R IY T AX R N IY NG,en
 returning,R AX T AX R N IY NG,en
+returning,R IY T AX R N IY NG,en
 reuse,R IY Y UW Z,en
 reuse,R IY Y UW S,en
 reused,R IY UW Z D,en
@@ -11685,19 +11566,18 @@ revard,R AX V AA R D,en
 revelatory,R AX V EH L AX T AO R IY,en
 revelle,R AX V EH L,en
 revelry,R EH V AX L R IY,en
-revenues,R EH V AX N UW Z,en
 revenues,R EH V AX N Y UW Z,en
+revenues,R EH V AX N UW Z,en
 reversion,R AX V AX R Z AX N,en
 reverted,R IY V AX R T AX D,en
 reverted,R AX V AX R T AX D,en
 reviewer's,R IY V Y UW AX R Z,en
 revilla,R EH V IY L AA,en
-revive,R AX V AY V,en
 revive,R IY V AY V,en
+revive,R AX V AY V,en
 revlon's,R EH V L AA N Z,en
 revolutionary,R EH V AX L UW SH AX N EH R IY,en
 revolved,R IY V AA L V D,en
-revolver,R AX V AA L V AX R,en
 revving,R EH V IY NG,en
 rewis,R UW AX S,en
 rexrode,R EH Q S R AO W D,en
@@ -11745,10 +11625,10 @@ righter,R AY T AX R,en
 rightward,R AY T W AX R D,en
 rigo,R IY G AO W,en
 rigors,R IY G AX R Z,en
-rigueur,R IY G AX R,en
 rigueur,R IY G Y UW R,en
-rikeld,R IY K EH L D,en
+rigueur,R IY G AX R,en
 rikeld,R AY K EH L D,en
+rikeld,R IY K EH L D,en
 riker's,R AY K AX R Z,en
 riklis,R IY K L AX S,en
 rill,R IY L,en
@@ -11757,7 +11637,6 @@ rimbun,R IY M B UW N,ma
 rimes,R AY M Z,en
 rims,R IY M Z,en
 rina,R IY N AA,en
-ringgit,R IY NG IY T,en
 ringmaster,R IY NG M EH S T AX R,en
 ringneck,R IY NG N EH Q,en
 ringquist,R IY NG K W IY S T,en
@@ -11784,8 +11663,8 @@ ritcey's,R IY T S IY Z,en
 rites,R AY T S,en
 rittenour,R IY T AX N AW R,en
 ritts,R IY T S,en
-ritzenthaler,R IY T S AX N T AA L AX R,en
 ritzenthaler,R IY T Z AX N T AX L AX R,en
+ritzenthaler,R IY T S AX N T AA L AX R,en
 ritzer,R IY T Z AX R,en
 riverbed,R IY V AX R B EH D,en
 rivieres,R IY V Y IY R EH Z,en
@@ -11811,10 +11690,9 @@ robley,R AA B L IY,en
 robot,R AO B AO T,ma
 rocca,R AA K AA,en
 roche's,R AO W SH AX Z,en
-rochelle's,R AO W SH EH L Z,en
 rochelle's,R AX SH EH L Z,en
+rochelle's,R AO W SH EH L Z,en
 rochette,R AX SH EH T,en
-rock,R AA Q,en
 rockabilly,R AA K AX B IY L IY,en
 rocke,R AA Q,en
 rockford,R AA Q F AX R D,en
@@ -11850,8 +11728,8 @@ romaine,R AO W M EY N,en
 roman's,R AO W M AX N Z,en
 romanesque,R AO W M AX N EH S K,en
 romanian,R AO W M EY N IY AX N,en
-romantically,R AO W M EH N T AX K AX L IY,en
 romantically,R AO W M EH N T AX K L IY,en
+romantically,R AO W M EH N T AX K AX L IY,en
 romantik,R AO M AA N T IY Q,ma
 romantika,R AO M AA N T IY K AA,ma
 romberg,R AA M B AX R G,en
@@ -11896,8 +11774,8 @@ rothwell,R AO T W EH L,en
 rotman,R AA T M AX N,en
 rotolo,R AO W T AO W L AO W,en
 rotor,R AO W T AX R,en
-rototiller,R AO W T AX T IY L AX R,en
 rototiller,R AO W T AO W T IY L AX R,en
+rototiller,R AO W T AX T IY L AX R,en
 rottler,R AA T L AX R,en
 rotunno,R AO W T UW N AO W,en
 rotz,R AA T S,en
@@ -11940,7 +11818,6 @@ rujukan,R UW JH UW K AA N,ma
 rukeyser,R UW K EY Z AX R,en
 rule's,R UW L Z,en
 rulers,R UW L AX R Z,en
-rum,R AX M,en
 rumbley,R AX M B L IY,en
 rumi,R UW M IY,ma
 rumore,R UW M AO R,en
@@ -11969,8 +11846,8 @@ ruth,R UW T,en
 ruthenberg,R AA T AX N B AX R G,en
 rutile,R UW T IY L,en
 rutledge,R AA T L AX JH,en
-rutstein,R AA T S T IY N,en
 rutstein,R AA T S T AY N,en
+rutstein,R AA T S T IY N,en
 ruvolo,R UW V AO W L AO W,en
 ryburn,R IY B AX R N,en
 rydman,R IY D M AX N,en
@@ -12002,7 +11879,6 @@ saddoris,S EH D AX R AX S,en
 sadeh,S AA D EH,en
 sadistis,S AA D IY S T IY S,ma
 sadler,S EH D L AX R,en
-sado,S EY D AO W,en
 sadye,S EH D AY,en
 saens's,S EY N Z AX Z,en
 safari,S AA F AA R IY,ma
@@ -12043,9 +11919,7 @@ saldovar,S AA L D AX V AA R,en
 salema,S AX L IY M AA,en
 salerno,S AX L EH R N AO W,en
 salespeople,S EY L Z P IY P AX L,en
-salin,S AA L IY N,en
 salinan,S AA L IY N AA N,ma
-saling,S EY L IY NG,en
 salinisasi,S AA L IY N IY S AA S IY,ma
 salizzoni,S EH L IY Z AO W N IY,en
 sallee,S EH L IY,en
@@ -12077,7 +11951,6 @@ sampler,S EH M P L AX R,en
 sampsell,S EH M P S AX L,en
 sancho,S AA N K AO W,en
 sanctions,S EH NG K SH AX N Z,en
-sandal,S EH N D AX L,en
 sandall,S EH N D AA L,en
 sandaran,S AA N D AA R AA N,ma
 sandhu,S EH N D HH UW,en
@@ -12123,8 +11996,8 @@ satisfy,S EH T IY S F AY,en
 satterfield,S EH T AX R F IY L D,en
 saturday,S EH T AX R D IY,en
 saturday,S EH T IY D EY,en
-saturday's,S EH T AX R D EY Z,en
 saturday's,S EH T AX R D IY Z,en
+saturday's,S EH T AX R D EY Z,en
 satz,S EH T S,en
 saucedo,S AW S EY D AO W,en
 saucepan,S AO S P EH N,en
@@ -12193,8 +12066,8 @@ schindel,SH IY N D AX L,en
 schiraldi,S K IY R AA L D IY,en
 schirmer,SH AX R M AX R,en
 schism,S K IY Z AX M,en
-schissler,SH IY S AX L AX R,en
 schissler,SH IY S L AX R,en
+schissler,SH IY S AX L AX R,en
 schist,SH IY S T,en
 schlachter,SH L EH Q T AX R,en
 schlafer,SH L EY F AX R,en
@@ -12204,8 +12077,8 @@ schlereth,SH L EH R AX T,en
 schlicher,SH L AX K AX R,en
 schlitz,SH L IY T S,en
 schlock,SH L AA Q,en
-schloesser,SH L AA AX S AX R,en
 schloesser,SH L AA S AX R,en
+schloesser,SH L AA AX S AX R,en
 schlotterbeck,SH L AA T AX R B EH Q,en
 schlotzhauer,SH L AA T S HH AW AX R,en
 schlough,SH L AW,en
@@ -12261,8 +12134,8 @@ schutz,SH AX T S,en
 schuyler,S K AY L AX R,en
 schwall,SH W AO L,en
 schwan,SH W AO N,en
-schwarzkopf's,SH W AO R T S K AO F S,en
 schwarzkopf's,SH W AO R T S K AO P F S,en
+schwarzkopf's,SH W AO R T S K AO F S,en
 schweiss,SH W AY S,en
 schwenk,SH W EH NG K,en
 schwerdloff,SH W AX R D L AO F,en
@@ -12288,8 +12161,8 @@ scrapped,S K R EH P T,en
 screech,S K R IY CH,en
 screwdrivers,S K R UW D R AY V AX R Z,en
 scribble,S K R IY B AX L,en
-scribbling,S K R IY B L IY NG,en
 scribbling,S K R IY B AX L IY NG,en
+scribbling,S K R IY B L IY NG,en
 scrimp,S K R IY M P,en
 scripp's,S K R IY P S,en
 scriptwriter,S K R IY P T R AY T AX R,en
@@ -12315,8 +12188,8 @@ seaquist,S IY K W IY S T,en
 searches,S AX R CH AX Z,en
 searfoss,S AX R F AX S,en
 seashell,S IY SH EH L,en
-seasonally,S IY Z AX N AX L IY,en
 seasonally,S IY Z N AX L IY,en
+seasonally,S IY Z AX N AX L IY,en
 seaworthy,S IY W AO R D IY,en
 seay,S EY,en
 sebabnya,S AX B AA B NY AA,ma
@@ -12362,10 +12235,9 @@ seeton,S IY T AX N,en
 seevers,S IY V AX R Z,en
 seff,S EH F,en
 segala,S AX G AA L AA,ma
-segar,S IY G AX R,en
 segovia,S EH G AO W V IY AA,en
-segrest,S IY G R EH S T,en
 segrest,S EH G AX R AX S T,en
+segrest,S IY G R EH S T,en
 segunung,S AX G UW N UW NG,ma
 sehebat,S AX HH EH B AA T,ma
 seifert,S AY F AX R T,en
@@ -12433,7 +12305,6 @@ selway,S EH L W EY,en
 sema,S AX M AA,ma
 semadi,S AX M AA D IY,ma
 semaksimum,S AX M AA Q S IY M UW M,ma
-seman,S IY M AX N,en
 semantics,S AX M EH N T IY Q S,en
 semarai,S AX M AA R AY,ma
 sembab,S AX M B AA B,ma
@@ -12445,10 +12316,8 @@ sembilik,S AX M B IY L IY Q,ma
 semen,S AX M EH N,ma
 semenanjung,S AX M AX N AA N JH UW NG,ma
 semenza,S EH M EH N Z AA,en
-semiautomatic,S EH M IY AO T AX M EH T IY Q,en
 semiautomatic,S EH M AY AO T AX M EH T IY Q,en
-semifinal,S EH M AY F AY N AX L,en
-semifinal,S EH M IY F AY N AX L,en
+semiautomatic,S EH M IY AO T AX M EH T IY Q,en
 seminar,S EH M IY N AA R,ma
 seminarian,S EH M AX N EH R IY AX N,en
 seminaries,S EH M AX N EH R IY Z,en
@@ -12463,7 +12332,6 @@ senator,S EH N AA T AO R,ma
 senda,S AX N D AA,ma
 sendar,S AX N D AA R,ma
 sendi,S AX N D IY,ma
-seng,S EH NG,en
 seng,S EH NG,ma
 senggugut,S AX NG G UW G UW T,ma
 sengit,S AX NG IY T,ma
@@ -12487,8 +12355,8 @@ sentencing,S EH N T AX N S IY NG,en
 sentiare,S EH N T IY AA R AX,ma
 sentiasa,S AX N T IY AA S AA,ma
 sentimentalitas,S EH N T IY M EH N T AA L IY T AA S,ma
-sentiments,S EH N AX M AX N T S,en
 sentiments,S EH N T AX M AX N T S,en
+sentiments,S EH N AX M AX N T S,en
 sentimeter,S EH N T IY M EH T AX R,ma
 sentinel,S EH N T AX N AX L,en
 sentol,S EH N T AO L,ma
@@ -12536,13 +12404,12 @@ seriat,S AX R IY AA T,ma
 seriawan,S AX R IY AA W AA N,ma
 serindit,S AX R IY N D IY T,ma
 serkai,S AX R K AY,ma
-serling,S AX R L IY NG,en
 serobeh,S AX R AO B EH HH,ma
 serombong,S AX R AO M B AO NG,ma
 serombongan,S AX R AO M B AO NG AA N,ma
 serondok,S AX R AO N D AO Q,ma
-serrano,S AX R EH N AO W,en
 serrano,S AX R AA N AO W,en
+serrano,S AX R EH N AO W,en
 serrate,S EH R EY T,en
 sertakan,S AX R T AA K AA N,ma
 sertu,S EH R T UW,ma
@@ -12586,10 +12453,10 @@ sewat,S EH W AA T,ma
 sewer,S UW AX R,en
 sewn,S AO W N,en
 sexton,S EH Q S T AX N,en
-sfernice,S AX F AX R N AX S,en
 sfernice,S F AX R N AX S,en
-sffed,EH S EH F EH F IY D IY,en
+sfernice,S AX F AX R N AX S,en
 sffed,S F EH D,en
+sffed,EH S EH F EH F IY D IY,en
 sffed,EH S EH F EH D,en
 shaath's,SH AA T S,en
 shackelton,SH AX K EH L T AX N,en
@@ -12773,8 +12640,8 @@ sigal,S AY JH AX L,en
 sightseer,S AY T S IY R,en
 sightseer,S AY T S IY AX R,en
 signage,S AY N AX JH,en
-signori,S IY N Y AO R IY,en
 signori,S IY Q N AO R IY,en
+signori,S IY N Y AO R IY,en
 silajdzic's,S IY L AA JH IY Q S,en
 silas,S AY L AX S,en
 silaturrahmi,S IY L AA T UW R R AA HH M IY,ma
@@ -12942,18 +12809,17 @@ softball,S AO F B AO L,en
 softball,S AO F T B AO L,en
 soften,S AO F AX N,en
 soften,S AA F AX N,en
-softening,S AO F N IY NG,en
 softening,S AO F AX N IY NG,en
-softer,S AO F T AX R,en
+softening,S AO F N IY NG,en
 softer,S AA F T AX R,en
-software,S AO F W EH R,en
+softer,S AO F T AX R,en
 software,S AO F T W EH R,en
+software,S AO F W EH R,en
 software's,S AO F T W EH R Z,en
 software's,S AO F W EH R Z,en
 soils,S OY L Z,en
 soko,S AO K AO,ma
 soland,S AA L AX N D,en
-solar,S AO W L AX R,en
 solares,S AO W L AA R EH S,en
 solberg,S AO W L B AX R G,en
 solecki,S AX L EH T S K IY,en
@@ -12962,8 +12828,8 @@ solesbee,S AO W L Z B IY,en
 solicitation,S AX L IY S IY T EY SH AX N,en
 solicited,S AX L IY S IY T AX D,en
 solid,S AA L AX D,en
-solingen,S AO W L IY NG G EH N,en
 solingen,S AA L IY NG G EH N,en
+solingen,S AO W L IY NG G EH N,en
 soloviev,S AA L AO W V IY V,en
 solver,S AA L V AX R,en
 somalian,S AX M AA L Y AX N,en
@@ -13081,7 +12947,6 @@ spitz,S P IY T S,en
 spizzirri,S P IY T S IY R IY,en
 splice,S P L AY S,en
 sponseller,S P AA N S AX L AX R,en
-sponsor,S P AA N S AX R,en
 spontaneous,S P AA N T EY N IY AX S,en
 spoof,S P UW F,en
 spoofs,S P UW F S,en
@@ -13126,8 +12991,8 @@ squier,S K W AY AX R,en
 squillace,S K W IY L AX S,en
 srader,SH R EY D AX R,en
 sram,SH R EH M,en
-srebrenica's,S R EY B R EH N IY T S AA Z,en
 srebrenica's,SH R EY B R AX N IY T S AA Z,en
+srebrenica's,S R EY B R EH N IY T S AA Z,en
 sroka,SH R AO W K AA,en
 sroufe,SH R AO W F,en
 stability,S T AX B IY L IY T IY,en
@@ -13190,8 +13055,6 @@ statesborough,S T EY T S B AX R AO W,en
 statesmanship,S T EY T S M AX N SH IY P,en
 stathopoulos,S T AX T AA P AX L AX S,en
 statuettes,S T EH CH UW EH T S,en
-status,S T EH T AX S,en
-status,S T EY T AX S,en
 statz,S T EH T S,en
 staubin,S T AW B IY N,en
 staunchly,S T AO N CH L IY,en
@@ -13267,8 +13130,8 @@ stihl,S T IY L,en
 stiletto,S T AX L EH T AO W,en
 stimulators,S T IY M Y AX L EY T AX R Z,en
 stine,S T AY N,en
-stinel,S T IY N EH L,en
 stinel,S T IY N AX L,en
+stinel,S T IY N EH L,en
 stines,S T AY N Z,en
 stinky,S T IY NG K IY,en
 stinson,S T IY N S AX N,en
@@ -13333,15 +13196,15 @@ strassner,S T R EH S N AX R,en
 strategically,S T R AX T IY JH AX K L IY,en
 strategists,S T R EH T AX JH IY S T S,en
 stratigraphic,S T R EH T AX G R EH F IY Q,en
-straum,S T R AW M,en
 straum,S T R AA M,en
+straum,S T R AW M,en
 streaker,S T R IY K AX R,en
 streamlining,S T R IY M L AY N IY NG,en
 strebel,S T R EH B AX L,en
 street,S T R IY T,en
 streets,S T R IY T S,en
-streisand's,S T R AY S EH N D Z,en
 streisand's,S T R AY Z AX N D Z,en
+streisand's,S T R AY S EH N D Z,en
 strelow,S T R EH L AO W,en
 streng,S T R EH NG,en
 strenuous,S T R EH N Y UW AX S,en
@@ -13378,8 +13241,8 @@ stufflebeam,S T AA F AX L B IY M,en
 stukey,S T AA K IY,en
 stumpe,S T AX M P,en
 stunningly,S T AX N IY NG L IY,en
-stupid,S T UW P IY D,en
 stupid,S T UW P AX D,en
+stupid,S T UW P IY D,en
 sturdier,S T AX R D IY AX R,en
 sturgell,S T AX R G AX L,en
 sturrock,S T AO R AX Q,en
@@ -13458,8 +13321,8 @@ sunburn,S AX N B AX R N,en
 sunburned,S AX N B AX R N D,en
 suncook,S AX N K UW Q,en
 sundal,S UW N D AA L,ma
-sundays,S AX N D IY Z,en
 sundays,S AX N D EY Z,en
+sundays,S AX N D IY Z,en
 sundheim,S AX N D HH AY M,en
 sundlun,S AX N D L AX N,en
 sungard,S AX N G AA R D,en
@@ -13479,13 +13342,12 @@ superintendent's,S UW P AX R AX N T EH N D AX N T S,en
 supermajority,S UW P AX R M AX JH AO R IY T IY,en
 superpowers',S UW P AX R P AW R Z,en
 superseding,S UW P AX R S IY D IY NG,en
-superstar,S UW P AX R S T AA R,en
 superstore,S UW P AX R S T AO R,en
 superstructure,S UW P AX R S T R AA Q CH AX R,en
 supervisors,S UW P AX R V AY Z AX R Z,en
 suppes,S UW P IY S,en
-supplement,S AX P L AX M AX N T,en
 supplement,S AX P L AX M EH N T,en
+supplement,S AX P L AX M AX N T,en
 supplicant,S AX P L AX K AX N T,en
 suppliers,S AX P L AY AX R Z,en
 sura,S UW R AA,en
@@ -13533,8 +13395,8 @@ swarner,S W AO R N AX R,en
 swartwout,S W AO R T W AW T,en
 swasta,S W AA S T AA,ma
 swat,S W AA T,en
-swathe,S W EY D,en
 swathe,S W AA D,en
+swathe,S W EY D,en
 swayed,S W EY D,en
 swaziland,S W AA Z IY L AX N D,en
 sweat,S W EH T,en
@@ -13648,10 +13510,7 @@ tame,T EY M,en
 tammie,T EH M IY,en
 tampa,T EH M P AA,en
 tampal,T AA M P AA L,ma
-tan,T EH N,en
 taney,T EY N IY,en
-tang,T AA NG,en
-tang,T EH NG,en
 tangan,T AA NG AA N,ma
 tangen,T EH NG AX N,en
 tanggung-jawab,T AA NG G UW NG JH AA W AA B,ma
@@ -13659,7 +13518,6 @@ tangis,T AA NG IY S,ma
 tangkal,T AA NG K AA L,ma
 tangki,T AA NG K IY,ma
 tanjung,T AA N JH UW NG,ma
-tank,T EH NG K,en
 tansy,T EH N Z IY,en
 tanur,T AA N UW R,ma
 tanzi,T EH N Z IY,en
@@ -13697,12 +13555,12 @@ taxicabs,T EH Q S IY K EH B Z,en
 taxiing,T EH Q S IY Y IY NG,en
 taxpayer's,T EH Q S P EY AX R Z,en
 tchaikovsky,CH AY K AA V S K IY,en
-tchaikovsky,CH EY K AA V S K IY,en
 tchaikovsky,CH AY K AA F S K IY,en
+tchaikovsky,CH EY K AA V S K IY,en
 teamed,T IY M D,en
 teamster's,T IY M S T AX R Z,en
-tear,T IY R,en
 tear,T EH R,en
+tear,T IY R,en
 teaster,T IY S T AX R,en
 teatro,T IY T R AO W,en
 teberau,T AX B AX R AW,ma
@@ -13731,12 +13589,9 @@ teknologiwan,T EH Q N AO L AO G IY W AA N,ma
 tekong,T EH K AO NG,ma
 telamon,T EH L AX M AX N,en
 telat,T AX L AA T,ma
-tele,T EH L AX,en
-tele,T EH L IY,en
 telecasts,T EH L AX K EH S T S,en
 telecommuters,T EH L AX K AX M Y UW T AX R Z,en
 telectronic,T EH L AX Q T R AA N IY Q,en
-telefon,T EH L AX F AA N,en
 telegram,T EH L AX G R AA M,ma
 teleku,T AX L AX K UW,ma
 telepok,T EH L EH P AO Q,ma
@@ -13874,8 +13729,8 @@ terukur,T AX R Q UW K UW R,ma
 terum,T AX R UW M,ma
 terung,T AX R UW NG,ma
 terusik,T AX R Q UW S IY Q,ma
-tes,T AX S,ma
 tes,T EH S,ma
+tes,T AX S,ma
 tesaurus,T EH S AW R UW S,ma
 tesis,T EH S IY S,ma
 teska,T EH S K AA,en
@@ -13884,7 +13739,6 @@ tessa,T EH S AA,en
 tessier,T EH S IY AX R,en
 testamen,T EH S T AA M EH N,ma
 tested,T EH S T AX D,en
-testing,T EH S T IY NG,en
 testis,T EH S T IY S,ma
 tetamu,T AX T AA M UW,ma
 teteguk,T AX T AX G UW Q,ma
@@ -13901,8 +13755,8 @@ thau,D AW,en
 theall,T IY L,en
 theatrical,T IY EH T R AX K AX L,en
 theilen,T AY L AX N,en
-themself,D AX M S EH L F,en
 themself,D EH M S EH L F,en
+themself,D AX M S EH L F,en
 theobald,T IY AX B AA L D,en
 theodor,T IY AX D AX R,en
 theodora,T IY AX D AO R AA,en
@@ -13992,8 +13846,8 @@ tirane,T IY R EY N,en
 tired,T AY AX R D,en
 tirus,T IY R UW S,ma
 tischer,T IY SH AX R,en
-tischler,T IY SH AX L AX R,en
 tischler,T IY SH L AX R,en
+tischler,T IY SH AX L AX R,en
 tison,T IY S AX N,en
 tita,T IY T AA,en
 titter,T IY T AX R,en
@@ -14008,8 +13862,8 @@ toby,T AO W B IY,en
 tod,T AA D,en
 toda,T AO W D AA,en
 todaro,T AO W D AA R AO W,en
-today,T AX D EY,en
 today,T UW D EY,en
+today,T AX D EY,en
 toeing,T AO W IY NG,en
 toenail,T AO W N EY L,en
 toenails,T AO W N EY L Z,en
@@ -14029,7 +13883,6 @@ tomich,T AA M IY Q,en
 tomko,T AA M K AO W,en
 tomorrows,T UW M AA R AO W Z,en
 tomorrows,T AX M AA R AO W Z,en
-ton,T AX N,en
 tonase,T AO N AA S AX,ma
 tone,T AO W N,en
 tonggek,T AO NG G EH Q,ma
@@ -14042,8 +13895,8 @@ toothaker,T UW T AX K AX R,en
 toothpaste,T UW T P EY S T,en
 toots,T UW T S,en
 topeka's,T AX P IY K AA Z,en
-topix,T AA P IY Q S,en
 topix,T AO W P IY Q S,en
+topix,T AA P IY Q S,en
 topkapi,T AA P K AA P IY,en
 toppin,T AA P IY N,en
 toppings,T AA P IY NG Z,en
@@ -14069,8 +13922,8 @@ touch,T AA CH,en
 touchdowns,T AA CH D AW N Z,en
 touched,T AA CH T,en
 tougas,T AX G AX Z,en
-tours,T AO R Z,en
 tours,T UW R Z,en
+tours,T AO R Z,en
 tourville,T UW R V IY L,en
 touvier,T UW V IY EY,en
 tovey,T AO W V IY,en
@@ -14113,17 +13966,17 @@ transcend,T R EH N S EH N D,en
 transcendence,T R EH N S EH N D AX N S,en
 transchannel,T R AX N S CH EH N AX L,en
 transcontinental's,T R EH N Z K AA N AX N EH N AX L Z,en
-transcontinental's,T R EH N Z K AA N T AX N EH N T AX L Z,en
-transcontinental's,T R EH N Z K AA N T AX N EH N AX L Z,en
 transcontinental's,T R EH N Z K AA N AX N EH N T AX L Z,en
+transcontinental's,T R EH N Z K AA N T AX N EH N AX L Z,en
+transcontinental's,T R EH N Z K AA N T AX N EH N T AX L Z,en
 transcribed,T R EH N S K R AY B D,en
 transcribers,T R EH N S K R AY B AX R Z,en
 transfered,T R EH N S F AX R D,en
 transference,T R EH N S F AX R AX N S,en
 transfering,T R EH N S F AX R IY NG,en
 transgress,T R EH N Z G R EH S,en
-translation,T R EH N Z L EY SH AX N,en
 translation,T R EH N S L EY SH AX N,en
+translation,T R EH N Z L EY SH AX N,en
 transnational,T R EH N S N EH SH AX N AX L,en
 transparency,T R EH N S P EH R AX N S IY,en
 transplant,T R EH N S P L EH N T,en
@@ -14135,8 +13988,8 @@ tranum,T R EH N AX M,en
 trapp,T R EH P,en
 trashes,T R EH SH AX Z,en
 trashy,T R EH SH IY,en
-travelers,T R EH V L AX R Z,en
 travelers,T R EH V AX L AX R Z,en
+travelers,T R EH V L AX R Z,en
 trax,T R EH Q S,en
 tread,T R EH D,en
 treasurer,T R EH Z AX R AX R,en
@@ -14158,7 +14011,6 @@ triana,T R IY EH N AA,en
 triangulation,T R AY EH NG G Y UW L EY SH AX N,en
 triarc,T R AY AA R K,en
 tribbett,T R IY B AX T,en
-tribunal,T R AX B Y UW N AX L,en
 tributes,T R IY B Y UW T S,en
 trigg,T R IY Q,en
 triggering,T R IY G AX R IY NG,en
@@ -14209,14 +14061,14 @@ tryba,T R IY B AA,en
 trygve,T R IY Q V IY,en
 tryon,T R AY AX N,en
 trzcinski,T AX R Z IY N S K IY,en
-tsai's,T S AY Z,en
 tsai's,S AY Z,en
-tsao,S AW,en
+tsai's,T S AY Z,en
 tsao,T S AW,en
+tsao,S AW,en
 tschudy,CH UW D IY,en
 tsiang,T S Y EH NG,en
-tsukuba,T S UW K Y UW B AA,en
 tsukuba,S UW K Y UW B AA,en
+tsukuba,T S UW K Y UW B AA,en
 tsurumi,S UW R UW M IY,en
 tsurumi,T S UW R UW M IY,en
 tuala,T UW AA L AA,ma
@@ -14231,7 +14083,6 @@ tukik,T UW K IY Q,ma
 tulisannya,T UW L IY S AA N NY AA,ma
 tullier,T AX L IY AX R,en
 tumbling,T AX M B AX L IY NG,en
-tumor,T UW M AX R,en
 tumpang,T UW M P AA NG,ma
 tumpu,T UW M P UW,ma
 tumult,T UW M AX L T,en
@@ -14245,8 +14096,8 @@ tungsrom,T AA NG Z R AX M,en
 tuntun,T UW N T UW N,ma
 tuntutannya,T UW N T UW T AA N NY AA,ma
 turben,T AX R B AX N,en
-turbot,T AX R B AO W,en
 turbot,T AX R B AX T,en
+turbot,T AX R B AO W,en
 ture,T UW R,en
 turgut,T AX R G AX T,en
 turismo,T UW R IY S M AO W,en
@@ -14298,16 +14149,12 @@ uhlig,UW L IY Q,en
 ujian,UW JH IY AA N,ma
 ujung,UW JH UW NG,ma
 ukiran,UW K IY R AA N,ma
-ukulele,Y UW K AX L EY L IY,en
-ulam,Y UW L EH M,en
 ulat,UW L AA T,ma
 ulbricht,AX L B R IY Q T,en
-uli,Y UW L IY,en
 ullock,AX L AX Q,en
 ulm,AX L M,en
 ultima,AX L T IY M AA,en
 ultimate,AX L T AX M AX T,en
-ultimatum,AX L T AX M EY T AX M,en
 ultranationalists,AX L T R AX N EH SH AX N AX L AX S T S,en
 umbra,AX M B R AA,en
 umland,AX M L AX N D,en
@@ -14356,8 +14203,8 @@ underworld,AA N D AX R W AX R L D,en
 underwrite,AA N D AX R R AY T,en
 underwriter's,AA N D AX R R AY T AX R Z,en
 underwriters',AA N D AX R R AY T AX R Z,en
-undetermined,AA N D AX T AX R M IY N D,en
 undetermined,AA N D IY T AX R M AX N D,en
+undetermined,AA N D AX T AX R M IY N D,en
 undifferentiated,AA N D IY F AX R EH N SH IY EY T AX D,en
 undiluted,AA N D AX L UW T AX D,en
 undiminished,AA N D AX M IY N IY SH T,en
@@ -14459,8 +14306,8 @@ urman,AX R M AX N,en
 urso,AX R S AO W,en
 uruguay,Y AX R AX G W EY,en
 uruguay,Y AX R AX G W AY,en
-uruguayan,Y AX R AX G W EY AX N,en
 uruguayan,Y AX R AX G W AY AX N,en
+uruguayan,Y AX R AX G W EY AX N,en
 usage,Y UW S AX JH,en
 usec,Y UW S EH Q,en
 useless,Y UW S L AX S,en
@@ -14532,16 +14379,16 @@ vanwieren,V EH N W IY R AX N,en
 vanya's,V AA N Y AA Z,en
 vanzandt,V EH N Z EH N T,en
 varble,V AA R B AX L,en
-vares,V EY R Z,en
 vares,V AA R EH S,en
+vares,V EY R Z,en
 vargo,V AA R G AO W,en
 variant,V EH R IY AX N T,en
 varig,V EH R IY Q,en
 varner,V AA R N AX R,en
-varo,V EH R AO W,en
 varo,V AA R AO W,en
-vase,V EY S,en
+varo,V EH R AO W,en
 vase,V AA Z,en
+vase,V EY S,en
 vasko,V AA S K AO W,en
 vassel,V EH S AX L,en
 vassilios,V AX S IY L Y AX S,en
@@ -14593,7 +14440,6 @@ vespa,V EY S P AA,en
 vespera,V EY S P EH R AA,en
 vesser,V EH S AX R,en
 vesting,V EH S T IY NG,en
-veto,V IY T AO W,en
 via,V IY AA,ma
 viability,V AY AX B IY L AX T IY,en
 vian,V IY AX N,en
@@ -14601,11 +14447,11 @@ vibhu,V IY B UW,en
 vicar,V AX K AX R,en
 viciousness,V IY SH AX S N AX S,en
 vicissitudes,V IY S IY S IY T UW D Z,en
-vickery,V IY S K AX R IY,en
 vickery,V IY K AX R IY,en
+vickery,V IY S K AX R IY,en
 vickey,V IY K IY,en
-vicomte,V AX K AA M T IY,en
 vicomte,V AX K AA M T,en
+vicomte,V AX K AA M T IY,en
 victim's,V IY Q T IY M Z,en
 victimize,V IY Q T AX M AY Z,en
 victimless,V IY Q T AX M L AX S,en
@@ -14709,12 +14555,10 @@ waggoner,W EH G AX N AX R,en
 waggy,W EH G IY,en
 wagnerian,W EH Q N EH R IY AX N,en
 wagnerian,V AA Q N EH R IY AX N,en
-wah,W AA,en
 wahle,W AO L,en
 wahlen,W AA L AX N,en
 wahyu,W AA HH Y UW,ma
 wailed,W EY L D,en
-wain,W EY N,en
 wainio,W EY N IY AO W,en
 waisner,W EY Z N AX R,en
 waite's,W EY T S,en
@@ -14730,8 +14574,8 @@ wald,W AO L D,en
 walde,W AO L D,en
 waldegard,W AO L D AX G AA R D,en
 walder,W AO L D AX R,en
-waldo,W AA L D AO W,en
 waldo,W AO L D AO W,en
+waldo,W AA L D AO W,en
 waldren,W AO L D R AX N,en
 waldroup,W AO L D R UW P,en
 waldschmidt,W AO L D SH M IY T,en
@@ -14741,8 +14585,8 @@ walke,W AO Q,en
 walking,W AO K IY NG,en
 walkway,W AO K W EY,en
 wallace,W AO L AX S,en
-wallenstein,W AO L AX N S T IY N,en
 wallenstein,W AO L AX N S T AY N,en
+wallenstein,W AO L AX N S T IY N,en
 wallet,W AO L AX T,en
 wallets,W AO L AX T S,en
 wallich,W AO L IY Q,en
@@ -14805,11 +14649,11 @@ weatherly,W EH D AX R L IY,en
 weatherproof,W EH D AX R P R UW F,en
 weathers,W EH D AX R Z,en
 weaves,W IY V Z,en
-weber's,V EY B AX R Z,en
 weber's,W EH B AX R Z,en
+weber's,V EY B AX R Z,en
 webley,W EH B L IY,en
-wechsler,W EH Q S L AX R,en
 wechsler,W EH SH L AX R,en
+wechsler,W EH Q S L AX R,en
 wecker,W EH K AX R,en
 wedgewood,W EH JH W UW D,en
 wedgewood's,W EH JH W UW D Z,en
@@ -14878,68 +14722,68 @@ westphal,W EH S T F AX L,en
 westtech's,W EH S T EH Q S,en
 wetlands,W EH T L EH N D Z,en
 wetlands',W EH T L EH N D Z,en
-wettstein,W EH T S T AY N,en
 wettstein,W EH T S T IY N,en
+wettstein,W EH T S T AY N,en
 wexler,W EH Q S L AX R,en
 weyers,W EY AX R Z,en
 weyman,W EY M AX N,en
 whale's,HH W EY L Z,en
 whale's,W EY L Z,en
-whaler,W EY L AX R,en
 whaler,HH W EY L AX R,en
+whaler,W EY L AX R,en
 whalers,W EY L AX R Z,en
 wham,W EH M,en
 wham,HH W EH M,en
-whatley,W AX T L IY,en
 whatley,HH W AX T L IY,en
-wheeless,W IY L AX S,en
+whatley,W AX T L IY,en
 wheeless,HH W IY L AX S,en
+wheeless,W IY L AX S,en
 wheeling,W IY L IY NG,en
 wheeling,HH W IY L IY NG,en
-wheelock,W IY L AA Q,en
 wheelock,HH W IY L AA Q,en
+wheelock,W IY L AA Q,en
 when,W IY N,en
-when,HH W EH N,en
 when,W EH N,en
 when,HH W IY N,en
-when'll,HH W EH N AX L,en
+when,HH W EH N,en
 when'll,W EH N AX L,en
-whereabouts,HH W EH R AX B AW T S,en
+when'll,HH W EH N AX L,en
 whereabouts,W EH R AX B AW T S,en
+whereabouts,HH W EH R AX B AW T S,en
 wherein,HH W EH R IY N,en
 wherein,W EH R IY N,en
 wherever,HH W EH R EH V AX R,en
 wherever,W EH R EH V AX R,en
-wherley,HH W AX R L IY,en
 wherley,W AX R L IY,en
-whether,W EH D AX R,en
+wherley,HH W AX R L IY,en
 whether,HH W EH D AX R,en
+whether,W EH D AX R,en
 which's,W IY CH AX Z,en
 whiskers,HH W IY S K AX R Z,en
 whispering,W IY S P AX R IY NG,en
 whispering,HH W IY S P AX R IY NG,en
-whispers,W IY S P AX R Z,en
 whispers,HH W IY S P AX R Z,en
+whispers,W IY S P AX R Z,en
 whitby,HH W IY T B IY,en
 whitby,W IY T B IY,en
-whiteaker,HH W IY T AX K AX R,en
 whiteaker,W IY T AX K AX R,en
-whitecotton,W AY T K AA T AX N,en
+whiteaker,HH W IY T AX K AX R,en
 whitecotton,HH W AY T K AA T AX N,en
+whitecotton,W AY T K AA T AX N,en
 whitefish,HH W AY T F IY SH,en
 whitefish,W AY T F IY SH,en
 whitehorse,W AY T HH AO R S,en
 whitehorse,HH W AY T HH AO R S,en
-whitelaw,HH W AY T L AO,en
 whitelaw,W AY T L AO,en
-whitesell,HH W AY T S EH L,en
+whitelaw,HH W AY T L AO,en
 whitesell,W AY T S EH L,en
+whitesell,HH W AY T S EH L,en
 whiton,HH W IY T AX N,en
 whiton,W IY T AX N,en
-whitsel,HH W IY T S AX L,en
 whitsel,W IY T S AX L,en
-whittaker,HH W IY T AX K AX R,en
+whitsel,HH W IY T S AX L,en
 whittaker,W IY T AX K AX R,en
+whittaker,HH W IY T AX K AX R,en
 whittle,HH W IY T AX L,en
 whittling,W IY T L IY NG,en
 whittling,HH W IY T L IY NG,en
@@ -14947,8 +14791,8 @@ whizzed,W IY Z D,en
 wholehearted,HH AO W L HH AA R T AX D,en
 wholesaler,HH AO W L S EY L AX R,en
 whom,HH UW M,en
-whopping,HH W AA P IY NG,en
 whopping,W AA P IY NG,en
+whopping,HH W AA P IY NG,en
 wichman,W IY CH M AX N,en
 wicker,W IY K AX R,en
 widen,W AY D AX N,en
@@ -14994,8 +14838,8 @@ winbush,W IY N B UW SH,en
 winch,W IY N CH,en
 windchill,W IY N D CH IY L,en
 windell,W IY N D AX L,en
-winder,W IY N D AX R,en
 winder,W AY N D AX R,en
+winder,W IY N D AX R,en
 windholz,W IY N D HH AO W L Z,en
 windish,W IY N D IY SH,en
 windspeed,W IY N D S P IY D,en
@@ -15022,8 +14866,8 @@ wintry,W IY N T R IY,en
 winzeler,W IY N Z AX L AX R,en
 wira,W IY R AA,ma
 wirakarya,W IY R AA K AA R Y AA,ma
-wired,W AY R D,en
 wired,W AY AX R D,en
+wired,W AY R D,en
 wiretapped,W AY AX R T EH P T,en
 wisecup,W AY Z K AX P,en
 wisenbaker,W AY Z AX N B EY K AX R,en
@@ -15054,15 +14898,15 @@ wives,W AY V Z,en
 wixon,W IY Q S AX N,en
 wixson,W IY Q S AX N,en
 wlodarczyk,W AX L AA D AX R CH IY Q,en
-wobbling,W AA B L IY NG,en
 wobbling,W AA B AX L IY NG,en
+wobbling,W AA B L IY NG,en
 woessner,W AO W S N AX R,en
 wogan,W AO W G AX N,en
 wogoman,W AO W G AO W M AX N,en
 wohlfarth,W AO W L F AA R T,en
 wojahn,W AO W HH AA N,en
-wojciech,W OY CH EH Q,en
 wojciech,V OY CH EH Q,en
+wojciech,W OY CH EH Q,en
 woke,W AO W K,en
 wolfer,W UW L F AX R,en
 wollam,W AA L AX M,en
@@ -15150,8 +14994,8 @@ yarde,Y AA R D,en
 yarder,Y AA R D AX R,en
 yardstick,Y AA R D S T IY Q,en
 yawner,Y AO N AX R,en
-yazov,Y EH Z AA V,en
 yazov,Y AA Z AO V,en
+yazov,Y EH Z AA V,en
 yeakley,Y IY K L IY,en
 yeaman,Y IY M AX N,en
 year,Y IY R,en
@@ -15189,9 +15033,9 @@ younger,Y AA NG G AX R,en
 youngest,Y AA NG G AX S T,en
 younglove,Y AA NG L AX V,en
 youree,Y AO R IY,en
-yours,Y UW R Z,en
-yours,Y AX R Z,en
 yours,Y AO R Z,en
+yours,Y AX R Z,en
+yours,Y UW R Z,en
 yourself,Y UW R S EH L F,en
 youtz,Y AW T S,en
 yuck,Y AA Q,en
@@ -15213,8 +15057,8 @@ zaccagnini,Z AA K AX Q N IY N IY,en
 zaftig,Z EH F T IY Q,en
 zagreb,Z AA G R EH B,en
 zahniser,Z AA N AY Z AX R,en
-zalewski,Z AX L UW S K IY,en
 zalewski,Z AX L EH F S K IY,en
+zalewski,Z AX L UW S K IY,en
 zamannya,Z AA M AA N NY AA,ma
 zamarron,Z AA M AA R AO N,en
 zambia's,Z EH M B IY AA Z,en
@@ -15232,8 +15076,8 @@ zavodnik,Z AX V AA D N IY Q,en
 zawada,Z AA W AA D AA,en
 zawislak,Z AA V IY S L AX Q,en
 zayac,Z AY AX Q,en
-zealots,Z EH L AX T S,en
 zealots,Z IY L AX T S,en
+zealots,Z EH L AX T S,en
 zebra,Z EH B R AA,ma
 zeebrugge,Z IY B R UW G IY,en
 zeff,Z EH F,en
@@ -15251,8 +15095,8 @@ zenica,Z EH N AX K AA,en
 zent,Z EH N T,en
 zepa,Z IY P AA,en
 zepa,Z EH P AA,en
-zerbe,Z IY R B IY,en
 zerbe,Z IY R B,en
+zerbe,Z IY R B IY,en
 zerkle,Z IY R K AX L,en
 zero's,Z IY R AO W Z,en
 zeros,Z IY R AO W Z,en
