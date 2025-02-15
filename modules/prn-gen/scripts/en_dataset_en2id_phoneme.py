@@ -1,4 +1,5 @@
 import csv
+import itertools
 import os
 import random
 import re
@@ -43,7 +44,7 @@ DEFAULT_ARPABET_TO_IPA = {
   'T': 't',
   "TH": 't',
   "UH": 'u',
-  "UW": "u w",
+  "UW": 'u',
   'V': 'v',
   'W': 'w',
   'Y': 'j',
@@ -58,7 +59,7 @@ AH_IH_ARPABETS = ["AH", "IH"]
 AH_IH_EXCLUDED_VOCAL_ARPABETS = [arpabet for arpabet in VOCAL_ARPABETS if arpabet not in AH_IH_ARPABETS]
 # vocal arpabets + ER OW UW
 VOCAL_STARTING_ARPABETS = VOCAL_ARPABETS[:]
-VOCAL_STARTING_ARPABETS.extend(["ER", "OW", "UW"])
+VOCAL_STARTING_ARPABETS.extend(["ER", "OW"])
 
 # all consonant arpabets
 CONSONANT_ARPABETS = ['B', "CH", 'D', "DH", 'F', 'G', "HH", "JH", 'K', 'L', 'M', 'N', "NG", 'P', 'R', 'S', "SH", 'T', "TH", 'V', 'W', 'Y', 'Z', "ZH"]
@@ -67,7 +68,7 @@ HH_L_R_W_Y_ARPABETS = ["HH", 'L', 'R', 'W', 'Y']
 HH_L_R_W_Y_EXCLUDED_CONSONANT_ARPABETS = [arpabet for arpabet in CONSONANT_ARPABETS if arpabet not in HH_L_R_W_Y_ARPABETS]
 # consonant arpabets + ER OW UW
 CONSONANT_ENDING_ARPABETS = CONSONANT_ARPABETS[:]
-CONSONANT_ENDING_ARPABETS.extend(["ER", "OW", "UW"])
+CONSONANT_ENDING_ARPABETS.extend(["ER", "OW"])
 
 # 'R' ending arpabets
 R_ENDING_ARPABETS = ["ER", 'R']
@@ -108,13 +109,33 @@ IPA_TO_2_LETTER_ARPABET = {
   'z': 'Z',
 }
 
-rows = set()
+phoneme_to_words = {
+  phoneme: {
+    "words": {}
+  } for phoneme in IPA_TO_2_LETTER_ARPABET
+}
+word_to_ipa_phoneme_sequences = {}
+train_rows = set(); train_trouble_rows = set(); train_abbrev_rows = set()
+val_rows = set(); val_trouble_rows = set(); val_abbrev_rows = set()
+test_rows = set(); test_trouble_rows = set(); test_abbrev_rows = set()
 with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
+     open(os.path.join(DATA_DIR, "en/train_trouble.csv")) as train_trouble_csv_read, \
+     open(os.path.join(DATA_DIR, "en/train_abbrev.csv")) as train_abbrev_csv_read, \
      open(os.path.join(DATA_DIR, "en/validation.csv")) as val_csv_read, \
-     open(os.path.join(DATA_DIR, "en/test.csv")) as test_csv_read :
+     open(os.path.join(DATA_DIR, "en/validation_trouble.csv")) as val_trouble_csv_read, \
+     open(os.path.join(DATA_DIR, "en/validation_abbrev.csv")) as val_abbrev_csv_read, \
+     open(os.path.join(DATA_DIR, "en/test.csv")) as test_csv_read, \
+     open(os.path.join(DATA_DIR, "en/test_trouble.csv")) as test_trouble_csv_read, \
+     open(os.path.join(DATA_DIR, "en/test_abbrev.csv")) as test_abbrev_csv_read :
   train_csv_reader = csv.reader(train_csv_read)
+  train_trouble_csv_reader = csv.reader(train_trouble_csv_read)
+  train_abbrev_csv_reader = csv.reader(train_abbrev_csv_read)
   val_csv_reader = csv.reader(val_csv_read)
+  val_trouble_csv_reader = csv.reader(val_trouble_csv_read)
+  val_abbrev_csv_reader = csv.reader(val_abbrev_csv_read)
   test_csv_reader = csv.reader(test_csv_read)
+  test_trouble_csv_reader = csv.reader(test_trouble_csv_read)
+  test_abbrev_csv_reader = csv.reader(test_abbrev_csv_read)
 
   # Skip headers
   next(train_csv_reader, None)
@@ -122,12 +143,33 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
   next(test_csv_reader, None)
 
   # Add rows from train val test
-  rows.update(tuple(row) for row in train_csv_reader)
-  rows.update(tuple(row) for row in val_csv_reader)
-  rows.update(tuple(row) for row in test_csv_reader)
+  train_rows.update(tuple(row) for row in train_csv_reader)
+  val_rows.update(tuple(row) for row in val_csv_reader)
+  test_rows.update(tuple(row) for row in test_csv_reader)
+  # Add troublesome rows from train val test
+  train_trouble_rows.update(tuple(row) for row in train_trouble_csv_reader)
+  val_trouble_rows.update(tuple(row) for row in val_trouble_csv_reader)
+  test_trouble_rows.update(tuple(row) for row in test_trouble_csv_reader)
+  # Add abbreviation rows from train val test
+  train_abbrev_rows.update(tuple(row) for row in train_abbrev_csv_reader)
+  val_abbrev_rows.update(tuple(row) for row in val_abbrev_csv_reader)
+  test_abbrev_rows.update(tuple(row) for row in test_abbrev_csv_reader)
 
-  rows = sorted(rows)
-  for row in rows :
+  for _, row in enumerate(sorted(itertools.chain(train_rows, val_rows, test_rows))) :
+    # Handle troublesome and abbreviation entries
+    if tuple((row[0], row[1])) in train_trouble_rows or \
+       tuple((row[0], row[1])) in train_abbrev_rows or \
+       tuple((row[0], row[1])) in val_trouble_rows or \
+       tuple((row[0], row[1])) in val_abbrev_rows or \
+       tuple((row[0], row[1])) in test_trouble_rows or \
+       tuple((row[0], row[1])) in test_abbrev_rows :
+      train_trouble_rows.discard(tuple((row[0], row[1])))
+      train_abbrev_rows.discard(tuple((row[0], row[1])))
+      val_trouble_rows.discard(tuple((row[0], row[1])))
+      val_abbrev_rows.discard(tuple((row[0], row[1])))
+      test_trouble_rows.discard(tuple((row[0], row[1])))
+      test_abbrev_rows.discard(tuple((row[0], row[1])))
+      continue
     grapheme = row[0]
     arpabet_phoneme_sequence = row[1].split()
     ipa_phoneme_sequence = []
@@ -1085,8 +1127,11 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
           if ei_pattern.search(grapheme) :
             ipa_phoneme_sequence.extend(["ei"])
             i += 1; rule_found_flag = True
-          else :
+          elif grapheme.endswith('A') :
             ipa_phoneme_sequence.extend(['a'])
+            i += 1; rule_found_flag = True
+          else :
+            ipa_phoneme_sequence.extend(['ə'])
             i += 1; rule_found_flag = True
         # default
         if not rule_found_flag :
@@ -1096,8 +1141,122 @@ with open(os.path.join(DATA_DIR, "en/train.csv")) as train_csv_read, \
         print(f"An error occurred:")
         print(traceback.format_exc())
         sys.exit(1)
+
     if obs_flag :
       print(row[0])
       print(row[1], ipa_phoneme_sequence)
     else :
-      print(row[0], row[1], ipa_phoneme_sequence)
+      if grapheme in word_to_ipa_phoneme_sequences :
+        if (ipa_phoneme_sequence := ' '.join(ipa_phoneme_sequence).split()) not in word_to_ipa_phoneme_sequences[grapheme] :
+          word_to_ipa_phoneme_sequences[grapheme].append(ipa_phoneme_sequence)
+          # print(grapheme, row[1], ipa_phoneme_sequence)
+        else :
+          continue
+      else :
+        word_to_ipa_phoneme_sequences[grapheme] = [
+          ipa_phoneme_sequence := ' '.join(ipa_phoneme_sequence).split()
+        ]
+        # print(grapheme, row[1], ipa_phoneme_sequence)
+
+for word in word_to_ipa_phoneme_sequences :
+  for ipa_phoneme_sequence in word_to_ipa_phoneme_sequences[word] :
+    for ipa_phn in set(ipa_phoneme_sequence) :
+      phoneme_to_words[ipa_phn]["words"][word] = len(word_to_ipa_phoneme_sequences[word])
+
+# Sort phoneme by phoneme occurrences (ascending)
+phoneme_to_words = dict(sorted(phoneme_to_words.items(), key=lambda item: sum(item[1]["words"].values())))
+# for phn in phoneme_to_words :
+#   print(phn, sum(phoneme_to_words[phn]["words"].values()))
+# Convert phoneme word set to list
+for key, val in phoneme_to_words.items() :
+  phoneme_to_words[key] = {
+    "words": [(k, v) for k, v in val["words"].items()]
+  }
+
+# Start of the TRAIN/VAL/TEST set splitting
+train, val, test = set(), set(), set()
+train_percentage = .9
+phone_keys = list(phoneme_to_words.keys())
+for i in range(len(phone_keys)) :
+  phn = phone_keys[i]
+  ## Populate the TEST set
+  ### Shuffle the words list
+  random.shuffle(phoneme_to_words[phn]["words"])
+  ### Split the words list
+  n_occurrences = sum(tup[1] for tup in phoneme_to_words[phn]["words"])
+  split_index = round((1-train_percentage) * n_occurrences)
+  j = 0; index = 0; test_split = set()
+  while j<len(phoneme_to_words[phn]["words"]) and index < split_index :
+    test_split.add(phoneme_to_words[phn]["words"][j])
+    index += phoneme_to_words[phn]["words"][j][1]
+    j += 1
+  ### Assign words to TEST set, ensuring no duplicates
+  test.update(test_split)
+  ### Remove assigned words from other phonemes' word lists
+  for other_phn, other_data in phoneme_to_words.items() :
+    phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - test_split)
+
+  ## Populate TRAIN and VAL set
+  ### Shuffle the words list
+  random.shuffle(phoneme_to_words[phn]["words"])
+  ### Split the words list
+  n_occurrences = sum(tup[1] for tup in phoneme_to_words[phn]["words"])
+  split_index = round(train_percentage * n_occurrences)
+  j = 0; index = 0; train_split = set(); val_split = set()
+  while j<len(phoneme_to_words[phn]["words"]) and index < split_index :
+    # print("from train/val/test splitting", phn, phoneme_to_words[phn]["words"][j])
+    train_split.add(phoneme_to_words[phn]["words"][j])
+    index += phoneme_to_words[phn]["words"][j][1]
+    j += 1
+  val_split = set(phoneme_to_words[phn]["words"][j:])
+  ### Assign words to TRAIN and VAL set, ensuring no duplicates
+  train.update(train_split)
+  val.update(val_split)
+  ### Remove assigned words from other phonemes' word lists
+  for other_phn, other_data in phoneme_to_words.items() :
+    phoneme_to_words[other_phn]["words"] = list(set(other_data["words"]) - train_split - val_split)
+  ### Re-sort the phones based on their occurrences
+  phoneme_to_words = dict(sorted(phoneme_to_words.items(), key=lambda item: len(item[1]["words"])))
+  phone_keys = list(phoneme_to_words.keys())
+# End of the TRAIN/VAL/TEST set splitting
+
+def convert_to_arpabet(ipa_phoneme_sequence:list) :
+  result = []
+  for phoneme in ipa_phoneme_sequence :
+    result.append(IPA_TO_2_LETTER_ARPABET[phoneme])
+  return result
+
+n_train = sum(tup[1] for tup in train)
+n_val = sum(tup[1] for tup in val)
+n_test = sum(tup[1] for tup in test)
+# Write converted TRAIN/VAL/TEST IPA phoneme sequences to files
+with open(os.path.join(DATA_DIR, "en/train_converted.csv"), 'w') as f_train_write, \
+     open(os.path.join(DATA_DIR, "en/validation_converted.csv"), 'w') as f_val_write, \
+     open(os.path.join(DATA_DIR, "en/test_converted.csv"), 'w') as f_test_write :
+  train_csv_writer = csv.writer(f_train_write)
+  val_csv_writer = csv.writer(f_val_write)
+  test_csv_writer = csv.writer(f_test_write)
+
+  train_csv_writer.writerow(["word", "arpabet_phoneme_sequence"])
+  val_csv_writer.writerow(["word", "arpabet_phoneme_sequence"])
+  test_csv_writer.writerow(["word", "arpabet_phoneme_sequence"])
+
+  print(f"Populating train set .. ({n_train})")
+  for train_entry in sorted(list(train), key=lambda entry: entry[0]) :
+    for ipa_phoneme_sequence in word_to_ipa_phoneme_sequences[train_entry[0]] :
+      arpabet_phoneme_sequence = convert_to_arpabet(ipa_phoneme_sequence)
+      train_csv_writer.writerow([train_entry[0], ' '.join(arpabet_phoneme_sequence)])
+  print("Done populating train set")
+  print(f"Populating val set .. ({n_val})")
+  for val_entry in sorted(list(val), key=lambda entry: entry[0]) :
+    for ipa_phoneme_sequence in word_to_ipa_phoneme_sequences[val_entry[0]] :
+      arpabet_phoneme_sequence = convert_to_arpabet(ipa_phoneme_sequence)
+      val_csv_writer.writerow([val_entry[0], ' '.join(arpabet_phoneme_sequence)])
+  print("Done populating val set")
+  print(f"Populating test set .. ({n_test})")
+  for test_entry in sorted(list(test), key=lambda entry: entry[0]) :
+    for ipa_phoneme_sequence in word_to_ipa_phoneme_sequences[test_entry[0]] :
+      arpabet_phoneme_sequence = convert_to_arpabet(ipa_phoneme_sequence)
+      test_csv_writer.writerow([test_entry[0], ' '.join(arpabet_phoneme_sequence)])
+  print("Done populating test set")
+  print(f"|9-(train/val)| + |8.1-(train/test)| = {abs(9-(n_train/n_val)) + abs(8.1-(n_train/n_test))}")
