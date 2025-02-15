@@ -21,7 +21,7 @@ AH F => ə f (awal & "OF" in grapheme, else?)
 AH G <vocal> => a g (tengah & "UG" in grapheme)
 AH G <vocal> => ə g (else?)
 
-AH JH => a j (tengah & "OG" in grapheme)
+AH JH => a j (tengah & "UDG"|"OG" in grapheme)
 AH JH => ə j (else?)
 
 # (same as variations of AH G) i think variations of AH K needs to be inspected?
@@ -96,7 +96,7 @@ IH M => i m (awal & not huruf i pertama, tengah & "IM"|"OM" in grapheme, akhir &
 IH M => ə m (awal & huruf i pertama, tengah & "EM" in grapheme, akhir & "EM" in grapheme)
 
 IH N => i n (akhir & "YN" in grapheme, else)
-IH N => ə n (tengah & "EN" in grapheme, akhir & "ION"|"ON"|"EN" in grapheme)
+IH N => ə n (tengah & "EN" in grapheme, akhir & "IAN"|"ION"|"ON"|"EN" in grapheme)
 
 IH NG => i ŋ
 
@@ -174,6 +174,8 @@ GMBH,G AH M
 HA'ARETZ,HH AH AA R EH T S
 KIA,K IY ER
 KINGHORN,K IH NG HH ER N
+KOENIG,K ER N IH G
+KOENIGS,K ER N IH G Z
 LWIN,EH L W IH N
 MACEK,M IH K EH K
 MACEWEN,M AH K Y UW AA N
@@ -229,6 +231,7 @@ BYU,B IY W AY Y UW
 C'S,S IY Z
 CA,S IY EY
 CAC,S IY EY S IY
+CEA,S IY IY EY
 CEL,S IY IY EH L
 CELO,S IY IY EH L OW
 CIA,S IY AY EY
@@ -285,7 +288,9 @@ FOP,EH F OW P IY
 G'S,JH IY Z
 GA,JH AO R JH AH
 GA,JH IY EY
+GEAC,JH IY IY EY S IY
 GED,JH IY IY D IY
+GENEGO,JH IY IY EH N IY JH IY OW
 GMBH,JH IY EH M B IY EY CH
 GNC,JH IY EH N S IY
 GOVPX,G AH V P IY EH K S
@@ -426,6 +431,7 @@ Y'S,W AY Z
 
 Z,Z IY
 Z'S,Z IY Z
+ZEPA,Z IY IY P IY EY
 
 # test
 ### possible troublesome entry
@@ -490,6 +496,7 @@ SEP,EH S IY P IY
 STA,EH S T IY EY
 TV,T EH L AH V IH ZH AH N
 TV,T IY V IY
+USTRUST,Y UW EH S T R AH S T
 V,V IY
 
 # validation
@@ -510,9 +517,12 @@ WS,D AH B AH L Y UW EH S
 # words i want to check after converting
 ABCOTEK
 BEAUREGARD
+BEGRUDGE
 DATAGRAPHIX
 DRACULA
 EXCRUCIATINGLY
+HERCEGOVINA
+MALUKEN
 MCLAUCHLIN
 NOMINAL
 OVEN
