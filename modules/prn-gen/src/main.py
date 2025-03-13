@@ -51,17 +51,23 @@ def load_models(config:Namespace) :
   print("Loading models..")
   global encoder, decoder
 
-  suffix_pattern = f"attn_{config.attn_model}-emb_{config.emb_dim}-hddn_{config.hidden_size}-layers_{config.n_layers}-epoch_"
+  mdl_suffix = f"-{f'wdecay_{config.weight_decay}-' if hasattr(config, 'weight_decay') and config.weight_decay else ''}attn_{config.attn_model}-emb_{config.emb_dim}-hddn_{config.hidden_size}-layers_{config.n_layers}-epoch_"
   encoders = sorted([
-    f for f in os.listdir(MODELS_DIR) if f.startswith(f"encoder-{suffix_pattern}")],
+    f for f in os.listdir(MODELS_DIR) if f.startswith(f"{config.mdl_prefix}encoder{mdl_suffix}")],
     key=lambda fn: int(fn.split("epoch_")[1].split(".pth")[0])
   )
   decoders = sorted([
-    f for f in os.listdir(MODELS_DIR) if f.startswith(f"decoder-{suffix_pattern}")],
+    f for f in os.listdir(MODELS_DIR) if f.startswith(f"{config.mdl_prefix}decoder{mdl_suffix}")],
     key=lambda fn: int(fn.split("epoch_")[1].split(".pth")[0])
   )
+  print(f"{config.mdl_prefix}encoder{mdl_suffix}")
+  print(f"{config.mdl_prefix}decoder{mdl_suffix}")
   assert len(encoders)>0 and len(decoders)>0, \
     f"""No encoder and decoder found with the following parameters:
+    - language: {config.lang}
+    {f"- model prefix: {config.mdl_prefix}" if hasattr(config, "mdl_prefix") and config.mdl_prefix else ''}
+    - grapheme type: {config.grp_type}
+    {f"- weight decay: {config.weight_decay}" if hasattr(config, "weight_decay") and config.weight_decay else ''}
     - attention scoring method: {config.attn_model}
     - embedding dimension: {config.emb_dim}
     - hidden layer size: {config.hidden_size}
@@ -102,7 +108,7 @@ def word_to_tensor(word:str) :
 
 def infer(word:str, with_attention:bool=False) :
   input_tensor = word_to_tensor(word)
-  
+
   # Run through encoder
   encoder_hidden = encoder.init_hidden()
   encoder_outputs, encoder_hidden = encoder(input_tensor, encoder_hidden)
@@ -137,7 +143,7 @@ def infer_sentence(sentence:str) :
   decoded_phonemes_list = []
   decoder_attentions_list = []
   for word in words :
-    decoded_phonemes, decoder_attns = infer(word)
+    decoded_phonemes, decoder_attns = infer(word.lower())
     decoded_phonemes_list.append(decoded_phonemes)
     decoder_attentions_list.append(decoder_attns)
   return decoded_phonemes_list, decoder_attentions_list
@@ -145,7 +151,9 @@ def infer_sentence(sentence:str) :
 if __name__ == "__main__" :
   parser = ArgumentParser()
   parser.add_argument("--lang", help="g2p's language model (en_id, en, id)")
+  parser.add_argument("--mdl_prefix", help="model prefix", nargs='?', const=1, default='')
   parser.add_argument("--grp_type", help="grapheme type (unigram, bigram, trigram)")
+  parser.add_argument("--weight_decay", help="weight decay (1e_5, 1e_4)", nargs='?', const=1, default="1e_5")
   parser.add_argument("--attn_model", help="attention type (dot, general, concat)", nargs='?', const=1, default="dot")
   parser.add_argument("--emb_dim", help="embedding dimension", type=int)
   parser.add_argument("--hidden_size", help="hidden layer size", type=int)
