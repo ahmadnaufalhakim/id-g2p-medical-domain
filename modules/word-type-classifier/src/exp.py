@@ -8,8 +8,8 @@ from ngram_model import NGramClassifier
 from utils import extract_tokens_from_file
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(CURR_DIR, "data")
-OUTPUT_DIR = os.path.join(CURR_DIR, "output")
+DATA_DIR = os.path.join(CURR_DIR, "..", "data")
+OUTPUT_DIR = os.path.join(CURR_DIR, "..", "output")
 if not os.path.exists(OUTPUT_DIR) :
   os.mkdir(OUTPUT_DIR)
 

@@ -7,7 +7,7 @@ from typing import List, Tuple
 from utils import preprocess_text
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
-MODELS_DIR = os.path.join(CURR_DIR, "models", "ngrams")
+MODELS_DIR = os.path.join(CURR_DIR, "..", "models", "ngrams")
 if not os.path.exists(MODELS_DIR) :
   os.mkdir(MODELS_DIR)
 

@@ -3,8 +3,8 @@ import re
 import string
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(CURR_DIR, "data")
-MODELS_DIR = os.path.join(CURR_DIR, "models")
+DATA_DIR = os.path.join(CURR_DIR, "..", "data")
+MODELS_DIR = os.path.join(CURR_DIR, "..", "models")
 if not os.path.exists(MODELS_DIR) :
   os.mkdir(MODELS_DIR)
 
