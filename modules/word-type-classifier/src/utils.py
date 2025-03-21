@@ -28,8 +28,10 @@ def preprocess_text(text:str) :
   text = text.translate(str.maketrans(punctuation, ' '*len(punctuation)))
   return text.lower().strip()
 
-def extract_tokens_from_file(filepath:str) -> list :
-  fstream = open(filepath, 'r', encoding="UTF_8").read().lower()
+def extract_tokens_from_file(filepath:str, lowercase:bool=True) -> list :
+  fstream = open(filepath, 'r', encoding="UTF_8").read()
+  if lowercase :
+    fstream = fstream.lower()
   clean_text = preprocess_text(fstream)
   return clean_text.split()
 
