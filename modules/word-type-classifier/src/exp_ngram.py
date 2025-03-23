@@ -9,12 +9,12 @@ from utils import extract_tokens_from_file
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(CURR_DIR, "..", "data")
-OUTPUT_DIR = os.path.join(CURR_DIR, "..", "output")
+OUTPUT_DIR = os.path.join(CURR_DIR, "..", "output", "ngrams")
 if not os.path.exists(OUTPUT_DIR) :
   os.mkdir(OUTPUT_DIR)
 
 # Helper function to visualize evaluation metric curve
-def plot(title:str, n:int, **kwargs) :
+def plot(title:str, n:int, **kwargs) -> None :
   global k_list
   plt.figure()
   fig, ax = plt.subplots()
@@ -56,12 +56,6 @@ val_foreign_filepath = os.path.join(DATA_DIR, "val", args.foreign_corpus) if arg
 k_list = [.0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1.]
 
 """CORE OF THE SCRIPT"""
-# Define train corpus filestream
-train_main_fstream = open(train_main_filepath, 'r', encoding="UTF_8").read().lower()
-train_foreign_fstream = open(train_foreign_filepath, 'r', encoding="UTF_8").read().lower()
-val_main_fstream = open(val_main_filepath, 'r', encoding="UTF_8").read().lower()
-val_foreign_fstream = open(val_foreign_filepath, 'r', encoding="UTF_8").read().lower()
-
 # Extract tokens from filepaths
 train_main_tokens = extract_tokens_from_file(train_main_filepath)
 train_foreign_tokens = extract_tokens_from_file(train_foreign_filepath)
