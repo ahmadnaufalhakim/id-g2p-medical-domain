@@ -1,0 +1,74 @@
+syllabifying strategy
+- karakter '-' dimampatkan ke syllable BERIKUTNYA (peculiar case 17320 `meng--i`)
+- kl scr tulisan bisa both sbg noun and verb, prioritize treating it as a noun (noun > verb > adjektiva/adverbia)
+- meng- + base word starting with 'a' = meng.ʔa (EXCEPT IF THERE EXISTS THE SAME BASE WORD 'k'+<base> AND THE WHOLE WORD "meng+<'a' base word>" DOESN'T EXIST IN KBBI)
+
+##
+notes
+- any "daerah" is labeled "da.ʔe.rah"
+- NOT ALL "-kw-" substring is phonetically labeled as "-k.w-"
+- might have to recheck syllabification of all "-isasi"
+- might have to recheck syllabification of all "-itas"
+- might have to recheck 9151, 9152
+- might have to recheck 12314, 12317, 12318
+- might have to recheck 12348
+- might have to recheck 12718
+- might have to recheck 13048
+- might have to recheck 13650
+- might have to recheck 13710, 13711, 13712, 13720
+- might have to recheck 13907
+- might have to recheck 14172
+- might have to recheck 14256
+- might have to recheck 16775, 16776
+- might have to recheck 27593
+
+- might have to recheck all "-ky-"
+- might have to recheck all "-kw-"
+- might have to recheck all "-(a|i|u|e|o)g[^(a|i|u|e|o)]-" (e.g. 19398 paradigma)
+- 23288 and 23289 rontgen, tak biarin pengucapannya as what is written, NOT AS ron.sən
+- ng+<ajar> => ng + ʔa.jar, while l+<ajar> => l + a.jar (idk why man, might have to recheck)
+
+- 18676 mm (delete or keep??????)
+- 5941 cm (delete or keep??????)
+- 23641 sbb
+- 23642 sdr
+- 25394 sma
+- 25711 swt
+- 27413 tgl
+
+- 18746 mualaf as mu'alaf or not?
+- 24993 serpentina = sər.pən.ti.na or sər.pen.ti.na? (kbbi said sər.pən.ti.na, but idk)
+
+- 22948 rasulu'llah (wtf??)
+- 23249 rock (wtf??)
+- 25929 tank (wtf??)
+- 27727 tunggal'' (wtf??)
+
+- 21990 permanganat -> per.man.ga.nat (NOT 'ng' sound wow)
+
+##
+ASSUMPTIONS
+- <word> + -isme = <syllabified word> + .is.me IF EITHER kbbi.web.id OR kbbi.kemdikbud.go.id APPROVES
+	(some cases that are not correct
+		botulisme = bo.tu.lis.me
+		sekularisme = se.ku.la.ris.me
+	)
+- kantung the same as kantong (case word mengantungi)
+- 16564, base word is apan(??)
+- 16761, mengeksplorasi -> meng.eks.plo.ra.si
+- 23739, sebukan as sebuk+an (prioritizing noun)
+- 25162, satori as setor+i (satori is an adjective, prioritizing as verb)
+- soal -> soʔal
+- syair -> sjaʔir
+- yaitu -> yaʔitu
+- non + <base word starts with vocals> = non.ʔ<leading vocal>.etc
+- pronounciation of sh -> sj
+
+##
+URGENT
+350
+ask mom 25745, 25790, 25813, 28059, 28152
+
+##
+TO BE ADDED
+sair -> sa`ir
