@@ -27,7 +27,7 @@ class NGramClassifier :
 
   def load(self, mdl_path:str = None) -> None :
     if mdl_path is None :
-      mdl_path = os.path.join(MODELS_DIR, f"{self.n}gram.pth")
+      mdl_path = os.path.join(MODELS_DIR, f"{self.n}gram{self.mdl_suffix}.pth")
     self.model = torch.load(f=mdl_path, weights_only=True)
 
   def train(self, main_tokens:list, foreign_tokens:list) -> None :
