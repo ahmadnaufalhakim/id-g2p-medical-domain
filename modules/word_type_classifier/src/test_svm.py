@@ -12,32 +12,36 @@ MODELS_DIR = os.path.join(CURR_DIR, "..", "models", "svms")
 if not os.path.exists(MODELS_DIR) :
   raise
 
-"""CORE OF THE SCRIPT"""
-parser = argparse.ArgumentParser()
-parser.add_argument("--kernel", help="SVM kernel function (linear, rbf, sigmoid)", nargs='?', const=1, default="linear")
-parser.add_argument("--main_corpus", help="MAIN language training corpus file name", required=False)
-parser.add_argument("--foreign_corpus", help="FOREIGN language training corpus file name", required=False)
-args = parser.parse_args()
-print(args)
+if __name__ == "__main__" :
+  """CORE OF THE SCRIPT"""
+  parser = argparse.ArgumentParser()
+  parser.add_argument("--kernel", help="SVM kernel function (linear, rbf, sigmoid)", nargs='?', const=1, default="linear")
+  parser.add_argument("--main_corpus", help="MAIN language training corpus file name", required=False)
+  parser.add_argument("--foreign_corpus", help="FOREIGN language training corpus file name", required=False)
+  args = parser.parse_args()
+  print(args)
 
-kernel = args.kernel
-test_main_filepath = os.path.join(DATA_DIR, "test", args.main_corpus) if args.main_corpus else os.path.join(DATA_DIR, "test", "main.csv")
-test_foreign_filepath = os.path.join(DATA_DIR, "test", args.foreign_corpus) if args.foreign_corpus else os.path.join(DATA_DIR, "test", "foreign.csv")
+  kernel = args.kernel
+  test_main_filepath = os.path.join(DATA_DIR, "test", args.main_corpus) if args.main_corpus else os.path.join(DATA_DIR, "test", "main.csv")
+  test_foreign_filepath = os.path.join(DATA_DIR, "test", args.foreign_corpus) if args.foreign_corpus else os.path.join(DATA_DIR, "test", "foreign.csv")
 
-# Extract tokens from filepaths
-test_main_tokens = extract_tokens_from_file(test_main_filepath)
-test_foreign_tokens = extract_tokens_from_file(test_foreign_filepath)
+  # Extract tokens from filepaths
+  test_main_tokens = extract_tokens_from_file(test_main_filepath)
+  test_foreign_tokens = extract_tokens_from_file(test_foreign_filepath)
 
-# Construct the array of data to feed to the classifier
-X_test = test_main_tokens + test_foreign_tokens
-y_test = [1]*len(test_main_tokens) + [0]*len(test_foreign_tokens)
-X_test, y_test = shuffle(X_test, y_test)
+  # Construct the array of data to feed to the classifier
+  X_test = test_main_tokens + test_foreign_tokens
+  y_test = [1]*len(test_main_tokens) + [0]*len(test_foreign_tokens)
+  X_test, y_test = shuffle(X_test, y_test)
 
-# Load the pipeline
-pipeline = joblib.load(os.path.join(MODELS_DIR, f"pipeline-{kernel}-C1e6-gamma1e-6.pkl"))
+  # Load the pipeline
+  if kernel == "sigmoid" :
+    pipeline = joblib.load(os.path.join(MODELS_DIR, f"pipeline-{kernel}-C1e6-gamma1e-6.pkl"))
+  else :
+    pipeline = joblib.load(os.path.join(MODELS_DIR, f"pipeline-{kernel}.pkl"))
 
-# Predict all test tokens
-y_pred = pipeline.predict(X_test)
-print(classification_report(y_test, y_pred))
-print(accuracy_score(y_test, y_pred))
-print(f1_score(y_test, y_pred))
+  # Predict all test tokens
+  y_pred = pipeline.predict(X_test)
+  print(classification_report(y_test, y_pred))
+  print(accuracy_score(y_test, y_pred))
+  print(f1_score(y_test, y_pred))

@@ -1,4 +1,3 @@
-from decimal import Decimal
 from math import floor
 import matplotlib.pyplot as plt
 import numpy as np
