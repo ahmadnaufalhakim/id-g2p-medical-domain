@@ -301,8 +301,7 @@ class NGramClassifier :
   def __get_ngram_proba(self, ngram:str, lang:str, pos:str) -> float :
     """
       Get the *probability* of an n-gram in the specified language and position.
-      If the n-gram is not found, recursively back off to lower-order n-grams.
-      If the lower-order n-gram (downto unigram) is still not found:
+      If the n-gram is not found:
         - k != 0, return smoothed probability; else
         - k == 0, return epsilon
     """
@@ -325,8 +324,7 @@ class NGramClassifier :
   def __get_ngram_log_proba(self, ngram:str, lang:str, pos:str) -> float :
     """
       Get the *log probability* of an n-gram in the specified language and position.
-      If the n-gram is not found, recursively back off to lower-order n-grams.
-      If the lower-order n-gram (downto unigram) is still not found:
+      If the n-gram is not found:
         - k != 0, return log smoothed probability; else
         - k == 0, return log epsilon
     """
