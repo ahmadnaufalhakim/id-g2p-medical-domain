@@ -1,3 +1,7 @@
+"""
+To split data from data/ma/train.csv to each respective train val test sets
+"""
+
 import csv
 import os
 import random
@@ -244,6 +248,9 @@ def convert_to_arpabet(syllables:list) :
         i += 1
   return result
 
+n_train = len(list(train))
+n_val = len(list(val))
+n_test = len(list(test))
 with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read,\
      open(os.path.join(DATA_DIR, "ma/train_converted.csv"), 'w') as f_train_write,\
      open(os.path.join(DATA_DIR, "ma/val_converted.csv"), 'w') as f_val_write,\
@@ -259,18 +266,19 @@ with open(os.path.join(DATA_DIR, "ma/train.csv")) as f_read,\
     train_csv_writer.writerow(headers+["arpabet_phoneme_sequence"])
     val_csv_writer.writerow(headers+["arpabet_phoneme_sequence"])
     test_csv_writer.writerow(headers+["arpabet_phoneme_sequence"])
-  print(f"Populating train set .. ({len(list(train))})")
+  print(f"Populating train set .. ({n_train})")
   for train_entry in sorted(list(train), key=lambda entry: entry[0]) :
     phoneme_sequence = convert_to_arpabet(syllables=train_entry[3].split('.'))
     train_csv_writer.writerow([train_entry[0], *train_entry[2:4], ' '.join(phoneme_sequence)])
   print("Done populating train set")
-  print(f"Populating val set .. ({len(list(val))})")
+  print(f"Populating val set .. ({n_val})")
   for val_entry in sorted(list(val), key=lambda entry: entry[0]) :
     phoneme_sequence = convert_to_arpabet(syllables=val_entry[3].split('.'))
     val_csv_writer.writerow([val_entry[0], *val_entry[2:4], ' '.join(phoneme_sequence)])
   print("Done populating val set")
-  print(f"Populating test set .. ({len(list(test))})")
+  print(f"Populating test set .. ({n_test})")
   for test_entry in sorted(list(test), key=lambda entry: entry[0]) :
     phoneme_sequence = convert_to_arpabet(syllables=test_entry[3].split('.'))
     test_csv_writer.writerow([test_entry[0], *test_entry[2:4], ' '.join(phoneme_sequence)])
   print("Done populating test set")
+  print(f"|9-(train/val)| + |8.1-(train/test)| = {abs(9-(n_train/n_val)) + abs(8.1-(n_train/n_test))}")
