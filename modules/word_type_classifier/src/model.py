@@ -23,7 +23,7 @@ class LID :
     elif self.alg == "svm" :
       assert hasattr(config, "kernel") and config.kernel in ["linear", "rbf", "sigmoid"], "Invalid kernel type. Choose 'linear', 'rbf', or 'sigmoid'."
       kernel = config.kernel
-      self.clf = joblib.load(os.path.join(MODELS_DIR, f"svms/pipeline-{kernel}.pkl"))
+      self.clf = joblib.load(os.path.join(MODELS_DIR, f"svm/pipeline-{kernel}.pkl"))
 
   def __call__(self, input:str) -> Union[List[int], np.ndarray] :
     if self.alg == "ngram" :

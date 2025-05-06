@@ -124,7 +124,7 @@ def plot_heatmap(
       bg_color = heatmap.cmap(heatmap.norm(grid[i, j]))
       font_color = get_font_color(bg_color=bg_color)
       plt.text(j, i, f"{grid[i, j]:.3f}", ha="center", va="center", color=font_color)
-  output_file = os.path.join(OUTPUT_DIR, "svms", f"svm-{kernel}{f'-coef0_{coef0}' if coef0 is not None else ''}-{metric}-heatmap.png")
+  output_file = os.path.join(OUTPUT_DIR, "svm", f"svm-{kernel}{f'-coef0_{coef0}' if coef0 is not None else ''}-{metric}-heatmap.png")
   plt.savefig(output_file, dpi=300, bbox_inches="tight")
   plt.close()
 def plot_svm_score(grid_search:GridSearchCV, kernel:str, metric:str) -> None :
@@ -158,7 +158,7 @@ def plot_svm_score(grid_search:GridSearchCV, kernel:str, metric:str) -> None :
     plt.ylabel(f"Mean {metric.title()} Score")
     plt.title(f"{metric.title()} Score for {kernel.title()} Kernel")
     plt.grid(True)
-    output_file = os.path.join(OUTPUT_DIR, "svms", f"svm-{kernel}-{metric}-plot.png")
+    output_file = os.path.join(OUTPUT_DIR, "svm", f"svm-{kernel}-{metric}-plot.png")
     plt.savefig(output_file, dpi=300, bbox_inches="tight")
     plt.close()
   elif kernel=="rbf" :

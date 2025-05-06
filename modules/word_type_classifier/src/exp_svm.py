@@ -11,7 +11,7 @@ from utils import extract_tokens_from_file, plot_svm_score, as_minutes
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(CURR_DIR, "..", "data")
-OUTPUT_DIR = os.path.join(CURR_DIR, "..", "output", "svms")
+OUTPUT_DIR = os.path.join(CURR_DIR, "..", "output", "svm")
 if not os.path.exists(OUTPUT_DIR) :
   os.mkdir(OUTPUT_DIR)
 

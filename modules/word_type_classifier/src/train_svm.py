@@ -12,7 +12,7 @@ from utils import extract_tokens_from_file, as_minutes
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(CURR_DIR, "..", "data")
-MODELS_DIR = os.path.join(CURR_DIR, "..", "models", "svms")
+MODELS_DIR = os.path.join(CURR_DIR, "..", "models", "svm")
 if not os.path.exists(MODELS_DIR) :
   os.mkdir(MODELS_DIR)
 

@@ -7,7 +7,7 @@ from utils import extract_tokens_from_file, plot_ngram_score
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(CURR_DIR, "..", "data")
-OUTPUT_DIR = os.path.join(CURR_DIR, "..", "output", "ngrams")
+OUTPUT_DIR = os.path.join(CURR_DIR, "..", "output", "ngram")
 if not os.path.exists(OUTPUT_DIR) :
   os.mkdir(OUTPUT_DIR)
 

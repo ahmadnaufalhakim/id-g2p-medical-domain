@@ -7,7 +7,7 @@ from utils import extract_tokens_from_file
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(CURR_DIR, "..", "data")
-MODELS_DIR = os.path.join(CURR_DIR, "..", "models", "ngrams")
+MODELS_DIR = os.path.join(CURR_DIR, "..", "models", "ngram")
 if not os.path.exists(MODELS_DIR) :
   raise
 
