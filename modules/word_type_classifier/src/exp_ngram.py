@@ -40,7 +40,7 @@ if __name__ == "__main__" :
       start_time = time.time()
       ngram_clf.train(
         main_tokens=train_main_tokens,
-        foreign_tokens=val_foreign_tokens
+        foreign_tokens=train_foreign_tokens
       )
       elapsed_time = time.time() - start_time
       print(f"{i}-gram model (with k = {k}) training finished in {elapsed_time} sec(s)")
