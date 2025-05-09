@@ -43,12 +43,25 @@ def extract_tokens_from_file(filepath:str, lowercase:bool=True) -> list :
   clean_text = preprocess_text(fstream)
   return clean_text.split()
 
+# Helper functions to log training progress
+def as_minutes(seconds:float) -> str :
+  minutes = floor(seconds/60)
+  seconds -= minutes*60
+  return f"{minutes}m {round(seconds, 2)}s"
+def time_since(since:float, percent:float) :
+  now = time.time()
+  seconds = now - since
+  eta_seconds = seconds/(percent)
+  remaining_seconds = eta_seconds - seconds
+  return f"{as_minutes(seconds)} (- {as_minutes(remaining_seconds)})"
+
 # Helper function to plot n-gram score for hyperparameter searching
-def plot_ngram_score(title:str, n:int, **kwargs) -> None :
-  global k_list
+def plot_ngram_score(title:str, n:int, k_list:list = None, **kwargs) -> None :
+  if k_list is None :
+    k_list = [.0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1.]
   plt.figure()
   fig, ax = plt.subplots()
-  # # Set x-axis ticks and labels
+  # Set x-axis ticks and labels
   plt.title(label=f"{n}-gram {title.title()}")
   plt.ylabel(ylabel=title.title())
   plt.xlabel(xlabel="k smoothing value")
@@ -69,20 +82,39 @@ def plot_ngram_score(title:str, n:int, **kwargs) -> None :
     if len(kwargs) > 1 :
       legends.append(k)
   if legends : plt.legend(legends)
-  plt.savefig(os.path.join(OUTPUT_DIR, f"{n}gram-{'-'.join(title.split())}.png"))
+  plt.savefig(os.path.join(OUTPUT_DIR, "ngram", f"{n}gram-{'-'.join(title.split())}.png"))
   plt.close()
 
-# Helper functions to log training progress
-def as_minutes(seconds:float) -> str :
-  minutes = floor(seconds/60)
-  seconds -= minutes*60
-  return f"{minutes}m {round(seconds, 2)}s"
-def time_since(since:float, percent:float) :
-  now = time.time()
-  seconds = now - since
-  eta_seconds = seconds/(percent)
-  remaining_seconds = eta_seconds - seconds
-  return f"{as_minutes(seconds)} (- {as_minutes(remaining_seconds)})"
+# Helper function to plot NB score for hyperparameter tuning
+def plot_nb_score(grid_search:GridSearchCV, nb_type:str, metric:str) -> None :
+  """
+    Plot and save plot of mean test scores for NB hyperparameters.
+
+    Args:
+      grid_search: A fitted GridSearchCV object.
+      nb_type: NB type ('bernoulli' or 'multinomial').
+      metric: The metric used to score the NB ('accuracy' or 'f1').
+  """
+  assert nb_type in ["bernoulli", "multinomial"], "Invalid NB type. Choose 'bernoulli' or 'multinomial'."
+  assert metric in ["accuracy", "f1"], "Invalid metric. Choose 'accuracy' or 'f1'"
+  # Extract results
+  results = grid_search.cv_results_
+  mean_test_scores = results["mean_test_score"]
+  params = results["params"]
+  print(mean_test_scores)
+  print(params)
+  # Sort alpha values
+  alpha_values = sorted(list(set(param["alpha"] for param in params)))
+  # Plot
+  plt.figure()
+  plt.plot(alpha_values, mean_test_scores, marker='o', linestyle='-', color='b')
+  plt.xlabel("alpha smoothing value")
+  plt.ylabel(f"Mean {metric.capitalize()} Score")
+  plt.title(f"{metric.capitalize()} Score for {nb_type.capitalize()} NB type")
+  plt.grid(True)
+  output_file = os.path.join(OUTPUT_DIR, "nb", f"{nb_type[0]}nb-{metric}-plot.png")
+  plt.savefig(output_file, dpi=300, bbox_inches="tight")
+  plt.close()
 
 # Helper functions to plot SVM score for hyperparameter searching
 def get_font_color(bg_color:np.ndarray) :
@@ -132,9 +164,9 @@ def plot_svm_score(grid_search:GridSearchCV, kernel:str, metric:str) -> None :
     Plot and save a heatmap of mean test scores for SVM hyperparameters.
 
     Args:
-        grid_search: A fitted GridSearchCV object.
-        kernel: SVM kernel type ('linear', 'rbf', or 'sigmoid').
-        metric: The metric used to score the SVM ('accuracy' or 'f1').
+      grid_search: A fitted GridSearchCV object.
+      kernel: SVM kernel type ('linear', 'rbf', or 'sigmoid').
+      metric: The metric used to score the SVM ('accuracy' or 'f1').
   """
   assert kernel in ["linear", "rbf", "sigmoid"], "Invalid kernel type. Choose 'linear', 'rbf', or 'sigmoid'."
   assert metric in ["accuracy", "f1"], "Invalid metric. Choose 'accuracy' or 'f1'"
@@ -148,7 +180,6 @@ def plot_svm_score(grid_search:GridSearchCV, kernel:str, metric:str) -> None :
     gamma_values = sorted(list(set(param["gamma"] for param in params)))
     if kernel=="sigmoid" :
       coef0_values = sorted(list(set(param["coef0"] for param in params)))
-
   # Plot based on kernel type
   if kernel=="linear" :
     plt.figure()
