@@ -35,10 +35,7 @@ if __name__ == "__main__" :
   X_test, y_test = shuffle(X_test, y_test)
 
   # Load the pipeline
-  if kernel == "sigmoid" :
-    pipeline = joblib.load(os.path.join(MODELS_DIR, f"pipeline-{kernel}-C1e6-gamma1e-6.pkl"))
-  else :
-    pipeline = joblib.load(os.path.join(MODELS_DIR, f"pipeline-{kernel}.pkl"))
+  pipeline = joblib.load(os.path.join(MODELS_DIR, f"pipeline-{kernel}.pkl"))
 
   # Predict all test tokens
   y_pred = pipeline.predict(X_test)
