@@ -101,8 +101,6 @@ def plot_nb_score(grid_search:GridSearchCV, nb_type:str, metric:str) -> None :
   results = grid_search.cv_results_
   mean_test_scores = results["mean_test_score"]
   params = results["params"]
-  print(mean_test_scores)
-  print(params)
   # Sort alpha values
   alpha_values = sorted(list(set(param["alpha"] for param in params)))
   # Plot
