@@ -16,8 +16,8 @@ if __name__ == "__main__" :
   """CORE OF THE SCRIPT"""
   parser = argparse.ArgumentParser()
   parser.add_argument("--kernel", help="SVM kernel function (linear, rbf, sigmoid)", nargs='?', const=1, default="linear")
-  parser.add_argument("--main_corpus", help="MAIN language training corpus file name", required=False)
-  parser.add_argument("--foreign_corpus", help="FOREIGN language training corpus file name", required=False)
+  parser.add_argument("--main_corpus", help="MAIN language test corpus file name", required=False)
+  parser.add_argument("--foreign_corpus", help="FOREIGN language test corpus file name", required=False)
   args = parser.parse_args()
   print(args)
 

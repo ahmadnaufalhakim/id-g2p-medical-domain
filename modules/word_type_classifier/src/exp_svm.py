@@ -48,8 +48,8 @@ if __name__ == "__main__" :
   y = y_train + y_val
 
   # debug stuff (use subset for fast hyperparameter tuning)
-  X = X[:int(.1*len(X))]
-  y = y[:int(.1*len(y))]
+  X = X[:int(.125*len(X))]
+  y = y[:int(.125*len(y))]
   print(f"{len(X)} training data")
 
   # Training vectorizer
@@ -63,20 +63,17 @@ if __name__ == "__main__" :
   # Training SVM model
   ## Define parameter grid
   if kernel=="linear" :
-    # best param: {C: 1.}
     param_grid = {
       'C': [1e-1, 1., 1e1, 1e2, 1e3, 1e4, 1e5, 1e6],
     }
     svm_clf = LinearSVC(max_iter=10_000, class_weight="balanced")
   else :
     if kernel=="rbf" :
-      # best param: {C: 1., gamma: 1.}
       param_grid = {
         'C': [1e-1, 1., 1e1, 1e2, 1e3, 1e4, 1e5, 1e6],
         "gamma": [1., 1e-1, 1e-2, 1e-3, 1e-4, 1e-5, 1e-6, 1e-7],
       }
     elif kernel=="sigmoid" :
-      # best param: {C: 1e3, coef0: .5, gamma: 1e-3}
       param_grid = {
         'C': [1e-1, 1., 1e1, 1e2, 1e3, 1e4, 1e5, 1e6],
         "gamma": [1., 1e-1, 1e-2, 1e-3, 1e-4, 1e-5, 1e-6, 1e-7],
@@ -88,7 +85,7 @@ if __name__ == "__main__" :
     estimator=svm_clf,
     param_grid=param_grid,
     scoring="f1",
-    cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=23522026),
+    cv=StratifiedKFold(n_splits=10, shuffle=True, random_state=23522026),
     n_jobs=-1,
     verbose=3
   )

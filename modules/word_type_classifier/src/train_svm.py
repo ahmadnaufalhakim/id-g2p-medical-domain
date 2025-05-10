@@ -45,25 +45,32 @@ if __name__ == "__main__" :
   X_val = val_main_tokens + val_foreign_tokens
   y_val = [1]*len(val_main_tokens) + [0]*len(val_foreign_tokens)
   X_val, y_val = shuffle(X_val, y_val)
-  # Merge train and validation sets for cross-validation
-  X = X_train + X_val
-  y = y_train + y_val
+
+  # Prepare the array of data to train the model on
+  X = X_train
+  y = y_train
+  ## uncomment 2 lines below to enable training on train+val splits
+  # X += X_val
+  # y += y_val
 
   # Define all the module needed (vectorizer, normalizer, and SVM model)
   n_min, n_max = 1, 3
   vectorizer = TfidfVectorizer(analyzer="char_wb", ngram_range=(n_min, n_max))
   normalizer = Normalizer()
   if kernel=="linear" :
+    # best param: {'C': 1.0}
     C = 1.
     svm_clf = LinearSVC(class_weight="balanced", verbose=True)
   else :
     if kernel=="rbf" :
+      # best param: {'C': 1.0, "gamma": 1.0}
       C = 1.
       gamma = 1.
       coef0 = 0.
     elif kernel=="sigmoid" :
-      C = 1e2
-      gamma = 1e-2
+      # best param: {'C': 100000.0, "coef0": 0.5, "gamma": 1e-05}
+      C = 1e5
+      gamma = 1e-5
       coef0 = .5
     svm_clf = SVC(C=C, kernel=kernel, gamma=gamma, coef0=coef0, class_weight="balanced", verbose=True)
 
