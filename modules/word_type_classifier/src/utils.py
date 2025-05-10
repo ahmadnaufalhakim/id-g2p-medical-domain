@@ -18,7 +18,7 @@ if not os.path.exists(OUTPUT_DIR) :
 
 def preprocess_text(text:str) -> str :
   """
-    Return cleaned text (no dashes, digits, tabs, punctuation, non-alphabetic characters)
+    Returns cleaned text (no dashes, digits, tabs, punctuation, non-alphabetic characters)
   """
   # Replace en em dashes with whitespace
   text = re.sub('–', ' ', text)
