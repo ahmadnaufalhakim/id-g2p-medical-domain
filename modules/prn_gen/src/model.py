@@ -3,7 +3,7 @@ import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from typing import Tuple
+from typing import List, Tuple
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 USE_CUDA = (DEVICE.type == "cuda")
@@ -163,9 +163,9 @@ class G2P :
     print("\tloading id2phn")
     self.INDEX2PHONEME = torch.load(os.path.join(MODELS_DIR, "id2phn.pth"), weights_only=True)
 
-  def load_models(self, config:Namespace) :
+  def load_models(self, config:Namespace) -> None :
     print("Loading models..")
-    mdl_prefix = f"{config.mdl_prefix}-" if hasattr(config, "mdl_prefix") and config.mdl_prefix else ''
+    mdl_prefix = f"{config.mdl_prefix}" if hasattr(config, "mdl_prefix") and config.mdl_prefix else ''
     mdl_suffix = f"-{f'wdecay_{config.weight_decay}-' if hasattr(config, 'weight_decay') and config.weight_decay else ''}attn_{config.attn_model}-emb_{config.emb_dim}-hddn_{config.hidden_size}-layers_{config.n_layers}-epoch_"
     encoders = sorted([
       f for f in os.listdir(MODELS_DIR) if f.startswith(f"{mdl_prefix}encoder{mdl_suffix}")],
@@ -178,6 +178,7 @@ class G2P :
     assert len(encoders)>0 and len(decoders)>0, \
       f"""No encoder and decoder found with the following parameters:
       - language: {config.lang}
+      {f"- model prefix: {config.mdl_prefix}" if hasattr(config, "mdl_prefix") and config.mdl_prefix else ''}
       - grapheme type: {config.grp_type}
       {f"- weight decay: {config.weight_decay}" if hasattr(config, "weight_decay") and config.weight_decay else ''}
       - attention scoring method: {config.attn_model}
@@ -216,8 +217,15 @@ class G2P :
     tensor = torch.LongTensor(indexes).view(-1, 1).to(DEVICE)
     return tensor
 
-  def infer(self, word:str, with_attention:bool = False) -> Tuple[list, torch.Tensor] :
+  def infer(
+        self,
+        word:str,
+        max_length:int = None,
+        with_attention:bool = False
+      ) -> Tuple[List[str], torch.Tensor] :
     input_tensor = self.word_to_tensor(word)
+    if max_length is None :
+      max_length = self.MAX_LENGTH
     # Run through encoder
     encoder_hidden = self.encoder.init_hidden()
     encoder_outputs, encoder_hidden = self.encoder(input_tensor, encoder_hidden)
@@ -225,9 +233,9 @@ class G2P :
     decoder_input = torch.LongTensor([[SOS_TOKEN]]).to(DEVICE)
     decoder_context = torch.zeros(1, self.decoder.hidden_size).to(DEVICE)
     decoder_hidden = encoder_hidden
-    decoder_attentions = torch.zeros(self.MAX_LENGTH, self.MAX_LENGTH)
+    decoder_attentions = torch.zeros(max_length, max_length)
     decoded_phonemes = []
-    for di in range(self.MAX_LENGTH) :
+    for di in range(max_length) :
       decoder_output, decoder_context, decoder_hidden, decoder_attention = self.decoder(
         decoder_input, decoder_context, decoder_hidden, encoder_outputs
       )
@@ -245,12 +253,81 @@ class G2P :
       decoder_input = torch.LongTensor([[ni.item()]]).to(DEVICE)
     return decoded_phonemes, decoder_attentions[:di+1, 1:len(encoder_outputs)]
 
-  def __call__(self, input:str) -> Tuple[list, list] :
+  def post_process(
+        self,
+        phonemes:list,
+        word:str,
+        max_single_repeat:int = 3,
+        max_cycle_repeats:int = 2
+      ) -> List[str] :
+    """
+    Post-processes raw phoneme predictions to fix common infinite loop patterns and unnatural repetitions.
+    Handles three specific failure cases from sequence-to-sequence G2P models:
+    1. Single phonemes stuttering (e.g., ['P', 'P', 'P', ...])
+    2. Cyclic pattern repetition (e.g., ['AO', 'W', 'AO', 'W', ...])
+    3. Overly long outputs without natural stopping points
+
+    The function guarantees the output will:
+    - End with exactly one <EOS> token
+    - Have no more than max_single_repeat consecutive identical phonemes
+    - Contain no more than max_cycle_repeats instances of any cyclic pattern
+    - Be length-constrained relative to input word length (set to length of the word + 1 by default)
+
+    Args:
+      phonemes: List of predicted phonemes (may include <EOS>)
+      word: Original input word for length reference
+      max_single_repeat: Max allowed consecutive repeats of single phoneme
+      max_cycle_repeats: Max allowed repeats of any cycle pattern
+    Returns:
+      Cleaned phoneme list with smart truncation
+    """
+    # Case 0: Remove any EOS and re-add later
+    if "<EOS>" in phonemes :
+      phonemes.remove("<EOS>")
+
+    # Case 1: Single phoneme infinite repeat
+    for i in range(1, len(phonemes)) :
+      if phonemes[i] == phonemes[i-1] :
+        repeat_count = 1
+        while i+repeat_count < len(phonemes) and phonemes[i+repeat_count] == phonemes[i] :
+          repeat_count += 1
+        if repeat_count >= max_single_repeat :
+          return phonemes[:i] + ["<EOS>"]
+
+    # Case 2: Cycle pattern detection
+    for cycle_length in range(1, len(phonemes)//2 + 1) :
+      if len(phonemes) < cycle_length * max_cycle_repeats :
+        continue
+      last_segment = phonemes[-cycle_length*max_cycle_repeats:]
+      cycles = [last_segment[i*cycle_length:(i+1)*cycle_length] for i in range(max_cycle_repeats)]
+      if all(c == cycles[0] for c in cycles) :
+        return phonemes[:-cycle_length*(max_cycle_repeats-1)] + ["<EOS>"]
+
+    # Case 3: Length-based truncation
+    max_reasonable_length = len(word)+1
+    if len(phonemes) > max_reasonable_length :
+      # Find last vowel as natural break point
+      vowels = {
+        "AA", "AE", "AH", "AO", "AW", "AY",
+        "EH", "ER", "EY",
+        "IH", "IY",
+        "OW", "OY",
+        "UH", "UW"
+      }
+      last_vowel_pos = max([i for i, phoneme in enumerate(phonemes) if phoneme in vowels], default=-1)
+      if last_vowel_pos != -1 and last_vowel_pos < len(phonemes)-2 :
+        return phonemes[:last_vowel_pos+2] + ["<EOS>"]
+      return phonemes[:max_reasonable_length] + ["<EOS>"]
+    # Default: Add EOS if missing
+    return phonemes + ["<EOS>"]
+
+  def __call__(self, input:str) -> Tuple[List[List[str]], List[torch.Tensor]] :
     words = input.split()
     decoded_phonemes_list = []
     decoder_attentions_list = []
     for word in words :
       decoded_phonemes, decoder_attns = self.infer(word.lower())
+      decoded_phonemes = self.post_process(decoded_phonemes, word.lower())
       decoded_phonemes_list.append(decoded_phonemes)
       decoder_attentions_list.append(decoder_attns)
     return decoded_phonemes_list, decoder_attentions_list
