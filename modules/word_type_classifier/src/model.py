@@ -24,11 +24,15 @@ class LID :
       assert hasattr(config, "kernel") and config.kernel in ["linear", "rbf", "sigmoid"], "Invalid kernel type. Choose 'linear', 'rbf', or 'sigmoid'."
       kernel = config.kernel
       self.clf = joblib.load(os.path.join(MODELS_DIR, f"svm/pipeline-{kernel}.pkl"))
+    elif self.alg == "nb" :
+      assert hasattr(config, "nb_type") and config.nb_type in ["bernoulli", "multinomial"], "Invalid NB type. Choose 'bernoulli' or 'multinomial'."
+      nb_type = config.nb_type
+      self.clf = joblib.load(os.path.join(MODELS_DIR, f"nb/pipeline-{nb_type[0]}nb.pkl"))
 
   def __call__(self, input:str) -> Union[List[int], np.ndarray] :
     if self.alg == "ngram" :
       lang_preds = [pred[1] for pred in self.clf.predict(input)]
-    elif self.alg == "svm" :
+    else :
       words = input.split()
       lang_preds = self.clf.predict(words)
     return lang_preds
