@@ -1,10 +1,10 @@
 from decimal import Decimal
 from math import log, exp
 import os
+import re
+import string
 import torch
 from typing import List, Tuple
-
-from utils import preprocess_text
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
 MODELS_DIR = os.path.join(CURR_DIR, "..", "models", "ngram")
@@ -134,7 +134,7 @@ class NGramClassifier :
           - lang1, lang2, ... are 0 (foreign), 1 (main), or -1 (neutral/unknown)
     """
     # Preprocess the text
-    text = preprocess_text(text)
+    text = self.__preprocess_text(text)
     # Split text into words
     words = text.split()
 
@@ -160,7 +160,7 @@ class NGramClassifier :
           - score1, score2, ... are the raw scores for each word
     """
     # Preprocess the text
-    text = preprocess_text(text)
+    text = self.__preprocess_text(text)
     # Split text into words
     words = text.split()
 
@@ -178,6 +178,25 @@ class NGramClassifier :
       "main": main_total_p_scores,
       "foreign": foreign_total_p_scores
     }
+
+  def __preprocess_text(self, text:str) -> str :
+    """
+      Returns cleaned text (no dashes, digits, tabs, punctuation, non-alphabetic characters)
+    """
+    # Replace en em dashes with whitespace
+    text = re.sub('–', ' ', text)
+    text = re.sub('—', ' ', text)
+    # Remove digits
+    text = re.sub(r"\d", '', text)
+    # Remove tabs
+    text = re.sub(r"\t", '', text)
+    # Remove non-alphabetic characters (except apostrophe and hyphen)
+    text = re.sub(r"[^a-zA-Z\s\'-]", '', text)
+    # Remove punctuation (except apostrophe and hyphen) using string.punctuation
+    punctuation = f"{string.punctuation}‘’“”"
+    punctuation = ''.join(char for char in punctuation if char not in "'-")
+    text = text.translate(str.maketrans(punctuation, ' '*len(punctuation)))
+    return text.lower().strip()
 
   def __get_frequency_distribution(self, tokens:list) -> dict :
     """
