@@ -5,6 +5,7 @@ from argparse import (
 from jiwer import wer
 import os
 import torch
+from typing import List, Tuple
 
 from model import (
   DEVICE,
@@ -31,7 +32,7 @@ decoder = None
 
 val_pairs = []
 
-def load_val_pairs(lang:str) :
+def load_val_pairs(lang:str) -> None :
   global DATA_DIR
   global val_pairs
 
@@ -39,7 +40,7 @@ def load_val_pairs(lang:str) :
     next(f_csv, None)
     val_pairs = [[s.strip('\n') for s in row.split(',')] for row in f_csv]
 
-def load_mappings(config:Namespace) :
+def load_mappings(config:Namespace) -> None :
   print("Loading mappings..")
   global MODELS_DIR
   global GRP_TYPE, INDEX2GRAPHEME, GRAPHEME2INDEX, INDEX2PHONEME
@@ -59,7 +60,7 @@ def load_mappings(config:Namespace) :
   print("\tloading id2phn")
   INDEX2PHONEME = torch.load(os.path.join(MODELS_DIR, "id2phn.pth"), weights_only=True)
 
-def load_models(config:Namespace, mdl_prefix:str = '') :
+def load_models(config:Namespace, mdl_prefix:str = '') -> None :
   print("Loading models..")
   global encoder, decoder
 
@@ -102,7 +103,7 @@ def load_models(config:Namespace, mdl_prefix:str = '') :
   encoder = encoder.to(DEVICE).eval()
   decoder = decoder.to(DEVICE).eval()
 
-def word_to_tensor(word:str) :
+def word_to_tensor(word:str) -> None :
   assert GRP_TYPE in ["unigram", "bigram", "trigram"]
   if GRP_TYPE == "unigram" :
     graphemes = [*word]
@@ -115,9 +116,14 @@ def word_to_tensor(word:str) :
   tensor = torch.LongTensor(indexes).view(-1, 1).to(DEVICE)
   return tensor
 
-def infer(word:str, with_attention:bool=False) :
+def infer(
+      word:str,
+      max_length:int = None,
+      with_attention:bool = False
+    ) -> Tuple[List[str], torch.Tensor] :
   input_tensor = word_to_tensor(word)
-
+  if max_length is None :
+    max_length = MAX_LENGTH
   # Run through encoder
   encoder_hidden = encoder.init_hidden()
   encoder_outputs, encoder_hidden = encoder(input_tensor, encoder_hidden)
@@ -125,10 +131,9 @@ def infer(word:str, with_attention:bool=False) :
   decoder_input = torch.LongTensor([[SOS_TOKEN]]).to(DEVICE)
   decoder_context = torch.zeros(1, decoder.hidden_size).to(DEVICE)
   decoder_hidden = encoder_hidden
-
-  decoder_attentions = torch.zeros(MAX_LENGTH, MAX_LENGTH)
+  decoder_attentions = torch.zeros(max_length, max_length)
   decoded_phonemes = []
-  for di in range(MAX_LENGTH) :
+  for di in range(max_length) :
     decoder_output, decoder_context, decoder_hidden, decoder_attention = decoder(
       decoder_input, decoder_context, decoder_hidden, encoder_outputs
     )
@@ -142,7 +147,6 @@ def infer(word:str, with_attention:bool=False) :
       break
     else :
       decoded_phonemes.append(INDEX2PHONEME[ni.item()])
-
     # Next decoder input is last token
     decoder_input = torch.LongTensor([[ni.item()]]).to(DEVICE)
   return decoded_phonemes, decoder_attentions[:di+1, 1:len(encoder_outputs)]
