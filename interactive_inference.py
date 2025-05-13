@@ -1,134 +1,108 @@
-from argparse import (
-  ArgumentParser,
-  Namespace
-)
+from argparse import Namespace
 import random
+from typing import List, Tuple
 
-from modules.prn_gen.src.model import G2P
+from modules.prn_gen.src.model import G2P, UNK_TOKEN
 from modules.word_type_classifier.src.model import LID
+from utils import gen_ngram_candidates, split_g2p_config, verify_args, preprocess_text
 
-def add_lang_specific_args(parser:ArgumentParser, prefix:str = None) -> None :
-  """
-    Helper to add language-specific arguments (e.g., --en_grp_type, --id_grp_type).
-    Default prefix is set to '' for joint mode.
-  """
-  parser.add_argument(
-    f"--{f'{prefix}_' if prefix else ''}mdl_prefix",
-    help=f"{f'{prefix} ' if prefix else ''} model filename prefix",
-    nargs='?', const=1, default=""
-  )
-  parser.add_argument(
-    f"--{f'{prefix}_' if prefix else ''}grp_type",
-    help=f"{f'{prefix} ' if prefix else ''} model grapheme type",
-    choices=["unigram", "bigram", "trigram"],
-    required=True
-  )
-  parser.add_argument(
-    f"--{f'{prefix}_' if prefix else ''}weight_decay",
-    help=f"{f'{prefix} ' if prefix else ''} model weight decay",
-    choices=["1e_5", "1e_4"],
-    nargs='?', const=1, default="1e_5"
-  )
-  parser.add_argument(
-    f"--{f'{prefix}_' if prefix else ''}attn_model",
-    help=f"{f'{prefix} ' if prefix else ''} model attention type",
-    choices=["dot", "general", "concat"],
-    default="dot"
-  )
-  parser.add_argument(f"--{f'{prefix}_' if prefix else ''}emb_dim", help=f"{f'{prefix} ' if prefix else ''} model embedding dimension", type=int, required=True)
-  parser.add_argument(f"--{f'{prefix}_' if prefix else ''}hidden_size", help=f"{f'{prefix} ' if prefix else ''} model hidden layer size", type=int, required=True)
-  parser.add_argument(f"--{f'{prefix}_' if prefix else ''}n_layers", help=f"{f'{prefix} ' if prefix else ''} model number of hidden layers", type=int, default=1)
-
-def split_config(config:Namespace, prefix:str) -> None :
-  """
-    Extract prefixed arguments into a new Namespace.
-  """
-  new_config = Namespace()
-  for key, value in vars(config).items() :
-    if key.startswith(f"{prefix}_") :
-      clean_key = key[len(prefix)+1:]
-      setattr(new_config, clean_key, value)
-    elif not hasattr(new_config, key) :
-      setattr(new_config, key, value)
-  return new_config
+def setup_params(config:Namespace) -> Tuple[str, List[G2P], LID, List[G2P], List[G2P]] :
+  mode = config.mode
+  en_id_g2ps = None
+  lid = None
+  en_g2ps = None
+  id_g2ps = None
+  if mode == "joint" :
+    tri_config = split_g2p_config(config=config, prefix="en_id", order="tri")
+    bi_config = split_g2p_config(config=config, prefix="en_id", order="bi")
+    uni_config = split_g2p_config(config=config, prefix="en_id", order="uni")
+    tri_g2p = G2P(config=tri_config)
+    bi_g2p = G2P(config=bi_config)
+    uni_g2p = G2P(config=uni_config)
+    en_id_g2ps = [uni_g2p, bi_g2p, tri_g2p]
+  elif mode == "separate" :
+    if not (hasattr(config, "alg") and config.alg in ["ngram", "svm", "nb"]) :
+      raise ValueError("Invalid word type classifier algorithm. Choose 'ngram', 'svm', or 'nb'.")
+    lid = LID(config=config)
+    en_tri_config = split_g2p_config(config=config, prefix="en", order="tri")
+    en_bi_config = split_g2p_config(config=config, prefix="en", order="bi")
+    en_uni_config = split_g2p_config(config=config, prefix="en", order="uni")
+    id_tri_config = split_g2p_config(config=config, prefix="id", order="tri")
+    id_bi_config = split_g2p_config(config=config, prefix="id", order="bi")
+    id_uni_config = split_g2p_config(config=config, prefix="id", order="uni")
+    en_tri_g2p = G2P(config=en_tri_config)
+    en_bi_g2p = G2P(config=en_bi_config)
+    en_uni_g2p = G2P(config=en_uni_config)
+    id_tri_g2p = G2P(config=id_tri_config)
+    id_bi_g2p = G2P(config=id_bi_config)
+    id_uni_g2p = G2P(config=id_uni_config)
+    en_g2ps = [en_uni_g2p, en_bi_g2p, en_tri_g2p]
+    id_g2ps = [id_uni_g2p, id_bi_g2p, id_tri_g2p]
+  return (mode, en_id_g2ps, lid, en_g2ps, id_g2ps)
 
 def interactive_inference(
-      config:Namespace
-    ) :
-  if not (hasattr(config, "mode") and config.mode in ["joint", "separate"]) :
-    raise ValueError("Invalid mode. Choose 'joint' or 'separate'.")
-  mode = config.mode
-  if mode == "joint" :
-    if not (hasattr(config, "lang") and config.lang == "en_id") :
-      raise ValueError("Invalid lang for joint mode. Use 'en_id'.")
-    g2p = G2P(config=config)
-    while True :
-      inp = input("\nInput (enter 'exit' to quit): ").strip()
-      if inp.lower() == "exit" :
+      mode:str,
+      en_id_g2ps:List[G2P] = None,
+      lid:LID = None,
+      en_g2ps:List[G2P] = None,
+      id_g2ps:List[G2P] = None
+    ) -> None :
+  while True :
+    inp = input("\nInput (enter 'exit' to quit): ").strip()
+    if inp.lower() == "exit" :
+      while True :
         confirm = input("Are you sure? (y/n): ").strip().lower()
-        if confirm == 'y' :
+        if confirm in ['y', 'n'] :
           break
-      phonemes, attentions = g2p(inp)
-      print(phonemes)
-  elif mode == "separate" :
-    if not (hasattr(config, "alg") and config.alg in ["ngram", "svm"]) :
-      raise ValueError("Invalid word type classifier algorithm. Choose 'ngram' or 'svm'.")
-    lid = LID(config=config)
-
-    en_config = split_config(config, "en")
-    setattr(en_config, "lang", "en")
-    en_g2p = G2P(config=en_config)
-
-    id_config = split_config(config, "id")
-    setattr(id_config, "lang", "id")
-    id_g2p = G2P(config=id_config)
-
-    while True :
-      inp = input("\nInput (enter 'exit' to quit): ").strip()
-      if inp.lower() == "exit" :
-        confirm = input("Are you sure? (y/n): ").strip().lower()
-        if confirm == 'y' :
-          break
-      decoded_phonemes = []
-      langs = lid(inp)
-      for word, lang in zip(inp.split(), langs) :
-        if lang == 0 :
-          phonemes, attentions = en_g2p(word)
-        elif lang == 1 :
-          phonemes, attentions = id_g2p(word)
-        elif random.random() < .5 :
-          phonemes, attentions = en_g2p(word)
         else :
-          phonemes, attentions = id_g2p(word)
-        decoded_phonemes.append(phonemes)
-      print(langs)
-      print(decoded_phonemes)
+          print("Please enter 'y' or 'n'.")
+      if confirm == 'y' :
+        break
+
+    inp = preprocess_text(inp)
+    if mode == "joint" :
+      langs = [None]*len(inp.split())
+    elif mode == "separate" :
+      langs = lid(inp)
+
+    for word, lang in zip(inp.split(), langs) :
+      ngram_order = [3, 2, 1]
+      ngram_candidates = gen_ngram_candidates(word)
+      found_valid_ngram = False # Flag to track if any ngram order indexing is valid
+      if mode == "joint" :
+        for order in ngram_order :
+          indexes = [en_id_g2ps[order-1].GRAPHEME2INDEX.get(grapheme, UNK_TOKEN) for grapheme in ngram_candidates[order-1]]
+          if (ngram_candidates[order-1]) and (UNK_TOKEN not in indexes) and (en_id_g2ps[order-1] is not None) :
+            phonemes, attentions = en_id_g2ps[order-1](word)
+            found_valid_ngram = True
+            break
+        # If no valid ngram was found
+        if not found_valid_ngram :
+          for order in ngram_order :
+            indexes = [en_id_g2ps[order-1].GRAPHEME2INDEX.get(grapheme, UNK_TOKEN) for grapheme in ngram_candidates[order-1]]
+            if (ngram_candidates[order-1]) and (en_id_g2ps[order-1] is not None) :
+              phonemes, attentions = en_id_g2ps[order-1](word)
+              break
+        print(phonemes, order, ngram_candidates[order-1])
+      elif mode == "separate" :
+        lang = "en" if lang == 0 or (lang not in [0, 1] and random.random()<.5) else "id"
+        g2ps = en_g2ps if lang == "en" else id_g2ps
+        for order in ngram_order :
+          indexes = [g2ps[order-1].GRAPHEME2INDEX.get(grapheme, UNK_TOKEN) for grapheme in ngram_candidates[order-1]]
+          if (ngram_candidates[order-1]) and (UNK_TOKEN not in indexes) and (g2ps[order-1] is not None) :
+            phonemes, attentions = g2ps[order-1](word)
+            found_valid_ngram = True
+            break
+        # If no valid ngram was found
+        if not found_valid_ngram :
+          for order in ngram_order :
+            indexes = [g2ps[order-1].GRAPHEME2INDEX.get(grapheme, UNK_TOKEN) for grapheme in ngram_candidates[order-1]]
+            if (ngram_candidates[order-1]) and (g2ps[order-1] is not None) :
+              phonemes, attentions = g2ps[order-1](word)
+              break
+        print(phonemes, lang, order, ngram_candidates[order-1])
 
 if __name__ == "__main__" :
-  parser = ArgumentParser()
-  subparsers = parser.add_subparsers(dest="mode", required=True)
-
-  # Joint mode (just G2P)
-  joint_parser = subparsers.add_parser("joint", help="Unified en_id G2P model")
-  add_lang_specific_args(parser=joint_parser)
-  # Separate mode (LID + dual G2P)
-  separate_parser = subparsers.add_parser("separate", help="LID + language-specific G2P")
-  separate_parser.add_argument(
-    "--alg",
-    help="LID algorithm",
-    choices=["ngram", "svm"],
-    required=True
-  )
-  # Conditional args for --alg
-  ngram_group = separate_parser.add_argument_group("ngram_args", "n-gram LID options")
-  ngram_group.add_argument("--n", help="n-gram order", type=int)
-  ngram_group.add_argument("--k", help="Smoothing parameter")
-  svm_group = separate_parser.add_argument_group("svm_args", "SVM LID options")
-  svm_group.add_argument("--kernel", help="SVM kernel", choices=["linear", "rbf", "sigmoid"])
-  # G2P args
-  add_lang_specific_args(separate_parser, "en")
-  add_lang_specific_args(separate_parser, "id")
-  args = parser.parse_args()
-  print(args)
-
-  interactive_inference(config=args)
+  config = verify_args()
+  mode, en_id_g2ps, lid, en_g2ps, id_g2ps = setup_params(config)
+  interactive_inference(mode, en_id_g2ps=en_id_g2ps, lid=lid, en_g2ps=en_g2ps, id_g2ps=id_g2ps)
