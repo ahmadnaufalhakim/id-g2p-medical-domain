@@ -161,3 +161,6 @@ cython_debug/
 
 # Kaldi folder
 kaldi/
+
+# Speech Recognition experiment's MEDISCO dataset
+dataset/
